@@ -1,0 +1,6 @@
+framework module Pods_KPI_Schedule {
+  umbrella header "Pods-KPI Schedule-umbrella.h"
+
+  export *
+  module * { export * }
+}

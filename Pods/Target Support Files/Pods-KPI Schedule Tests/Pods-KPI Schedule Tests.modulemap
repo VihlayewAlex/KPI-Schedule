@@ -1,0 +1,6 @@
+framework module Pods_KPI_Schedule_Tests {
+  umbrella header "Pods-KPI Schedule Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
