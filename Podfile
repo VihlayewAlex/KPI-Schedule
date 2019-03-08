@@ -5,6 +5,8 @@ target 'KPI Schedule' do
   use_frameworks!
 
   pod "PromiseKit"
+  pod "Pageboy"
+  pod "DZNEmptyDataSet"
 
 end
 

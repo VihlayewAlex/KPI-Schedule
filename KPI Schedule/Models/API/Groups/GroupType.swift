@@ -22,4 +22,13 @@ enum GroupType {
             return nil
         }
     }
+    
+    var name: String {
+        switch self {
+        case .daily:
+            return "daily"
+        case .extramural:
+            return "extramural"
+        }
+    }
 }

@@ -1,5 +1,5 @@
 //
-//  NetworkingAPIFacade.swift
+//  NetworkingApiFacade.swift
 //  KPI Schedule
 //
 //  Created by Alex Vihlayew on 3/6/19.
@@ -9,7 +9,7 @@
 import Foundation
 import PromiseKit
 
-struct NetworkingAPIFacade {
+struct NetworkingApiFacade {
     
     private let apiService: APIService
     
@@ -42,45 +42,43 @@ struct NetworkingAPIFacade {
                     offset += limit
                 }
             } catch {
-                packetHandler(Handler.failure(error))
+                callbackQueue.async {
+                    packetHandler(Handler.failure(error))
+                }
             }
         }
     }
     
     func getSchedule(forGroupWithId groupId: Int) -> Promise<Schedule> {
-        return Promise(resolver: { (resolver) in
-            self.apiService.getTimetable(groupId: groupId).done({ (response) in
-                let timetableInfo = response.data
-                let schedule = Schedule(timetable: timetableInfo)
-                resolver.fulfill(schedule)
-            }).catch({ (error) in
-                resolver.reject(error)
-            })
+        return apiService.getTimetable(groupId: groupId).map({ (response) -> Schedule in
+            return Schedule(timetable: response.data)
         })
     }
     
     func getTeachers(forGroupWithId groupId: Int) -> Promise<[Teacher]> {
-        return Promise(resolver: { (resolver) in
-            self.apiService.getTeachers(groupId: groupId).done({ (response) in
-                let teachersInfo = response.data
-                let teachers = teachersInfo.map({ (teacherInfo) -> Teacher in
-                    return Teacher(info: teacherInfo)
-                })
-                resolver.fulfill(teachers)
-            }).catch({ (error) in
-                resolver.reject(error)
+        return apiService.getTeachers(groupId: groupId).map({ (response) -> [Teacher] in
+            return response.data.map({ (teacherInfo) -> Teacher in
+                return Teacher(info: teacherInfo)
             })
         })
     }
     
     func searchTeachers(byString searchString: String) -> Promise<[Teacher]> {
+        return apiService.searchTeachers(string: searchString).map({ (response) -> [Teacher] in
+            return response.data.map({ (teacherInfo) -> Teacher in
+                return Teacher(info: teacherInfo)
+            })
+        })
+    }
+    
+    func getCurrentWeekNumber() -> Promise<ScheduleWeek> {
         return Promise(resolver: { (resolver) in
-            self.apiService.searchTeachers(string: searchString).done({ (response) in
-                let teachersInfo = response.data
-                let teachers = teachersInfo.map({ (teacherInfo) -> Teacher in
-                    return Teacher(info: teacherInfo)
-                })
-                resolver.fulfill(teachers)
+            apiService.getCurrentWeekNumber().done({ (response) in
+                if let week = ScheduleWeek(number: response.data) {
+                    resolver.fulfill(week)
+                } else {
+                    resolver.reject(NetworkingApiError.weekNumberIsOutOfExpectedRange)
+                }
             }).catch({ (error) in
                 resolver.reject(error)
             })

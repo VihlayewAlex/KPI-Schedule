@@ -10,11 +10,11 @@ import XCTest
 
 class NetworkingAPIFacadeTests: XCTestCase {
 
-    var APIFacade: NetworkingAPIFacade!
+    var APIFacade: NetworkingApiFacade!
     var exp: XCTestExpectation!
     
     override func setUp() {
-        APIFacade = NetworkingAPIFacade(apiService: NetworkingAPI())
+        APIFacade = NetworkingApiFacade(apiService: NetworkingApi())
         exp = expectation(description: "Correctly abstract Networking API")
     }
 

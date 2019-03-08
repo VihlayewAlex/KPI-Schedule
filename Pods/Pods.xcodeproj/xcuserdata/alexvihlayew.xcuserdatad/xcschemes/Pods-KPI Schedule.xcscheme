@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF8F8EE54C6FDB783411B7D1F03E38EF"
+               BlueprintIdentifier = "84944A4AF70930A357FA051E7F29257E"
                BuildableName = "Pods_KPI_Schedule.framework"
                BlueprintName = "Pods-KPI Schedule"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AF8F8EE54C6FDB783411B7D1F03E38EF"
+            BlueprintIdentifier = "84944A4AF70930A357FA051E7F29257E"
             BuildableName = "Pods_KPI_Schedule.framework"
             BlueprintName = "Pods-KPI Schedule"
             ReferencedContainer = "container:Pods.xcodeproj">

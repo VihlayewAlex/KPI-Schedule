@@ -10,6 +10,7 @@ import Foundation
 
 struct Lesson {
     let name: String
+    let type: LessonType
     let number: Int
     let timeStart: String
     let timeEnd: String
@@ -21,6 +22,7 @@ extension Lesson {
     
     init(info: LessonInfo) {
         self.name = info.name
+        self.type = LessonType(string: info.type)
         self.number = info.number
         self.timeStart = info.timeStart
         self.timeEnd = info.timeEnd

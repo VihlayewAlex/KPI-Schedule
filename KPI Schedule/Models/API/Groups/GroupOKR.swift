@@ -25,4 +25,15 @@ enum GroupOKR {
             return nil
         }
     }
+    
+    var name: String {
+        switch self {
+        case .bachelor:
+            return "bachelor"
+        case .magister:
+            return "magister"
+        case .specialist:
+            return "specialist"
+        }
+    }
 }

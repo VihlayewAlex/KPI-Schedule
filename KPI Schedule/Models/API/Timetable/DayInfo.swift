@@ -9,5 +9,21 @@
 import Foundation
 
 struct DayInfo: Decodable {
+    let dayNumber: DayOfWeek
     let lessons: [LessonInfo]
+    
+    enum CodingKeys: String, CodingKey {
+        case lessons
+        case dayNumber = "day_number"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        if let dayNumberInt = try? container.decode(Int.self, forKey: .dayNumber), let dayNumber = DayOfWeek(number: dayNumberInt) {
+            self.dayNumber = dayNumber
+        } else {
+            throw DecodingError.typeMismatch(DayInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "day_number value is not convertible to Int"))
+        }
+        lessons = try container.decode([LessonInfo].self, forKey: .lessons)
+    }
 }

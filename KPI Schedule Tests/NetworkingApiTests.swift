@@ -11,11 +11,11 @@ import PromiseKit
 
 class NetworkingApiTests: XCTestCase {
 
-    var API: NetworkingAPI!
+    var API: NetworkingApi!
     var exp: XCTestExpectation!
     
     override func setUp() {
-        API = NetworkingAPI()
+        API = NetworkingApi()
         exp = expectation(description: "Get and parse all JSONs")
     }
 

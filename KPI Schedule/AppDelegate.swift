@@ -8,7 +8,8 @@
 
 import UIKit
 
-let API = NetworkingAPIFacade(apiService: NetworkingAPI())
+var API = NetworkingApiFacade(apiService: NetworkingApi())
+var UserPreferences = OnDiskPreferences()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 

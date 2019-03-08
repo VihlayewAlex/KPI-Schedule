@@ -9,6 +9,8 @@
 import Foundation
 
 struct Day {
+    var dayOfWeek: DayOfWeek
+    
     let first: Lesson?
     let second: Lesson?
     let third: Lesson?
@@ -21,13 +23,25 @@ struct Day {
     let tenth: Lesson?
     
     var lessons: [Lesson?] {
-        return [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth]
+        var arr = [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth]
+        arr.removeLast({ () -> Int in
+            var i = arr.count - 1
+            while arr[i] == nil {
+                i -= 1
+                if i == -1 {
+                    break
+                }
+            }
+            return arr.count - i - 1
+        }())
+        return arr
     }
 }
 
 extension Day {
     
     init(info: DayInfo) {
+        self.dayOfWeek = info.dayNumber
         if let lessonInfo = info.lessons.first(where: { $0.number == 1 }) {
             first = Lesson(info: lessonInfo)
         } else {
@@ -78,6 +92,10 @@ extension Day {
         } else {
             tenth = nil
         }
+    }
+ 
+    static func empty(_ dayOfWeek: DayOfWeek) -> Day {
+        return Day(dayOfWeek: dayOfWeek, first: nil, second: nil, third: nil, fourth: nil, fifth: nil, sixth: nil, seventh: nil, eighth: nil, ninth: nil, tenth: nil)
     }
     
 }

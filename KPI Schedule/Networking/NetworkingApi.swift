@@ -1,5 +1,5 @@
 //
-//  NetworkingAPI.swift
+//  NetworkingApi.swift
 //  KPI Schedule
 //
 //  Created by Alex Vihlayew on 3/6/19.
@@ -22,12 +22,14 @@ protocol APIService {
     
     func getTimetable(groupId: Int) -> Promise<SingleDataResponse<TimetableInfo>>
     
+    func getCurrentWeekNumber() -> Promise<SingleDataResponse<Int>>
+    
 }
 
 
 // MARK: - Common networking logic
 
-class NetworkingAPI {
+class NetworkingApi {
     
     private enum NetworkingApiTarget {
         case getGroups(limit: Int, offset: Int)
@@ -35,6 +37,7 @@ class NetworkingAPI {
         case getTeachers(groupId: Int)
         case searchTeachers(string: String)
         case getTimetable(groupId: Int)
+        case getCurrentWeekNumber
         
         var url: URL {
             switch self {
@@ -48,22 +51,8 @@ class NetworkingAPI {
                 return URL(string: "https://api.rozklad.org.ua/v2/teachers/?search={'query':'\(string)'}".addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!
             case .getTimetable(let groupId):
                 return URL(string: "https://api.rozklad.org.ua/v2/groups/\(groupId)/timetable")!
-            }
-        }
-    }
-    
-    private enum NetworkingApiError: LocalizedError {
-        // Data
-        case noDataReturned
-        // Pagination
-        case invalidPaginationParams
-        
-        var localizedDescription: String {
-            switch self {
-            case .noDataReturned:
-                return "No data returned as a response for the request"
-            case .invalidPaginationParams:
-                return "Pagination params do not satisfy requirements: limit > 0, offset >= 0"
+            case .getCurrentWeekNumber:
+                return URL(string: "https://api.rozklad.org.ua/v2/weeks")!
             }
         }
     }
@@ -95,7 +84,7 @@ class NetworkingAPI {
 
 // MARK: - Concrete APIService implementation
 
-extension NetworkingAPI: APIService {
+extension NetworkingApi: APIService {
 
     func getGroups(limit: Int, offset: Int) -> Promise<ArrayDataMetadataResponse<GroupsResponseMeta, GroupInfo>> {
         guard limit > 0, offset >= 0 else {
@@ -114,6 +103,10 @@ extension NetworkingAPI: APIService {
     
     func getTimetable(groupId: Int) -> Promise<SingleDataResponse<TimetableInfo>> {
         return executePromiseRequest(to: .getTimetable(groupId: groupId))
+    }
+    
+    func getCurrentWeekNumber() -> Promise<SingleDataResponse<Int>> {
+        return executePromiseRequest(to: .getCurrentWeekNumber)
     }
 
 }

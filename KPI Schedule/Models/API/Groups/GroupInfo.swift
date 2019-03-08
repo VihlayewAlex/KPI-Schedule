@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GroupInfo: Decodable {
+struct GroupInfo: Codable {
     let id: Int
     let name: String
     let okr: GroupOKR
@@ -36,4 +36,31 @@ struct GroupInfo: Decodable {
             throw DecodingError.typeMismatch(GroupInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Can't match type value to GroupType enum case"))
         }
     }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(okr.name, forKey: .okr)
+        try container.encode(type.name, forKey: .type)
+    }
+}
+
+extension GroupInfo {
+    
+    init(id: Int, name: String, okr: GroupOKR, type: GroupType) {
+        self.id = id
+        self.name = name
+        self.okr = okr
+        self.type = type
+    }
+    
+}
+
+extension GroupInfo: Equatable {
+    
+    static func == (lhs: GroupInfo, rhs: GroupInfo) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
 }

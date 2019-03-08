@@ -20,8 +20,8 @@ struct Schedule {
 extension Schedule {
     
     init(timetable: TimetableInfo) {
-        first = Week(info: timetable.weeks.first)
-        second = Week(info: timetable.weeks.second)
+        first = Week(info: timetable.weeks.first, number: .first)
+        second = Week(info: timetable.weeks.second, number: .second)
     }
     
 }

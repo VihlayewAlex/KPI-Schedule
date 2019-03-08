@@ -9,11 +9,9 @@
 import Foundation
 
 struct LessonInfo: Decodable {
-    let day: LessonDay
     let name: String
     let number: Int
     let type: String
-    let week: LessonWeek
     let timeStart: String
     let timeEnd: String
     let teachers: [TeacherInfo]
@@ -32,11 +30,6 @@ struct LessonInfo: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        if let dayString = try? container.decode(String.self, forKey: .day), let dayInt = Int(dayString), let _day = LessonDay(number: dayInt) {
-            day = _day
-        } else {
-            throw DecodingError.typeMismatch(LessonInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Can't match day value to LessonDay enum case"))
-        }
         name = try container.decode(String.self, forKey: .name)
         if let numberString = try? container.decode(String.self, forKey: .number), let _number = Int(numberString) {
             number = _number
@@ -44,11 +37,6 @@ struct LessonInfo: Decodable {
             throw DecodingError.typeMismatch(LessonInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "lesson_number value is not convertible to Int"))
         }
         type = try container.decode(String.self, forKey: .type)
-        if let weekString = try? container.decode(String.self, forKey: .week), let weekInt = Int(weekString), let _week = LessonWeek(number: weekInt) {
-            week = _week
-        } else {
-            throw DecodingError.typeMismatch(LessonInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Can't match day value to LessonDay enum case"))
-        }
         timeStart = try container.decode(String.self, forKey: .timeStart)
         timeEnd = try container.decode(String.self, forKey: .timeEnd)
         teachers = try container.decode([TeacherInfo].self, forKey: .teachers)

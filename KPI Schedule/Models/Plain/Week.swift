@@ -9,56 +9,56 @@
 import Foundation
 
 struct Week {
-    let monday: Day?
-    let tuesday: Day?
-    let wednesday: Day?
-    let thursday: Day?
-    let friday: Day?
-    let saturday: Day?
-    let sunday: Day?
+    let monday: Day
+    let tuesday: Day
+    let wednesday: Day
+    let thursday: Day
+    let friday: Day
+    let saturday: Day
+    let sunday: Day
     
-    var days: [Day?] {
+    var days: [Day] {
         return [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
     }
 }
 
 extension Week {
     
-    init(info: WeekInfo) {
+    init(info: WeekInfo, number: ScheduleWeek) {
         if let mondayInfo = info.days.monday {
             monday = Day(info: mondayInfo)
         } else {
-            monday = nil
+            monday = Day.empty(.monday)
         }
         if let tuesdayInfo = info.days.tuesday {
             tuesday = Day(info: tuesdayInfo)
         } else {
-            tuesday = nil
+            tuesday = Day.empty(.tuesday)
         }
         if let wednesdayInfo = info.days.wednesday {
             wednesday = Day(info: wednesdayInfo)
         } else {
-            wednesday = nil
+            wednesday = Day.empty(.wednesday)
         }
         if let thursdayInfo = info.days.thursday {
             thursday = Day(info: thursdayInfo)
         } else {
-            thursday = nil
+            thursday = Day.empty(.thursday)
         }
         if let fridayInfo = info.days.friday {
             friday = Day(info: fridayInfo)
         } else {
-            friday = nil
+            friday = Day.empty(.friday)
         }
         if let saturdayInfo = info.days.saturday {
             saturday = Day(info: saturdayInfo)
         } else {
-            saturday = nil
+            saturday = Day.empty(.saturday)
         }
         if let sundayInfo = info.days.sunday {
             sunday = Day(info: sundayInfo)
         } else {
-            sunday = nil
+            sunday = Day.empty(.sunday)
         }
     }
     
