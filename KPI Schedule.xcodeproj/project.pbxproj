@@ -74,6 +74,7 @@
 		3AC6EBEE222FF1ED00A387CC /* NetworkingAPIFacadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC6EBED222FF1ED00A387CC /* NetworkingAPIFacadeTests.swift */; };
 		3ACDD5E4223104DD00A0DE04 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDD5E3223104DD00A0DE04 /* CGRect+Extensions.swift */; };
 		3ACDD5E62231288800A0DE04 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDD5E52231288800A0DE04 /* Math.swift */; };
+		3AE8536722328CB600B40971 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8536622328CB600B40971 /* ProfileVC.swift */; };
 		3AF967D422318AB900761ACD /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF967D322318AB900761ACD /* DayOfWeek.swift */; };
 		3AF967D622318AF900761ACD /* ScheduleWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF967D522318AF900761ACD /* ScheduleWeek.swift */; };
 		3AF967D722318AFE00761ACD /* ScheduleWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF967D522318AF900761ACD /* ScheduleWeek.swift */; };
@@ -143,6 +144,7 @@
 		3AC6EBED222FF1ED00A387CC /* NetworkingAPIFacadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPIFacadeTests.swift; sourceTree = "<group>"; };
 		3ACDD5E3223104DD00A0DE04 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		3ACDD5E52231288800A0DE04 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		3AE8536622328CB600B40971 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		3AF967D322318AB900761ACD /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		3AF967D522318AF900761ACD /* ScheduleWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWeek.swift; sourceTree = "<group>"; };
 		3AF967DA2231A32B00761ACD /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				3A5F57972230684000BFD268 /* SchedulePagerVC.swift */,
 				3A5F579B22306DC700BFD268 /* ScheduleDayVC.swift */,
 				3A5F57A022307A5800BFD268 /* LessonCell.swift */,
+				3AE8536622328CB600B40971 /* ProfileVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				3AF967DB2231A32B00761ACD /* Date+Extensions.swift in Sources */,
 				3A5F57892230400E00BFD268 /* SplashScreenVC.swift in Sources */,
 				3A48285C222F2AA30093E949 /* AppDelegate.swift in Sources */,
+				3AE8536722328CB600B40971 /* ProfileVC.swift in Sources */,
 				3A4828B7222F68EB0093E949 /* DayInfo.swift in Sources */,
 				3A5F5794223060DA00BFD268 /* Preferences.swift in Sources */,
 				3A2E6B05223179B1004623F1 /* NetworkingApiError.swift in Sources */,

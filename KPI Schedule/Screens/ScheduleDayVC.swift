@@ -9,12 +9,22 @@
 import UIKit
 import DZNEmptyDataSet
 
+protocol ScheduleScrollingDelegate: class {
+    
+    func didScrollDay()
+    
+    func didScrollWeek()
+    
+}
+
 final class ScheduleDayVC: UIViewController {
 
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tableFooterView: UIView!
+    
+    weak var delegate: ScheduleScrollingDelegate?
     
     var day: Day!
     var week: ScheduleWeek!
@@ -50,7 +60,15 @@ final class ScheduleDayVC: UIViewController {
             tableFooterView.isHidden = true
         }
         
-        dayLabel.text = day?.dayOfWeek.name.uppercased()
+        dayLabel.text = day.dayOfWeek.name.uppercased() + { () -> String in
+            let currentDay = Date().dayOfWeek
+            let displayedDay = day.dayOfWeek
+            if week == currentWeek && displayedDay == currentDay {
+                return " (TODAY)"
+            } else {
+                return ""
+            }
+        }()
         dateLabel.text = { () -> String in
             let currentDay = Date().dayOfWeek
             let displayedDay = day.dayOfWeek
@@ -71,6 +89,8 @@ final class ScheduleDayVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        delegate?.didScrollDay()
         
         if backgroundView.superview == nil {
             backgroundView.layer.opacity = 0.0
@@ -116,6 +136,7 @@ final class ScheduleDayVC: UIViewController {
 extension ScheduleDayVC: UITableViewDataSource, UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        delegate?.didScrollDay()
         backgroundView.frame = tableView.rect(forSection: 0)
             .shifted(by: tableView.frame.origin)
             .unshifted(by: scrollView.contentOffset)

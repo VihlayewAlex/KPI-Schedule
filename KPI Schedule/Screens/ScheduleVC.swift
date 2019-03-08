@@ -14,19 +14,40 @@ final class ScheduleVC: UIViewController {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var scheduleContainerView: UIView!
+    @IBOutlet weak var timelineContainerView: UIView!
+    @IBOutlet weak var scheduleGlobalContainerLeftConstraint: NSLayoutConstraint!
+    @IBOutlet weak var scheduleGlobalContainerRightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var timelinePointerView: UIView!
+    @IBOutlet weak var timelinePointerViewTopConstraint: NSLayoutConstraint!
     @IBOutlet var screenEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer!
+    @IBOutlet var timelinePanGestureRecognizer: UIPanGestureRecognizer!
     
-    var schedulePageVC = SchedulePagerVC()
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    private var schedulePageVC = SchedulePagerVC()
+    
+    private var isTimelineOpen = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTimeline()
         configurePageVC()
         loadSchedule()
+        
+        updateTimelinePointer()
+    }
+    
+    private func configureTimeline() {
+        timelineContainerView.layer.cornerRadius = 6.0
+        timelineContainerView.layer.maskedCorners = [CACornerMask.layerMaxXMinYCorner]
     }
     
     private func configurePageVC() {
         addChild(schedulePageVC)
+        schedulePageVC.scrollingDelegate = self
         schedulePageVC.view.translatesAutoresizingMaskIntoConstraints = false
         scheduleContainerView.addSubview(schedulePageVC.view)
         scheduleContainerView.topAnchor.constraint(equalTo: schedulePageVC.view.topAnchor).isActive = true
@@ -48,12 +69,85 @@ final class ScheduleVC: UIViewController {
         }
     }
     
+    func updateTimelinePointer() {
+        let now = Date()
+        if let currentLessonIndex = now.lessonIndex, let currentLessonFraction = now.lessonFraction {
+            let position = { () -> CGFloat in
+                let numberOfCompletedLessons = CGFloat(currentLessonIndex)
+                let numberOfGaps = CGFloat(currentLessonIndex)
+                return (numberOfCompletedLessons * 106.0)
+                     + (numberOfGaps * 12.0)
+                     + (CGFloat(currentLessonFraction) * 106.0)
+            }()
+            let offset = schedulePageVC.selectedViewController?.tableView.contentOffset.y ?? 0.0
+            let newPointerLocation: CGFloat = 32.0 + position - offset
+            timelinePointerViewTopConstraint.constant = newPointerLocation
+            view.layoutIfNeeded()
+            timelinePointerView.isHidden = false
+        } else {
+            timelinePointerView.isHidden = true
+        }
+    }
+    
     @IBAction func weekChanged() {
         schedulePageVC.scheduleOptions = schedulePageVC.scheduleOptions?.with(newSelectedScheduleWeek: ScheduleWeek(index: segmentedControl.selectedSegmentIndex)!)
     }
     
     @IBAction func handlePan() {
-        print("Pan")
+        guard !isTimelineOpen else {
+            return
+        }
+        switch screenEdgePanGestureRecognizer.state {
+        case .began, .changed:
+            // Update coordinates
+            scheduleGlobalContainerLeftConstraint.constant = 0 + screenEdgePanGestureRecognizer.location(in: view).x
+            scheduleGlobalContainerRightConstraint.constant = 0 - screenEdgePanGestureRecognizer.location(in: view).x
+            UIView.animate(withDuration: 0.1, animations: { [weak self] in
+                self?.view.layoutIfNeeded()
+            })
+        default:
+            // Recover or proceed
+            scheduleGlobalContainerLeftConstraint.constant = 0 + 60
+            scheduleGlobalContainerRightConstraint.constant = 0 - 60
+            isTimelineOpen = true
+            screenEdgePanGestureRecognizer.isEnabled = false
+            timelinePanGestureRecognizer.isEnabled = true
+            UIView.animate(withDuration: 0.7, animations: { [weak self] in
+                self?.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    @IBAction func handleSwipeBack() {
+        switch timelinePanGestureRecognizer.state {
+        case .began, .changed:
+            scheduleGlobalContainerLeftConstraint.constant = 0
+            scheduleGlobalContainerRightConstraint.constant = 0
+            isTimelineOpen = false
+            timelinePanGestureRecognizer.isEnabled = false
+            screenEdgePanGestureRecognizer.isEnabled = true
+            UIView.animate(withDuration: 0.3, animations: { [weak self] in
+                self?.view.layoutIfNeeded()
+            })
+        default:
+            break
+        }
+    }
+    
+}
+
+extension ScheduleVC: ScheduleScrollingDelegate {
+    
+    func didScrollDay() {
+        updateTimelinePointer()
+    }
+    
+    func didScrollWeek() {
+        let displayedDay = schedulePageVC.selectedViewController?.day.dayOfWeek
+        let displayedWeek = schedulePageVC.scheduleOptions?.selectedScheduleWeek
+        UIView.animate(withDuration: 0.15) {
+            self.timelinePointerView.layer.opacity = ((displayedDay != Date().dayOfWeek) || (displayedWeek != self.schedulePageVC.currentScheduleWeek)) ? 0.0 : 1.0
+        }
     }
     
 }

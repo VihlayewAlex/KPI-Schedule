@@ -29,7 +29,15 @@ struct ScheduleOptions {
 
 final class SchedulePagerVC: PageboyViewController {
 
-    private var viewControllers = [UIViewController]()
+    weak var scrollingDelegate: ScheduleScrollingDelegate?
+    
+    private var viewControllers = [ScheduleDayVC]()
+    var selectedViewController: ScheduleDayVC? {
+        guard let selectedPageIndex = selectedPageIndex else {
+            return nil
+        }
+        return viewControllers[selectedPageIndex]
+    }
     private var selectedPageIndex: Int?
     
     var currentScheduleWeek: ScheduleWeek = .first
@@ -53,6 +61,7 @@ final class SchedulePagerVC: PageboyViewController {
         self.viewControllers = []
         for day in week.days {
             let dayVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "scheduleDayVC") as! ScheduleDayVC
+            dayVC.delegate = scrollingDelegate
             dayVC.day = day
             dayVC.week = scheduleOptions.selectedScheduleWeek
             dayVC.currentWeek = currentScheduleWeek
@@ -71,6 +80,7 @@ extension SchedulePagerVC: PageboyViewControllerDelegate {
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didScrollToPageAt index: PageboyViewController.PageIndex, direction: PageboyViewController.NavigationDirection, animated: Bool) {
         self.selectedPageIndex = index
+        scrollingDelegate?.didScrollWeek()
     }
     
     func pageboyViewController(_ pageboyViewController: PageboyViewController, didReloadWith currentViewController: UIViewController, currentPageIndex: PageboyViewController.PageIndex) { }

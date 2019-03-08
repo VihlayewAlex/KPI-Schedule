@@ -16,4 +16,35 @@ extension Date {
         return DayOfWeek(USAnumber: component)!
     }
     
+    var lessonIndex: Int? {
+        var lessonsTime = [(Date, Date)]()
+        for _ in 0..<10 {
+            let start = lessonsTime.first?.1.addingTimeInterval(60 * 20) ?? Calendar.current.startOfDay(for: self).addingTimeInterval((60 * 30) + (60 * 60 * 8))
+            let end = start.addingTimeInterval(60 * 95)
+            lessonsTime.append((start, end))
+        }
+        let currentDate = self
+        return lessonsTime.index(where: { (timeframe) -> Bool in
+            let (lhs, rhs) = timeframe
+            return (lhs < currentDate) && (currentDate < rhs)
+        })
+        
+    }
+    
+    var lessonFraction: Double? {
+        guard let currentLessonIndex = self.lessonIndex else {
+            return nil
+        }
+        var lessonsTime = [(Date, Date)]()
+        for _ in 0..<10 {
+            let start = lessonsTime.first?.1.addingTimeInterval(60 * 20) ?? Calendar.current.startOfDay(for: self).addingTimeInterval((60 * 30) + (60 * 60 * 8))
+            let end = start.addingTimeInterval(60 * 95)
+            lessonsTime.append((start, end))
+        }
+        let currentTimeframe = lessonsTime[currentLessonIndex]
+        let totalTimeInterval = 60 * 95
+        let currentOffset = self.timeIntervalSince(currentTimeframe.0)
+        return currentOffset / Double(totalTimeInterval)
+    }
+    
 }
