@@ -48,6 +48,7 @@ final class SplashScreenVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "chooseGroup" {
             (segue.destination as? ChooseGroupVC)?.groups = groups
+            (segue.destination as? ChooseGroupVC)?.strategy = ChooseGroupStrategySet.initiallySetGroup
         }
     }
 

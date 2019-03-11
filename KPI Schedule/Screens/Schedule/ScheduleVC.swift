@@ -22,10 +22,6 @@ final class ScheduleVC: UIViewController {
     @IBOutlet var screenEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer!
     @IBOutlet var timelinePanGestureRecognizer: UIPanGestureRecognizer!
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     private var schedulePageVC = SchedulePagerVC()
     
     private var isTimelineOpen = false
@@ -36,6 +32,7 @@ final class ScheduleVC: UIViewController {
         configureTimeline()
         configurePageVC()
         loadSchedule()
+        setupNotificationObservers()
         
         updateTimelinePointer()
     }
@@ -60,6 +57,7 @@ final class ScheduleVC: UIViewController {
     private func loadSchedule() {
         if let groupId = UserPreferences.selectedGroup?.id {
             when(fulfilled: API.getSchedule(forGroupWithId: groupId), API.getCurrentWeekNumber()).done({ [weak self] (schedule, currentWeek) in
+                print("✅ Reloaded schedule")
                 self?.segmentedControl.selectedSegmentIndex = currentWeek.index
                 self?.schedulePageVC.currentScheduleWeek = currentWeek
                 self?.schedulePageVC.scheduleOptions = ScheduleOptions(schedule: schedule, selectedScheduleWeek: currentWeek)
@@ -67,6 +65,12 @@ final class ScheduleVC: UIViewController {
                 print(error.localizedDescription)
             })
         }
+    }
+    
+    private func setupNotificationObservers() {
+        NotificationCenter.default.addObserver(forName: Notification.groupChanged.name, object: nil, queue: nil, using: { [weak self] (notification) in
+            self?.loadSchedule()
+        })
     }
     
     func updateTimelinePointer() {
@@ -87,6 +91,17 @@ final class ScheduleVC: UIViewController {
         } else {
             timelinePointerView.isHidden = true
         }
+    }
+    
+    func updateTimelineTableScroll() {
+        guard let timelineTableView = (children.first(where: { (viewController) -> Bool in
+            return viewController is UITableViewController
+        }) as? UITableViewController)?.tableView, let newOffset = schedulePageVC.selectedViewController?.tableView.contentOffset else {
+            return
+        }
+        UIView.animate(withDuration: 0.1, animations: {
+            timelineTableView.contentOffset = newOffset
+        })
     }
     
     @IBAction func weekChanged() {
@@ -140,14 +155,24 @@ extension ScheduleVC: ScheduleScrollingDelegate {
     
     func didScrollDay() {
         updateTimelinePointer()
+        updateTimelineTableScroll()
     }
     
     func didScrollWeek() {
         let displayedDay = schedulePageVC.selectedViewController?.day.dayOfWeek
         let displayedWeek = schedulePageVC.scheduleOptions?.selectedScheduleWeek
+        let noLessons = schedulePageVC.selectedViewController?.day.lessons.isEmpty ?? true
         UIView.animate(withDuration: 0.15) {
-            self.timelinePointerView.layer.opacity = ((displayedDay != Date().dayOfWeek) || (displayedWeek != self.schedulePageVC.currentScheduleWeek)) ? 0.0 : 1.0
+            self.timelinePointerView.layer.opacity = (
+                (displayedDay != Date().dayOfWeek)
+             || (displayedWeek != self.schedulePageVC.currentScheduleWeek)
+             || (noLessons)
+            ) ? 0.0 : 1.0
         }
+    }
+    
+    func didSelect(lesson: Lesson) {
+        performSegue(withIdentifier: "lessonSegue", sender: nil)
     }
     
 }

@@ -15,6 +15,8 @@ protocol ScheduleScrollingDelegate: class {
     
     func didScrollWeek()
     
+    func didSelect(lesson: Lesson)
+    
 }
 
 final class ScheduleDayVC: UIViewController {
@@ -117,6 +119,12 @@ final class ScheduleDayVC: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        delegate?.didScrollDay()
+    }
+    
     @IBAction func share() {
         let textToShare = [day.lessons.reduce("", { (result, nextLesson) in
             var lessonString = "No lesson"
@@ -195,6 +203,14 @@ extension ScheduleDayVC: UITableViewDataSource, UITableViewDelegate {
         UIView.animate(withDuration: 0.25, delay: 0.05 * Double(indexPath.row), animations: {
             cell.alpha = 1
         })
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard indexPath.row % 2 == 0 else { return }
+        if let lesson = day?.lessons[(indexPath.row) / 2] {
+            delegate?.didSelect(lesson: lesson)
+        }
     }
     
 }

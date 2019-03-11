@@ -8,11 +8,34 @@
 
 import UIKit
 
+struct ChooseGroupStrategySet {
+    
+    static let null: ChooseGroupeStrategy = { (_,_) in return }
+    
+    static let initiallySetGroup: ChooseGroupeStrategy = { (group, viewController) in
+        UserPreferences.selectedGroup = group
+        viewController.dismiss(animated: true, completion: nil)
+    }
+    
+    static func changeGroup(withCompletion completion: (() -> Void)?) -> ChooseGroupeStrategy {
+        return { (group, viewController) in
+            UserPreferences.selectedGroup = group
+            NotificationCenter.default.post(Notification.groupChanged)
+            viewController.dismiss(animated: true, completion: nil)
+            completion?()
+        }
+    }
+    
+}
+
+typealias ChooseGroupeStrategy = ((GroupInfo, UIViewController) -> Void)?
+
 final class ChooseGroupVC: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
+    var strategy: ChooseGroupeStrategy = ChooseGroupStrategySet.null
     var groups = [GroupInfo]() {
         didSet {
             filteredGroups = groups
@@ -32,8 +55,7 @@ final class ChooseGroupVC: UIViewController {
 
     @IBAction func done() {
         if let selectedGroup = selectedGroup {
-            UserPreferences.selectedGroup = selectedGroup
-            dismiss(animated: true, completion: nil)
+            strategy?(selectedGroup, self)
         }
     }
     
