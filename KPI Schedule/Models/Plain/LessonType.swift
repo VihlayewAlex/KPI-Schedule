@@ -40,6 +40,19 @@ enum LessonType {
         }
     }
     
+    var fullName: String {
+        switch self {
+        case .lecture:
+            return "Lecture"
+        case .laboratory:
+            return "Laboratory"
+        case .practice:
+            return "Practice"
+        case .unknown:
+            return "???"
+        }
+    }
+    
     var color: UIColor {
         switch self {
         case .lecture:

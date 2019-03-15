@@ -15,7 +15,7 @@ protocol ScheduleScrollingDelegate: class {
     
     func didScrollWeek()
     
-    func didSelect(lesson: Lesson)
+    func didSelect(lesson: Lesson, forDate dateString: String)
     
 }
 
@@ -209,7 +209,7 @@ extension ScheduleDayVC: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         guard indexPath.row % 2 == 0 else { return }
         if let lesson = day?.lessons[(indexPath.row) / 2] {
-            delegate?.didSelect(lesson: lesson)
+            delegate?.didSelect(lesson: lesson, forDate: dateLabel.text!)
         }
     }
     

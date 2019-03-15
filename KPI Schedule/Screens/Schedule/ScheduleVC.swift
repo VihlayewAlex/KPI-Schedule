@@ -23,7 +23,8 @@ final class ScheduleVC: UIViewController {
     @IBOutlet var timelinePanGestureRecognizer: UIPanGestureRecognizer!
     
     private var schedulePageVC = SchedulePagerVC()
-    
+    private var selectedLesson: Lesson?
+    private var selectedDate: String?
     private var isTimelineOpen = false
     
     override func viewDidLoad() {
@@ -33,6 +34,12 @@ final class ScheduleVC: UIViewController {
         configurePageVC()
         loadSchedule()
         setupNotificationObservers()
+        
+        updateTimelinePointer()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         updateTimelinePointer()
     }
@@ -75,19 +82,20 @@ final class ScheduleVC: UIViewController {
     
     func updateTimelinePointer() {
         let now = Date()
-        if let currentLessonIndex = now.lessonIndex, let currentLessonFraction = now.lessonFraction {
-            let position = { () -> CGFloat in
-                let numberOfCompletedLessons = CGFloat(currentLessonIndex)
-                let numberOfGaps = CGFloat(currentLessonIndex)
-                return (numberOfCompletedLessons * 106.0)
-                     + (numberOfGaps * 12.0)
-                     + (CGFloat(currentLessonFraction) * 106.0)
-            }()
-            let offset = schedulePageVC.selectedViewController?.tableView.contentOffset.y ?? 0.0
-            let newPointerLocation: CGFloat = 32.0 + position - offset
-            timelinePointerViewTopConstraint.constant = newPointerLocation
-            view.layoutIfNeeded()
-            timelinePointerView.isHidden = false
+        if let currentLessonIndex = now.lessonIndex,
+            let currentLessonFraction = now.lessonFraction {
+                let position = { () -> CGFloat in
+                    let numberOfCompletedLessons = CGFloat(currentLessonIndex)
+                    let numberOfGaps = CGFloat(currentLessonIndex)
+                    return (numberOfCompletedLessons * 106.0)
+                         + (numberOfGaps * 12.0)
+                         + (CGFloat(currentLessonFraction) * 106.0)
+                }()
+                let offset = schedulePageVC.selectedViewController?.tableView.contentOffset.y ?? 0.0
+                let newPointerLocation: CGFloat = 32.0 + position - offset
+                timelinePointerViewTopConstraint.constant = newPointerLocation
+                view.layoutIfNeeded()
+                timelinePointerView.isHidden = false
         } else {
             timelinePointerView.isHidden = true
         }
@@ -102,6 +110,15 @@ final class ScheduleVC: UIViewController {
         UIView.animate(withDuration: 0.1, animations: {
             timelineTableView.contentOffset = newOffset
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "lessonSegue" {
+            let lessonVC = segue.destination as! LessonVC
+            lessonVC.lesson = selectedLesson
+            lessonVC.dateString = selectedDate
+            selectedLesson = nil
+        }
     }
     
     @IBAction func weekChanged() {
@@ -171,7 +188,9 @@ extension ScheduleVC: ScheduleScrollingDelegate {
         }
     }
     
-    func didSelect(lesson: Lesson) {
+    func didSelect(lesson: Lesson, forDate dateString: String) {
+        self.selectedLesson = lesson
+        self.selectedDate = dateString
         performSegue(withIdentifier: "lessonSegue", sender: nil)
     }
     

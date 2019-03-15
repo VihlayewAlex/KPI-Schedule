@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B327F779062FC13F204BD66 /* Pods_KPI_Schedule_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEF86A691B76155A08E4CF9 /* Pods_KPI_Schedule_Tests.framework */; };
+		3A18DDA9223BA84B00E9844A /* LessonTeachersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18DDA8223BA84B00E9844A /* LessonTeachersDataSource.swift */; };
+		3A18DDAB223BA85900E9844A /* LessonLocationsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18DDAA223BA85900E9844A /* LessonLocationsDataSource.swift */; };
+		3A18DDAD223BABA800E9844A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A18DDAC223BABA800E9844A /* LocationCell.swift */; };
 		3A2E6B05223179B1004623F1 /* NetworkingApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E6B04223179B1004623F1 /* NetworkingApiError.swift */; };
 		3A2E6B0622317ABA004623F1 /* NetworkingApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2E6B04223179B1004623F1 /* NetworkingApiError.swift */; };
 		3A3F0F0A2236996E00BFA1CC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F0F092236996E00BFA1CC /* SettingsVC.swift */; };
@@ -102,6 +105,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A18DDA8223BA84B00E9844A /* LessonTeachersDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTeachersDataSource.swift; sourceTree = "<group>"; };
+		3A18DDAA223BA85900E9844A /* LessonLocationsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonLocationsDataSource.swift; sourceTree = "<group>"; };
+		3A18DDAC223BABA800E9844A /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		3A2E6B04223179B1004623F1 /* NetworkingApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApiError.swift; sourceTree = "<group>"; };
 		3A3F0F092236996E00BFA1CC /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		3A482858222F2AA30093E949 /* KPI Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KPI Schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +201,9 @@
 				3A5F579B22306DC700BFD268 /* ScheduleDayVC.swift */,
 				3A5F57A022307A5800BFD268 /* LessonCell.swift */,
 				3AB74A452236B6E9005AA30D /* LessonVC.swift */,
+				3A18DDA8223BA84B00E9844A /* LessonTeachersDataSource.swift */,
+				3A18DDAA223BA85900E9844A /* LessonLocationsDataSource.swift */,
+				3A18DDAC223BABA800E9844A /* LocationCell.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -662,12 +671,15 @@
 				3A4828B7222F68EB0093E949 /* DayInfo.swift in Sources */,
 				3A5F5794223060DA00BFD268 /* Preferences.swift in Sources */,
 				3A2E6B05223179B1004623F1 /* NetworkingApiError.swift in Sources */,
+				3A18DDAB223BA85900E9844A /* LessonLocationsDataSource.swift in Sources */,
 				3A482888222F577C0093E949 /* LessonInfo.swift in Sources */,
+				3A18DDA9223BA84B00E9844A /* LessonTeachersDataSource.swift in Sources */,
 				3AC6EBE8222FDC9900A387CC /* SingleDataResponse.swift in Sources */,
 				3A5F57A72230835500BFD268 /* LessonType.swift in Sources */,
 				3AC6EBE2222FDA2700A387CC /* Room.swift in Sources */,
 				3A482878222F42900093E949 /* GroupInfo.swift in Sources */,
 				3A5F579C22306DC700BFD268 /* ScheduleDayVC.swift in Sources */,
+				3A18DDAD223BABA800E9844A /* LocationCell.swift in Sources */,
 				3AF967D622318AF900761ACD /* ScheduleWeek.swift in Sources */,
 				3AB74A462236B6E9005AA30D /* LessonVC.swift in Sources */,
 				3A48287A222F42B90093E949 /* GroupsResponseMeta.swift in Sources */,
