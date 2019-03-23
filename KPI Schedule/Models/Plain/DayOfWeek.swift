@@ -62,19 +62,19 @@ enum DayOfWeek {
     var name: String {
         switch self {
         case .monday:
-            return "Monday"
+            return "Monday".localized
         case .tuesday:
-            return "Tuesday"
+            return "Tuesday".localized
         case .wednesday:
-            return "Wednesday"
+            return "Wednesday".localized
         case .thursday:
-            return "Thursday"
+            return "Thursday".localized
         case .friday:
-            return "Friday"
+            return "Friday".localized
         case .saturday:
-            return "Saturday"
+            return "Saturday".localized
         case .sunday:
-            return "Sunday"
+            return "Sunday".localized
         }
     }
     
@@ -96,4 +96,24 @@ enum DayOfWeek {
             return 6
         }
     }
+    
+    var number: Int {
+        switch self {
+        case .monday:
+            return 1
+        case .tuesday:
+            return 2
+        case .wednesday:
+            return 3
+        case .thursday:
+            return 4
+        case .friday:
+            return 5
+        case .saturday:
+            return 6
+        case .sunday:
+            return 7
+        }
+    }
+    
 }

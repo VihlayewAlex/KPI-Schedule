@@ -10,20 +10,22 @@ import UIKit
 import Pageboy
 
 struct ScheduleOptions {
+    var group: GroupInfo
     var schedule: Schedule
     var selectedScheduleWeek: ScheduleWeek
     
-    init(schedule: Schedule, selectedScheduleWeek: ScheduleWeek) {
+    init(group: GroupInfo, schedule: Schedule, selectedScheduleWeek: ScheduleWeek) {
+        self.group = group
         self.schedule = schedule
         self.selectedScheduleWeek = selectedScheduleWeek
     }
     
     func with(newSchedule: Schedule) -> ScheduleOptions {
-        return ScheduleOptions(schedule: newSchedule, selectedScheduleWeek: self.selectedScheduleWeek)
+        return ScheduleOptions(group: group, schedule: newSchedule, selectedScheduleWeek: self.selectedScheduleWeek)
     }
     
     func with(newSelectedScheduleWeek: ScheduleWeek) -> ScheduleOptions {
-        return ScheduleOptions(schedule: self.schedule, selectedScheduleWeek: newSelectedScheduleWeek)
+        return ScheduleOptions(group: group, schedule: self.schedule, selectedScheduleWeek: newSelectedScheduleWeek)
     }
 }
 
@@ -38,7 +40,7 @@ final class SchedulePagerVC: PageboyViewController {
         }
         return viewControllers[selectedPageIndex]
     }
-    private var selectedPageIndex: Int?
+    var selectedPageIndex: Int?
     
     var currentScheduleWeek: ScheduleWeek = .first
     

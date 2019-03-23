@@ -8,23 +8,53 @@
 
 import Foundation
 
-protocol Preferences {
+protocol PreferencesStorage {
+    
+    // MARK: Groups
     
     var selectedGroup: GroupInfo? { get set }
     
-    var cachedTimetable: TimetableInfo? { get set }
+    var favouriteGroups: [GroupInfo] { get set }
+    
+    // MARK: Cache
+    
+    var cachedWeekNumber: Int? { get set }
+    
+    var cachedGroupTimetable: TimetableInfo? { get set }
+    
+    var cachedFavouriteGroupTimetables: [LabeledCodable<TimetableInfo>] { get set }
+    
+    // MARK: Tutorial
+    
+    var isScheduleTutorialShown: Bool { get set }
     
 }
 
-struct InMemoryPreferences: Preferences {
+struct InMemoryPreferences: PreferencesStorage {
+    
+    // MARK: Groups
     
     var selectedGroup: GroupInfo?
     
-    var cachedTimetable: TimetableInfo?
+    var favouriteGroups = [GroupInfo]()
+    
+    // MARK: Cache
+    
+    var cachedWeekNumber: Int?
+    
+    var cachedGroupTimetable: TimetableInfo?
+    
+    var cachedFavouriteGroupTimetables = [LabeledCodable<TimetableInfo>]()
+    
+    // MARK: Tutorial
+    
+    var isScheduleTutorialShown: Bool = false
     
 }
 
-struct OnDiskPreferences: Preferences {
+struct OnDiskPreferences: PreferencesStorage {
+    
+    // MARK: Groups
     
     var selectedGroup: GroupInfo? {
         get {
@@ -46,6 +76,87 @@ struct OnDiskPreferences: Preferences {
         }
     }
     
-    var cachedTimetable: TimetableInfo?
+    var favouriteGroups: [GroupInfo] {
+        get {
+            if let data = UserDefaults.standard.data(forKey: "favouriteGroups") {
+                let decoder = JSONDecoder()
+                return (try? decoder.decode([GroupInfo].self, from: data)) ?? []
+            } else {
+                return []
+            }
+        }
+        set {
+            let encoder = JSONEncoder()
+            let data = try? encoder.encode(newValue)
+            UserDefaults.standard.set(data, forKey: "favouriteGroups")
+        }
+    }
+    
+    // MARK: Cache
+    
+    var cachedWeekNumber: Int? {
+        get {
+            return (UserDefaults.standard.object(forKey: "cachedWeekNumber") as? Int)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "cachedWeekNumber")
+        }
+    }
+    
+    var cachedWeekNumberUpdateTimestamp: TimeInterval? {
+        get {
+            return (UserDefaults.standard.object(forKey: "cachedWeekNumberUpdateTimestamp") as? TimeInterval)
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "cachedWeekNumberUpdateTimestamp")
+        }
+    }
+    
+    var cachedGroupTimetable: TimetableInfo? {
+        get {
+            if let data = UserDefaults.standard.data(forKey: "cachedGroupTimetable") {
+                let decoder = JSONDecoder()
+                return try? decoder.decode(TimetableInfo.self, from: data)
+            } else {
+                return nil
+            }
+        }
+        set {
+            guard let newValue = newValue else {
+                UserDefaults.standard.removeObject(forKey: "cachedGroupTimetable")
+                return
+            }
+            let encoder = JSONEncoder()
+            let data = try? encoder.encode(newValue)
+            UserDefaults.standard.set(data, forKey: "cachedGroupTimetable")
+        }
+    }
+    
+    var cachedFavouriteGroupTimetables: [LabeledCodable<TimetableInfo>] {
+        get {
+            if let data = UserDefaults.standard.data(forKey: "cachedFavouriteGroupTimetables") {
+                let decoder = JSONDecoder()
+                return (try? decoder.decode([LabeledCodable<TimetableInfo>].self, from: data)) ?? []
+            } else {
+                return []
+            }
+        }
+        set {
+            let encoder = JSONEncoder()
+            let data = try? encoder.encode(newValue)
+            UserDefaults.standard.set(data, forKey: "cachedFavouriteGroupTimetables")
+        }
+    }
+    
+    // MARK: Tutorial
+    
+    var isScheduleTutorialShown: Bool {
+        get {
+            return (UserDefaults.standard.object(forKey: "isScheduleTutorialShown") as? Bool) ?? false
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isScheduleTutorialShown")
+        }
+    }
     
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct WeekInfo: Decodable {
+struct WeekInfo: Codable {
     let days: DaysInfo
 }

@@ -1,0 +1,54 @@
+/* 
+  Localized.strings
+  KPI Schedule
+
+  Created by Alex Vihlayew on 3/22/19.
+  Copyright © 2019 Oleksandr Vikhliaiev. All rights reserved.
+*/
+
+"Choose group" = "Выберите группу";
+"Start typing your group name to search" = "Начните вводить название группы для поиска";
+"Days" = "Дни";
+"Swipe left or right to switch between days of the week" = "Для того чтобы переключаться между днями, листайте вправо или влево";
+"Weeks" = "Недели";
+"Toggle between first and second week using the switch" = "Просматривайте обе недели с помощью переключателя";
+"Favourites" = "Избранные";
+"Switch between your and favourite groups using the dropdown" = "Переключайтесь между своей группой и избранными с помощью меню";
+"Timeline" = "Временная шкала";
+"Swipe from the left edge of the screen to access schedule timeline" = "Сделайте свайп с левого края экрана чтобы открыть временную шкалу";
+"Done" = "Готово";
+"Schedule" = "Расписание";
+"Week" = "Неделя";
+"NO LESSON" = "НЕТ ПАРЫ";
+"Lesson" = "Пара";
+"Lesson:" = "Пара:";
+"Break:" = "Перерыв:";
+"Teachers" = "Преподаватели";
+"Teachers:" = "Преподаватели:";
+"Locations:" = "Локации:";
+"Show on map" = "Показать на карте";
+"Settings" = "Настройки";
+"My group" = "Моя группа";
+"Favourite groups" = "Избранные группы";
+"+ Add favourite" = "+ Добавить избранную";
+"Change" = "Сменить";
+"A list of groups for fast access and cached schedule data" = "Список групп для быстрого доступа из меню и оффлайн режима";
+"Error" = "Ошибка";
+"Ok" = "Ок";
+"Retry" = "Попробовать снова";
+"Monday" = "Понедельник";
+"Tuesday" = "Вторник";
+"Wednesday" = "Среда";
+"Thursday" = "Четверг";
+"Friday" = "Пятница";
+"Saturday" = "Суббота";
+"Sunday" = "Воскресенье";
+" (TODAY)" = " (СЕГОДНЯ)";
+"NO LESSONS TODAY" = "СЕГОДНЯ НЕТ ПАР";
+"Or not only today? ;)" = "Или не только сегодня? ;)";
+"Lecture" = "Лекция";
+"Laboratory" = "Лабораторная";
+"Practice" = "Практика";
+"Lec" = "Лек";
+"Lab" = "Лаб";
+"Prac" = "Прак";

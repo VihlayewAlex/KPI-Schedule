@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct LessonInfo: Decodable {
+struct LessonInfo: Codable {
     let name: String
     let number: Int
     let type: String
@@ -18,7 +18,6 @@ struct LessonInfo: Decodable {
     let rooms: [RoomInfo]
     
     enum CodingKeys: String, CodingKey {
-        case day = "day_number"
         case name = "lesson_name"
         case number = "lesson_number"
         case type = "lesson_type"
@@ -42,4 +41,16 @@ struct LessonInfo: Decodable {
         teachers = try container.decode([TeacherInfo].self, forKey: .teachers)
         rooms = try container.decode([RoomInfo].self, forKey: .rooms)
     }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(name, forKey: .name)
+        try container.encode(String(number), forKey: .number)
+        try container.encode(type, forKey: .type)
+        try container.encode(timeStart, forKey: .timeStart)
+        try container.encode(timeEnd, forKey: .timeEnd)
+        try container.encode(teachers, forKey: .teachers)
+        try container.encode(rooms, forKey: .rooms)
+    }
+    
 }

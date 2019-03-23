@@ -49,8 +49,22 @@ struct NetworkingApiFacade {
         }
     }
     
-    func getSchedule(forGroupWithId groupId: Int) -> Promise<Schedule> {
+    func getSchedule(forGroupWithId groupId: Int, allowCached: Bool) -> Promise<Schedule> {
+        if allowCached {
+            if groupId == Preferences.selectedGroup?.id {
+                if let cached = Preferences.cachedGroupTimetable {
+                    return Promise.value(Schedule(timetable: cached))
+                }
+            } else if let cachedFavourite = Preferences.cachedFavouriteGroupTimetables.first(where: { $0.label == String(groupId) })?.value {
+                return Promise.value(Schedule(timetable: cachedFavourite))
+            }
+        }
         return apiService.getTimetable(groupId: groupId).map({ (response) -> Schedule in
+            if groupId == Preferences.selectedGroup?.id {
+                Preferences.cachedGroupTimetable = response.data
+            } else {
+                Preferences.cachedFavouriteGroupTimetables += [LabeledCodable(value: response.data, label: String(groupId))]
+            }
             return Schedule(timetable: response.data)
         })
     }
@@ -72,9 +86,16 @@ struct NetworkingApiFacade {
     }
     
     func getCurrentWeekNumber() -> Promise<ScheduleWeek> {
+        if let cached = Preferences.cachedWeekNumber,
+            let updateTimestamp = Preferences.cachedWeekNumberUpdateTimestamp {
+            let numberOfWeeksPast = Calendar.current.component(.day, from: Date(timeIntervalSince1970: updateTimestamp)) / 7
+            return Promise.value(ScheduleWeek(number: (numberOfWeeksPast % 2 == 0) ? cached : (cached == 1 ? 2 : 1))!)
+        }
         return Promise(resolver: { (resolver) in
             apiService.getCurrentWeekNumber().done({ (response) in
                 if let week = ScheduleWeek(number: response.data) {
+                    Preferences.cachedWeekNumber = week.number
+                    Preferences.cachedWeekNumberUpdateTimestamp = Date().timeIntervalSince1970
                     resolver.fulfill(week)
                 } else {
                     resolver.reject(NetworkingApiError.weekNumberIsOutOfExpectedRange)

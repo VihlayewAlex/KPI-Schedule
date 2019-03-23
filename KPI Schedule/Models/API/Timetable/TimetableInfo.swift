@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct TimetableInfo: Decodable {
+struct TimetableInfo: Codable {
     let weeks: WeeksInfo
 }

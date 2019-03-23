@@ -14,4 +14,8 @@ extension Notification {
         return Notification(name: Notification.Name("GroupChanged"))
     }
     
+    static var scheduleTabTapped: Notification {
+        return Notification(name: Notification.Name("ScheduleTabTapped"))
+    }
+    
 }

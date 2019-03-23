@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DayInfo: Decodable {
+struct DayInfo: Codable {
     let dayNumber: DayOfWeek
     let lessons: [LessonInfo]
     
@@ -26,4 +26,11 @@ struct DayInfo: Decodable {
         }
         lessons = try container.decode([LessonInfo].self, forKey: .lessons)
     }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(lessons, forKey: .lessons)
+        try container.encode(dayNumber.number, forKey: .dayNumber)
+    }
+    
 }

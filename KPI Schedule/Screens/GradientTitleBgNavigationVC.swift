@@ -13,7 +13,7 @@ class GradientTitleBgNavigationVC: LightStatusBarNavigationVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "navBarGradient")!)
+        navigationBar.barTintColor = UIColor(patternImage: UIImage(named: "navBarGradient")!.resized(to: navigationBar.bounds.width, and: navigationBar.bounds.width * 0.5)!)
     }
     
 }

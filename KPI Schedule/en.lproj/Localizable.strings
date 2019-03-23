@@ -1,0 +1,54 @@
+/* 
+  Localized.strings
+  KPI Schedule
+
+  Created by Alex Vihlayew on 3/22/19.
+  Copyright © 2019 Oleksandr Vikhliaiev. All rights reserved.
+*/
+
+"Choose group" = "Choose group";
+"Start typing your group name to search" = "Start typing your group name to search";
+"Days" = "Days";
+"Swipe left or right to switch between days of the week" = "Swipe left or right to switch between days of the week";
+"Weeks" = "Weeks";
+"Toggle between first and second week using the switch" = "Toggle between first and second week using the switch";
+"Favourites" = "Favourites";
+"Switch between your and favourite groups using the dropdown" = "Switch between your and favourite groups using the dropdown";
+"Timeline" = "Timeline";
+"Swipe from the left edge of the screen to access schedule timeline" = "Swipe from the left edge of the screen to access schedule timeline";
+"Done" = "Done";
+"Schedule" = "Schedule";
+"Week" = "Week";
+"NO LESSON" = "NO LESSON";
+"Lesson" = "Lesson";
+"Lesson:" = "Lesson:";
+"Break:" = "Break:";
+"Teachers" = "Teachers";
+"Teachers:" = "Teachers:";
+"Locations:" = "Locations:";
+"Show on map" = "Show on map";
+"Settings" = "Settings";
+"My group" = "My group";
+"Favourite groups" = "Favourite groups";
+"+ Add favourite" = "+ Add favourite";
+"Change" = "Change";
+"A list of groups for fast access and cached schedule data" = "A list of groups for fast access and cached schedule data";
+"Error" = "Error";
+"Ok" = "Ok";
+"Retry" = "Retry";
+"Monday" = "Monday";
+"Tuesday" = "Tuesday";
+"Wednesday" = "Wednesday";
+"Thursday" = "Thursday";
+"Friday" = "Friday";
+"Saturday" = "Saturday";
+"Sunday" = "Sunday";
+" (TODAY)" = " (TODAY)";
+"NO LESSONS TODAY" = "NO LESSONS TODAY";
+"Or not only today? ;)" = "Or not only today? ;)";
+"Lecture" = "Lecture";
+"Laboratory" = "Laboratory";
+"Practice" = "Practice";
+"Lec" = "Lec";
+"Lab" = "Lab";
+"Prac" = "Prac";

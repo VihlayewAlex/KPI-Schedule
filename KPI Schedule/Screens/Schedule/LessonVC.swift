@@ -67,9 +67,24 @@ extension LessonVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if tableView == teachersTableView {
-            print("Show teacher")
+            if let url = lesson?.teachers[indexPath.row].url,
+                UIApplication.shared.canOpenURL(url) {
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url)
+                } else {
+                    UIApplication.shared.openURL(url)
+                }
+            }
         } else if tableView == locationsTableView {
-            print("Show location")
+            if let coordinate = lesson?.rooms[indexPath.row].coordinate,
+                let url = URL(string: "https://www.google.com/maps/dir/?api=1&destination=\(coordinate.latitude),\(coordinate.longitude)"),
+                UIApplication.shared.canOpenURL(url) {
+                    if #available(iOS 10, *) {
+                        UIApplication.shared.open(url)
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
+            }
         }
     }
     

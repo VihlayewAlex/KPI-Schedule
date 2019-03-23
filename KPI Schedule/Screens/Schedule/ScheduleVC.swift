@@ -12,6 +12,7 @@ import PromiseKit
 
 final class ScheduleVC: UIViewController {
 
+    @IBOutlet weak var groupDropdownButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var scheduleContainerView: UIView!
     @IBOutlet weak var timelineContainerView: UIView!
@@ -30,6 +31,7 @@ final class ScheduleVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureLabels()
         configureTimeline()
         configurePageVC()
         loadSchedule()
@@ -38,15 +40,61 @@ final class ScheduleVC: UIViewController {
         updateTimelinePointer()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if !Preferences.isScheduleTutorialShown {
+            showTutorial()
+            Preferences.isScheduleTutorialShown = true
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         updateTimelinePointer()
     }
     
+    private func configureLabels() {
+        segmentedControl.setTitle("Week".localized + " 1", forSegmentAt: 0)
+        segmentedControl.setTitle("Week".localized + " 2", forSegmentAt: 1)
+    }
+    
+    private func showTutorial() {
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            let scheduleTutorialVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "scheduleTutorialVC")
+            topController.present(scheduleTutorialVC, animated: true, completion: nil)
+        }
+    }
+    
     private func configureTimeline() {
-        timelineContainerView.layer.cornerRadius = 6.0
-        timelineContainerView.layer.maskedCorners = [CACornerMask.layerMaxXMinYCorner]
+        let radius: CGFloat = 6.0
+        let corners = CACornerMask.layerMaxXMinYCorner
+        timelineContainerView.layer.cornerRadius = radius
+        if #available(iOS 11.0, *) {
+            timelineContainerView.layer.maskedCorners = [corners]
+        } else {
+            var cornerMask = UIRectCorner()
+            if(corners.contains(.layerMinXMinYCorner)){
+                cornerMask.insert(.topLeft)
+            }
+            if(corners.contains(.layerMaxXMinYCorner)){
+                cornerMask.insert(.topRight)
+            }
+            if(corners.contains(.layerMinXMaxYCorner)){
+                cornerMask.insert(.bottomLeft)
+            }
+            if(corners.contains(.layerMaxXMaxYCorner)){
+                cornerMask.insert(.bottomRight)
+            }
+            let path = UIBezierPath(roundedRect: timelineContainerView.bounds, byRoundingCorners: cornerMask, cornerRadii: CGSize(width: radius, height: radius))
+            let mask = CAShapeLayer()
+            mask.path = path.cgPath
+            timelineContainerView.layer.mask = mask
+        }
     }
     
     private func configurePageVC() {
@@ -61,15 +109,25 @@ final class ScheduleVC: UIViewController {
         schedulePageVC.didMove(toParent: self)
     }
     
-    private func loadSchedule() {
-        if let groupId = UserPreferences.selectedGroup?.id {
-            when(fulfilled: API.getSchedule(forGroupWithId: groupId), API.getCurrentWeekNumber()).done({ [weak self] (schedule, currentWeek) in
-                print("✅ Reloaded schedule")
+    private func loadSchedule(for group: GroupInfo? = nil) {
+        if let group = (group ?? Preferences.selectedGroup) {
+            when(fulfilled: API.getSchedule(forGroupWithId: group.id, allowCached: true), API.getCurrentWeekNumber()).done({ [weak self] (schedule, currentWeek) in
+                print("✅ Reloaded schedule for " + group.name)
                 self?.segmentedControl.selectedSegmentIndex = currentWeek.index
                 self?.schedulePageVC.currentScheduleWeek = currentWeek
-                self?.schedulePageVC.scheduleOptions = ScheduleOptions(schedule: schedule, selectedScheduleWeek: currentWeek)
-            }).catch({ (error) in
-                print(error.localizedDescription)
+                self?.schedulePageVC.scheduleOptions = ScheduleOptions(group: group, schedule: schedule, selectedScheduleWeek: currentWeek)
+                self?.groupDropdownButton.setAttributedTitle({ () -> NSAttributedString in
+                    let attrStr = NSMutableAttributedString(string: group.name)
+                    attrStr.append(NSAttributedString(string: " ▼", attributes: [.font: UIFont.systemFont(ofSize: 14.0)]))
+                    return attrStr
+                }(), for: .normal)
+            }).catch({ [weak self] (error) in
+                let alert = UIAlertController(title: "Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Retry".localized, style: .cancel, handler: { (_) in
+                    self?.loadSchedule(for: group)
+                }))
+                self?.present(alert, animated: true, completion: nil)
             })
         }
     }
@@ -77,6 +135,12 @@ final class ScheduleVC: UIViewController {
     private func setupNotificationObservers() {
         NotificationCenter.default.addObserver(forName: Notification.groupChanged.name, object: nil, queue: nil, using: { [weak self] (notification) in
             self?.loadSchedule()
+        })
+        NotificationCenter.default.addObserver(forName: Notification.scheduleTabTapped.name, object: nil, queue: nil, using: { [weak self] (notification) in
+            guard let group = self?.schedulePageVC.scheduleOptions?.group else { return }
+            // self?.schedulePageVC.scrollToPage(PageboyViewController.Page.at(index: targetIndex), animated: true)
+            self?.schedulePageVC.selectedPageIndex = Date().dayOfWeek.index
+            self?.loadSchedule(for: group)
         })
     }
     
@@ -118,7 +182,19 @@ final class ScheduleVC: UIViewController {
             lessonVC.lesson = selectedLesson
             lessonVC.dateString = selectedDate
             selectedLesson = nil
+        } else if segue.identifier == "groupSelectionSegue" {
+            let groupsVC = segue.destination as! GroupsSelectionTVC
+            groupsVC.groups = [Preferences.selectedGroup!] + Preferences.favouriteGroups
+            groupsVC.currentlySelectedGroup = schedulePageVC.scheduleOptions?.group
+            groupsVC.delegate = self
+            groupsVC.modalPresentationStyle = .popover
+            groupsVC.popoverPresentationController?.delegate = self
+            groupsVC.preferredContentSize = CGSize(width: 200.0, height: 44.0 * Double(groupsVC.groups.count))
         }
+    }
+    
+    @IBAction func switchGroup() {
+        performSegue(withIdentifier: "groupSelectionSegue", sender: nil)
     }
     
     @IBAction func weekChanged() {
@@ -192,6 +268,22 @@ extension ScheduleVC: ScheduleScrollingDelegate {
         self.selectedLesson = lesson
         self.selectedDate = dateString
         performSegue(withIdentifier: "lessonSegue", sender: nil)
+    }
+    
+}
+
+extension ScheduleVC: UIPopoverPresentationControllerDelegate {
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+    
+}
+
+extension ScheduleVC: GroupsSelectionTVCDelegate {
+    
+    func didSelect(group: GroupInfo) {
+        loadSchedule(for: group)
     }
     
 }

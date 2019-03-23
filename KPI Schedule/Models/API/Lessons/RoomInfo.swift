@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RoomInfo: Decodable {
+struct RoomInfo: Codable {
     let id: Int
     let name: String
     let latitude: Double
@@ -26,7 +26,7 @@ struct RoomInfo: Decodable {
         if let idString = try? container.decode(String.self, forKey: .id), let _id = Int(idString) {
             id = _id
         } else {
-            throw DecodingError.typeMismatch(RoomInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "teacher_id value is not convertible to Int"))
+            throw DecodingError.typeMismatch(RoomInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "room_id value is not convertible to Int"))
         }
         name = try container.decode(String.self, forKey: .name)
         if let latitudeString = try? container.decode(String.self, forKey: .latitude), let _latitude = Double(latitudeString) {
@@ -40,4 +40,13 @@ struct RoomInfo: Decodable {
             throw DecodingError.typeMismatch(RoomInfo.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "room_longitude value is not convertible to Double"))
         }
     }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(String(id), forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(String(latitude), forKey: .latitude)
+        try container.encode(String(longitude), forKey: .longitude)
+    }
+    
 }

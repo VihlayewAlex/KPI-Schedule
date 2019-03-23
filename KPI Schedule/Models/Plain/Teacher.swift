@@ -12,10 +12,12 @@ struct Teacher {
     let id: Int
     let fullName: String
     let shortName: String
+    let url: URL?
     
     init(info: TeacherInfo) {
         self.id = info.id
-        self.fullName = info.fullName
-        self.shortName = info.shortName
+        self.fullName = !info.fullName.isEmpty ? info.fullName : info.name
+        self.shortName = !info.shortName.isEmpty ? info.shortName : info.name
+        self.url = URL(string: info.url)
     }
 }

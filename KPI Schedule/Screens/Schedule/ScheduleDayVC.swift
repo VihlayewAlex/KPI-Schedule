@@ -66,7 +66,7 @@ final class ScheduleDayVC: UIViewController {
             let currentDay = Date().dayOfWeek
             let displayedDay = day.dayOfWeek
             if week == currentWeek && displayedDay == currentDay {
-                return " (TODAY)"
+                return " (TODAY)".localized
             } else {
                 return ""
             }
@@ -218,7 +218,7 @@ extension ScheduleDayVC: UITableViewDataSource, UITableViewDelegate {
 extension ScheduleDayVC: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        let attributedString = NSMutableAttributedString(string: "NO LESSONS TODAY")
+        let attributedString = NSMutableAttributedString(string: "NO LESSONS TODAY".localized)
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor(red: 183 / 255, green: 183 / 255, blue: 190 / 255, alpha: 1.0),
             .font: UIFont.systemFont(ofSize: 18.0, weight: .heavy)
@@ -228,7 +228,7 @@ extension ScheduleDayVC: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        let attributedString = NSMutableAttributedString(string: "Or not only today? ;)")
+        let attributedString = NSMutableAttributedString(string: "Or not only today? ;)".localized)
         let attributes: [NSAttributedString.Key: Any] = [
             .foregroundColor: UIColor(red: 183 / 255, green: 183 / 255, blue: 190 / 255, alpha: 1.0),
             .font: UIFont.systemFont(ofSize: 16.0, weight: .semibold)

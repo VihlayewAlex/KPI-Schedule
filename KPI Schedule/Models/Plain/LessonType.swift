@@ -30,11 +30,11 @@ enum LessonType {
     var name: String {
         switch self {
         case .lecture:
-            return "Lec"
+            return "Lec".localized
         case .laboratory:
-            return "Lab"
+            return "Lab".localized
         case .practice:
-            return "Prac"
+            return "Prac".localized
         case .unknown:
             return "???"
         }
@@ -43,11 +43,11 @@ enum LessonType {
     var fullName: String {
         switch self {
         case .lecture:
-            return "Lecture"
+            return "Lecture".localized
         case .laboratory:
-            return "Laboratory"
+            return "Laboratory".localized
         case .practice:
-            return "Practice"
+            return "Practice".localized
         case .unknown:
             return "???"
         }

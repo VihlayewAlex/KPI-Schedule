@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DaysInfo: Decodable {
+struct DaysInfo: Codable {
     let monday: DayInfo?
     let tuesday: DayInfo?
     let wednesday: DayInfo?

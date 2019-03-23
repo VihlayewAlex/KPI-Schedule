@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WeeksInfo: Decodable {
+struct WeeksInfo: Codable {
     let first: WeekInfo
     let second: WeekInfo
     

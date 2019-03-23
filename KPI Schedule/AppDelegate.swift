@@ -9,7 +9,7 @@
 import UIKit
 
 var API = NetworkingApiFacade(apiService: NetworkingApi())
-var UserPreferences = OnDiskPreferences()
+var Preferences = OnDiskPreferences()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

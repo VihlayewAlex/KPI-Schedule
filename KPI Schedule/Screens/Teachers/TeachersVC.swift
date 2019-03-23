@@ -33,11 +33,16 @@ class TeachersVC: UIViewController {
     }
     
     private func loadTeachers() {
-        if let groupId = UserPreferences.selectedGroup?.id {
+        if let groupId = Preferences.selectedGroup?.id {
             API.getTeachers(forGroupWithId: groupId).done({ [weak self] (teachers) in
                 self?.teachers = teachers
-            }).catch({ (error) in
-                print(error.localizedDescription)
+            }).catch({ [weak self] (error) in
+                let alert = UIAlertController(title: "Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Retry".localized, style: .default, handler: { (_) in
+                    self?.loadTeachers()
+                }))
+                self?.present(alert, animated: true, completion: nil)
             })
         }
     }
@@ -64,6 +69,14 @@ extension TeachersVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if let url = teachers[indexPath.row].url,
+            UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
     }
     
 }

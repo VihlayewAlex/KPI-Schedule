@@ -13,14 +13,22 @@ struct ChooseGroupStrategySet {
     static let null: ChooseGroupeStrategy = { (_,_) in return }
     
     static let initiallySetGroup: ChooseGroupeStrategy = { (group, viewController) in
-        UserPreferences.selectedGroup = group
+        Preferences.selectedGroup = group
         viewController.dismiss(animated: true, completion: nil)
     }
     
     static func changeGroup(withCompletion completion: (() -> Void)?) -> ChooseGroupeStrategy {
         return { (group, viewController) in
-            UserPreferences.selectedGroup = group
+            Preferences.selectedGroup = group
             NotificationCenter.default.post(Notification.groupChanged)
+            viewController.dismiss(animated: true, completion: nil)
+            completion?()
+        }
+    }
+    
+    static func addGroupToFavourites(withCompletion completion: (() -> Void)?) -> ChooseGroupeStrategy {
+        return { (group, viewController) in
+            Preferences.favouriteGroups += [group]
             viewController.dismiss(animated: true, completion: nil)
             completion?()
         }

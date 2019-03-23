@@ -17,15 +17,23 @@ final class SplashScreenVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        guard UserPreferences.selectedGroup == nil else {
+        guard Preferences.selectedGroup == nil else {
             route()
             return
         }
         
+        loadGroups()
+    }
+    
+    func loadGroups() {
         API.getAllGroups(packedBy: 100, callbackQueue: DispatchQueue.main) { [weak self] (handler) in
             switch handler {
             case .failure(let error):
-                print("🔥", error.localizedDescription)
+                let alert = UIAlertController(title: "Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Retry".localized, style: .default, handler: { (_) in
+                    self?.loadGroups()
+                }))
+                self?.present(alert, animated: true, completion: nil)
             case .success(let packet):
                 self?.progressView.setProgress(Float(packet.currentOffset) / Float(packet.totalCount), animated: true)
                 self?.groups += packet.nextPacket
@@ -38,7 +46,7 @@ final class SplashScreenVC: UIViewController {
     }
     
     func route() {
-        if UserPreferences.selectedGroup != nil {
+        if Preferences.selectedGroup != nil {
             performSegue(withIdentifier: "schedule", sender: nil)
         } else {
             performSegue(withIdentifier: "chooseGroup", sender: nil)
