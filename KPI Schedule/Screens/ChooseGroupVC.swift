@@ -20,6 +20,7 @@ struct ChooseGroupStrategySet {
     static func changeGroup(withCompletion completion: (() -> Void)?) -> ChooseGroupeStrategy {
         return { (group, viewController) in
             Preferences.selectedGroup = group
+            Preferences.cachedGroupTimetable = nil
             NotificationCenter.default.post(Notification.groupChanged)
             viewController.dismiss(animated: true, completion: nil)
             completion?()
@@ -40,6 +41,7 @@ typealias ChooseGroupeStrategy = ((GroupInfo, UIViewController) -> Void)?
 
 final class ChooseGroupVC: UIViewController {
 
+    @IBOutlet var progressView: UIVisualEffectView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -61,9 +63,41 @@ final class ChooseGroupVC: UIViewController {
         tableView.dataSource = self
     }
 
+    private func showProgressView() {
+        progressView.isHidden = true
+        view.addSubview(progressView)
+        view.bringSubviewToFront(progressView)
+        progressView.translatesAutoresizingMaskIntoConstraints = false
+        progressView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        progressView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+        progressView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        progressView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        UIView.animate(withDuration: 0.3) {
+            self.progressView.isHidden = false
+        }
+    }
+    
+    private func hideProgressView() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.progressView.isHidden = true
+        }, completion: { (_) in
+            self.progressView.removeFromSuperview()
+        })
+    }
+    
     @IBAction func done() {
         if let selectedGroup = selectedGroup {
-            strategy?(selectedGroup, self)
+            showProgressView()
+            _ = API.validateSchedule(forGroupWithId: selectedGroup.id).done { [weak self] (isValid) in
+                self?.hideProgressView()
+                if let strongSelf = self, isValid {
+                    self?.strategy?(selectedGroup, strongSelf)
+                } else {
+                    let alert = UIAlertController(title: "No schedule available".localized, message: "Sorry, there is no schedule available for this group now".localized, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Choose other".localized, style: .default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
+                }
+            }
         }
     }
     

@@ -121,6 +121,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A0D7E992247CD7A0089F97A /* KPI Schedule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KPI Schedule.entitlements"; sourceTree = "<group>"; };
 		3A1338FF22456AB600A03271 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		3A13390222456EA800A03271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3A13390422456EEE00A03271 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -276,6 +277,7 @@
 		3A48285A222F2AA30093E949 /* KPI Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				3A0D7E992247CD7A0089F97A /* KPI Schedule.entitlements */,
 				3A48285B222F2AA30093E949 /* AppDelegate.swift */,
 				3ACDD5E72231288E00A0DE04 /* Utils */,
 				3ACDD5E2223104CC00A0DE04 /* Extensions */,
@@ -525,6 +527,11 @@
 				TargetAttributes = {
 					3A482857222F2AA30093E949 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					3A48288C222F58C60093E949 = {
 						CreatedOnToolsVersion = 10.1;

@@ -197,11 +197,11 @@
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="Rdm-0b-yzB">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Bl9-ib-sxe">
-                                <rect key="frame" x="240" y="7.5" width="119" height="29"/>
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" id="Bl9-ib-sxe">
+                                <rect key="frame" x="240" y="7.5" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Week 1"/>
+                                    <segment title="Week 1 (Current)"/>
                                     <segment title="Week 2"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1175,10 +1175,35 @@
                         <viewLayoutGuide key="safeArea" id="R7w-FL-dyS"/>
                     </view>
                     <connections>
+                        <outlet property="progressView" destination="q7O-HW-BuO" id="7tV-ig-V4D"/>
                         <outlet property="searchBar" destination="cuT-15-FOT" id="XYQ-7U-fDR"/>
                         <outlet property="tableView" destination="fQd-1l-mOd" id="0r9-Vp-YyU"/>
                     </connections>
                 </viewController>
+                <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="q7O-HW-BuO">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rBW-3M-RMt">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fuz-GD-dI2">
+                                <rect key="frame" x="31.5" y="31.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fuz-GD-dI2" firstAttribute="centerY" secondItem="rBW-3M-RMt" secondAttribute="centerY" id="Jqc-YA-Z1G"/>
+                            <constraint firstItem="fuz-GD-dI2" firstAttribute="centerX" secondItem="rBW-3M-RMt" secondAttribute="centerX" id="lcP-yx-J7y"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WgH-lF-kOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="34"/>
@@ -1253,7 +1278,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="F01-vf-bOh">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="F01-vf-bOh">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="32"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

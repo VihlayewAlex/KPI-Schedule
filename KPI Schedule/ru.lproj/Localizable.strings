@@ -52,3 +52,7 @@
 "Lec" = "Лек";
 "Lab" = "Лаб";
 "Prac" = "Прак";
+"No schedule available" = "Нет расписания";
+"Sorry, there is no schedule available for this group now" = "К сожалению, пока расписание для данной группы отсутствует";
+"Choose other" = "Выбрать другую";
+" (Current)" = " Текущая";

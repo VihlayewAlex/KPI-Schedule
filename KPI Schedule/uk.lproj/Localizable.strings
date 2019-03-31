@@ -52,3 +52,7 @@
 "Lec" = "Лек";
 "Lab" = "Лаб";
 "Prac" = "Прак";
+"No schedule available" = "Немає розкладу";
+"Sorry, there is no schedule available for this group now" = "Нажаль, зараз розклад для цієї групи відсутній";
+"Choose other" = "Обрати іншу";
+" (Current)" = " (Поточний)";

@@ -114,6 +114,9 @@ final class ScheduleVC: UIViewController {
             when(fulfilled: API.getSchedule(forGroupWithId: group.id, allowCached: true), API.getCurrentWeekNumber()).done({ [weak self] (schedule, currentWeek) in
                 print("✅ Reloaded schedule for " + group.name)
                 self?.segmentedControl.selectedSegmentIndex = currentWeek.index
+                self?.segmentedControl.setTitle("Week".localized + " 1" + ((currentWeek.index == 0) ? " (Current)".localized : ""), forSegmentAt: 0)
+                self?.segmentedControl.setTitle("Week".localized + " 2" + ((currentWeek.index == 1) ? " (Current)".localized : ""), forSegmentAt: 1)
+                self?.segmentedControl.sizeToFit()
                 self?.schedulePageVC.currentScheduleWeek = currentWeek
                 self?.schedulePageVC.scheduleOptions = ScheduleOptions(group: group, schedule: schedule, selectedScheduleWeek: currentWeek)
                 self?.groupDropdownButton.setAttributedTitle({ () -> NSAttributedString in

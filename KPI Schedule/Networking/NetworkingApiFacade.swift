@@ -69,6 +69,16 @@ struct NetworkingApiFacade {
         })
     }
     
+    func validateSchedule(forGroupWithId groupId: Int) -> Promise<Bool> {
+        return Promise.init(resolver: { (resolver) in
+            apiService.getTimetable(groupId: groupId).done({ (_) in
+                resolver.fulfill(true)
+            }).catch({ (_) in
+                resolver.fulfill(false)
+            })
+        })
+    }
+    
     func getTeachers(forGroupWithId groupId: Int) -> Promise<[Teacher]> {
         return apiService.getTeachers(groupId: groupId).map({ (response) -> [Teacher] in
             return response.data.map({ (teacherInfo) -> Teacher in
