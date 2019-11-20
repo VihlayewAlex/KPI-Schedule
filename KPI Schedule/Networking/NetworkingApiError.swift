@@ -15,8 +15,10 @@ enum NetworkingApiError: LocalizedError {
     case invalidPaginationParams
     // Week number
     case weekNumberIsOutOfExpectedRange
+    // Group not found
+    case groupNotFound
     
-    var localizedDescription: String {
+    var errorDescription: String? {
         switch self {
         case .noDataReturned:
             return "No data returned as a response for the request"
@@ -24,6 +26,9 @@ enum NetworkingApiError: LocalizedError {
             return "Pagination params do not satisfy requirements: limit > 0, offset >= 0"
         case .weekNumberIsOutOfExpectedRange:
             return "Week number can be constructed only from 1 or 2"
+        case .groupNotFound:
+            return "Group not found"
         }
     }
+    
 }

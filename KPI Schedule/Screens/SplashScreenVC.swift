@@ -14,6 +14,14 @@ final class SplashScreenVC: UIViewController {
     
     var groups = [GroupInfo]()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(forName: Notification.route.name, object: nil, queue: nil) { [weak self] (_) in
+            self?.presentedViewController?.dismiss(animated: true)
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

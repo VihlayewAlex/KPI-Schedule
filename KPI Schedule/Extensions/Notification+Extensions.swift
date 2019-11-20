@@ -18,4 +18,8 @@ extension Notification {
         return Notification(name: Notification.Name("ScheduleTabTapped"))
     }
     
+    static var route: Notification {
+        return Notification(name: Notification.Name("Route"))
+    }
+    
 }

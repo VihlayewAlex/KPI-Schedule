@@ -28,6 +28,10 @@ protocol PreferencesStorage {
     
     var isScheduleTutorialShown: Bool { get set }
     
+    // MARK: Cleaning
+    
+    mutating func clear()
+    
 }
 
 struct InMemoryPreferences: PreferencesStorage {
@@ -49,6 +53,17 @@ struct InMemoryPreferences: PreferencesStorage {
     // MARK: Tutorial
     
     var isScheduleTutorialShown: Bool = false
+    
+    // MARK: Cleaning
+    
+    mutating func clear() {
+        selectedGroup = nil
+        favouriteGroups = []
+        cachedWeekNumber = nil
+        cachedGroupTimetable = nil
+        cachedFavouriteGroupTimetables = []
+        isScheduleTutorialShown = false
+    }
     
 }
 
@@ -157,6 +172,17 @@ struct OnDiskPreferences: PreferencesStorage {
         set {
             UserDefaults.standard.set(newValue, forKey: "isScheduleTutorialShown")
         }
+    }
+    
+    // MARK: Cleaning
+    
+    mutating func clear() {
+        selectedGroup = nil
+        favouriteGroups = []
+        cachedWeekNumber = nil
+        cachedGroupTimetable = nil
+        cachedFavouriteGroupTimetables = []
+        isScheduleTutorialShown = false
     }
     
 }

@@ -70,6 +70,12 @@ class NetworkingApi {
                         let response = try self.decoder.decode(T.self, from: data)
                         resolver.fulfill(response)
                     } catch {
+                        if let response = try? self.decoder.decode(ErrorMessageResponse.self, from: data),
+                            response.message == "Group not found" {
+                            resolver.reject(NetworkingApiError.groupNotFound)
+                        }
+                        print("Decoding error:", error)
+                        print("Couldn't decode value from data:", String(data: data, encoding: .utf8) ?? "nil")
                         resolver.reject(error)
                     }
                 } else {

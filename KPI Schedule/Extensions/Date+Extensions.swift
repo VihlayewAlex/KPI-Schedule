@@ -24,7 +24,7 @@ extension Date {
             lessonsTime.append((start, end))
         }
         let currentDate = self
-        return lessonsTime.index(where: { (timeframe) -> Bool in
+        return lessonsTime.firstIndex(where: { (timeframe) -> Bool in
             let (lhs, rhs) = timeframe
             return (lhs < currentDate) && (currentDate < rhs)
         })

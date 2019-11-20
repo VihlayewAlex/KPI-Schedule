@@ -7,473 +7,482 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004590F333CD9EC16133BF013ADB8478 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04387F233E289E8A2C30889B5D11B6 /* NSURLSession+Promise.swift */; };
-		0269A2A0AFDA23F876B986B9FB2812B1 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E513A06B4DBAC326CB326FF7C9514EA7 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0387B92123D9002B334B3E62512C3CCE /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5773F4C9ED7C10EFFF9CD13554330A56 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04BA80BDE03B6D0FB453AB3397570E9E /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181C057EF21E0D1DC692D9B49B4E686 /* firstly.swift */; };
-		0B5AF60F3F052163778639F31802C54A /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA09410DCDD162495F8D15622AB6F9F /* NavigationDirection.swift */; };
-		0CB070CABDAC5DC26CFCC1BD820FA8BC /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = DE5B5D5FA72884B73962BB31F043C4EE /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		103F1D0DE971566ACC8C66302C4D7487 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5908CA38BE2C3F75FFB9DEED42C799 /* UIView+AutoLayout.swift */; };
-		12A65F5B318D340C37F774855DDB5CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		13405A22B922201DC6D1A3D73932FA47 /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C5FEC79F8AE12052C13AA6812FD9F /* UIViewPropertyAnimator+Promise.swift */; };
-		1453C19525B08A843F49D14E1F30DD1C /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0AE0821166930D895BEB6B1FABF262 /* Pageboy-dummy.m */; };
-		156778B4DDD5B94BE736DB59C1770F17 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C73451B00CF6527579587AF29F771DF /* UIView+Localization.swift */; };
-		1E0CA465B1D87E4866667C4D05084EAE /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D39C304352473B722DA37A6942268F /* Page.swift */; };
-		1F20A399BC5D31252CE28515FAA02D7D /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DED21C604E23A42112DA19209429E972 /* UIScrollView+EmptyDataSet.m */; };
-		1FD9A9D5D1FC8A93B3078EE048F47890 /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60485EE5CEF98A5B1BBC24A3DE155EDF /* CustomStringConvertible.swift */; };
-		21A1539DFE54D9F2DED25470AD7D6E47 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A8D1A77B9602ADE83E32A2D314D627 /* Catchable.swift */; };
-		22E7C17A7A1F21F22FBE7FC8DFD4CCA1 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A81163DD28AD2FCC991D8E0992B61174 /* PromiseKit-dummy.m */; };
-		247F9B2FFB18C8E718CA21CBC1FFAFB9 /* Pods-KPI Schedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D82951A32B528FDBB6E3386CE0EACA49 /* Pods-KPI Schedule-dummy.m */; };
-		24DB79C0D66F9900DDC38F30AA1E4041 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C91D08D351E72A3AF9ADCE50CF257D1 /* race.swift */; };
-		27694925F1E0563B7B0214C4BFD0DD1B /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D105198EDFFD4F8B21B990128E7AAEA4 /* UIView+Animation.swift */; };
-		27ECE162C30B043B06FDA84645F69B85 /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 730D1BA7EB6F65896DE8AB3224C9950C /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2805CDF104A81809DECE07EFAB4F2A57 /* PageboyViewController+ScrollCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9261DD7747B13C607D29B7273883D232 /* PageboyViewController+ScrollCalculations.swift */; };
-		32E24B6B822379E8045BD1DF69F3F490 /* Pods-KPI Schedule Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26252EB91F886254901AE227FDD0D1D7 /* Pods-KPI Schedule Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35199E8970D9690FD59D2DE530C0C271 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFBE5BE41AF7CED3DDDD2125923DACE /* UIView+Promise.swift */; };
-		3824B9DDBB5C7B576C8A1AAB6FE8BA6E /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194E1937E56AD79AEEE0B55B3FE26DC /* PageboyAutoScroller.swift */; };
-		4040672A543B7D6633C7A606130AB3CF /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB3485FC26AC5E8DFDBCAD28900BAF /* Box.swift */; };
-		422D54C40E23985F4974721138108EC9 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B054B3BE6D2547A8266C3B7C4E174F /* Thenable.swift */; };
-		4399C4C274E67F2C879B2ED7C7246F51 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8080DE9F9B3A8A530B7807F2C8F9FDC /* NSNotificationCenter+Promise.swift */; };
-		442CFE53D93D77044EB08F6E4F3E7FF2 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = CB91FBCC3F72172FDED8ECE4C4F3F83B /* join.m */; };
-		461BC9A8381C26AD9B6C3986825F04C3 /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A30665B7EDDA76BC38B2C45B65565E /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C8B1FD40FA099A219F4F9116B83851A /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = F62069C5647994C8729E696F28B1C435 /* UIView+AnyPromise.m */; };
-		4CF0166150275554BF1E5BF48D5B93E9 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = 0753A4DFC3FA1ADB77AB83E5A57C9435 /* race.m */; };
-		4F034807DF960713C65E7BAF0BF163B0 /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328DF71DB531DD20C5680BF3C0793069 /* PageboyViewController+ScrollDetection.swift */; };
-		51FE9537DCAB400EF5FD6A549DC5038E /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17DC3526CB7DDE5AE91D44DBAA17E9D /* TransitionOperation+Action.swift */; };
-		5356172FF2D8B1693C7AA2AECD0F0532 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9B967BA50CA4769AE7B2AAACF9FAAA /* after.m */; };
-		5C43DB3630EFDD54D1FE090E184E0BD6 /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC508BB29C5D2F99756B82398783BA7 /* UIViewController+Pageboy.swift */; };
-		5EFA73D76802FAF96E1096C245B58F28 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5E82CB7F56A43840632A3510CB334 /* NSURLSession+AnyPromise.m */; };
-		605EFF3E798065B9E2BACC04C32C2363 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		63556D7CEF11F2BB51AD027E6DAAFDA1 /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CEBE442E1B5407F0AC108F6C0FAA9 /* PageboyViewControllerDelegate.swift */; };
-		65BDF60216AC3C890BD70428634ED7A2 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = FC246B676EF3907124B576D3A0F3563F /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65F8F2A346B5FC1861A6589413820438 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58647CD4E061F299D0C143FDDAEA26B0 /* TransitionOperation.swift */; };
-		66D513FB203384B59A64C6A07C72C932 /* PageboyViewController+Updating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C5DD421536BE0A2F5DF8D99550A9E2 /* PageboyViewController+Updating.swift */; };
-		6F729AE4F635C97A21FF1785BD1273DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		7A7049139F0D432AF0778E03430E75F9 /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 551BEE6BF45BDE0B6F155699FF387B79 /* NSTask+AnyPromise.m */; };
-		7D67292E214CAB2F8E6571F80807D128 /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA3932EFEDA924F44DE8C290EFA520E /* Guarantee.swift */; };
-		7E02110382C56F1E82D0E900B8C91A6C /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EA5327AF9A9F52D8897FB774C3DAEF /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80CF292B3FDC2E16E192F199B3881558 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D409A46310D7A5983DD6102046190E1 /* AnyPromise.m */; };
-		81D6409EE17962537BE4B578D76B3851 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5E2DB397EA40AB708A9A9CD56DAFE /* LogEvent.swift */; };
-		87657769CFB586F872070AD5ECEE5993 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2743ECA23A03B8D794A4E3441B65A5DF /* Error.swift */; };
-		898E287B670B446EB5C77689BD3240BE /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 217A6CE4525A44D4612D64E32D0032E6 /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A058E9E642C6F6047D733D98AE1BE3C /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573A9ED9C1C35221670941BFFB1BD56C /* PageboyViewController+AutoScrolling.swift */; };
-		8B5CD6E8FA9B244572F70E4156C29603 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		8E455900124177EB1873BE398D3B409A /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = BE51089834A4C3B4B56F98D235C50985 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		962B36834D621FBB1C96C0E1E6FD300C /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94141FEFB831A1FA619BFA776E5B2D69 /* AnyPromise.swift */; };
-		98D9AC184A035501D09CD2B0DD2484FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		9FBE75262050C1CAEBD3830FD0F6A19C /* Pods-KPI Schedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9A7D231948F83010FE65D820A6B673 /* Pods-KPI Schedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A29CED3FD48E0986C98C267CB89ACB6B /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 6404D4DE77BDD7A58910B3F96360CC89 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5704E78083A55B6302281CB11650899 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6B01BF234DC3C748DC48E961E024A1 /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A88200272A28C8ADDD72F28E4D628BA0 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238FF26C4E038EF99AEAD72FBC7384B /* Process+Promise.swift */; };
-		A8B4EDF22486F06C752C6682433A87C0 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 69901F25396BC96092746D7AF1E7912C /* UIViewController+AnyPromise.m */; };
-		AADB2358C8EB7435D488757D05DC9CC4 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AC98B23832580BF2D5AEC37C9A9AAE /* PageboyViewController+Management.swift */; };
-		ABE887876C9DA6A9E2D2EF7E53E43CC2 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8C48D2D877FA4F7373BDE1E2D7775B /* Deprecations.swift */; };
-		AEC891D775C81D1A71B97890150ED843 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC50173B7AFB26BB60170B88A9330FD8 /* PageboyViewControllerDataSource.swift */; };
-		AF692A980FCFFB1FC0E1824D3D69B831 /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 693E6BBA4EB93770FF8FDDE24B0F412D /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B13DD4ECFF47226B73E6CF2880718123 /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CEA8C3BCAFDA7060221594BC0588974 /* DZNEmptyDataSet-dummy.m */; };
-		B612C12E6D192FA8B56F22556CA45F61 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F9AA692A1C9AAF68891F6841CB6E49 /* Promise.swift */; };
-		BD8047E6C86CEE766C86D647AFF9D24A /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F857C5BBDCBFE18E4B37704D53278A /* when.m */; };
-		BE7D4EAF914D7A939CB48CC5CB2FD999 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62C1A2F13C652DE6347C8452A41B673 /* afterlife.swift */; };
-		BEC177746E398274C15FD23140734482 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C80BA5D3D5F481A80D6A9EC9FAD0B /* Configuration.swift */; };
-		BFFABBE460B3489C7985B0DD2EE0CA0A /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 20120D9869AFBB70109D7A5B8091AD8B /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C043DDAC431079366DEB3A8891AE7013 /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE84DAC12B6C33BBE12D68EBBB8009B8 /* hang.swift */; };
-		C2B65BF001B0CADD1B5F95EDE5F3817A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		C363E3200B9B7CFCA3BAA606E3748E25 /* Pods-KPI Schedule Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD49F8D8E5DC07AE24D16B06D822179 /* Pods-KPI Schedule Tests-dummy.m */; };
-		C4FF56F85A2D1AB18C3FE74C57A874D6 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245FC9DFF72624F8DAA8D12152F63BD /* UIPageViewController+ScrollView.swift */; };
-		C55A4DD1FC510EAA059F85D15C2D5D18 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8173211328F5D6707EEF9751913C6FA /* PageboyViewController.swift */; };
-		CB1E38153AB4D5D15F41E02063443A5A /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09D922231AE242C81511604AD2037E5 /* when.swift */; };
-		CD44BE203078C94F7263CA318AB785BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		D170FEB7EA06A8C9D4144D29F135BB88 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D209E2314D1801389180551550544A6D /* Resolver.swift */; };
-		DA38644A2E1DCEA102D5D07B80F17F41 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AB14263979524821DE5FD16939D826E /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF3ED4829B247623640688FBBF36FBD1 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D56961D3C884013B5C27A701C425DF /* dispatch_promise.m */; };
-		E019462461B91663148A8A67EEF5F771 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC423CAD5A4918CDBF37EDBEDFD8EACD /* UIScrollView+ScrollActivity.swift */; };
-		E1ED98E7C9ACA359A7F0E080759FD8D4 /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DD84101E418B88F4A00C307082CA4 /* NSObject+Promise.swift */; };
-		E489D85B0C3F6D16DB521FBC5789656D /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3BC2572FECA21347031A76A889C97 /* NSNotificationCenter+AnyPromise.m */; };
-		E87E9FEF20118CA7E3C1DDE6AFBBF63E /* DispatchQueue+main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AFD636842196F232767E17A48723C5 /* DispatchQueue+main.swift */; };
-		EA3286661A93D7647C5E64D3224A08F9 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A74FF11FF2E79C785C10924F657C23 /* PageboyViewController+Transitioning.swift */; };
-		F1B2B8912438551E34BD3763DE92DF0E /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4DE2839839C9CC154EB3678414EC5 /* UIApplication+SafeShared.swift */; };
-		F465558938D19F2352CD00E23A72C0D0 /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF1A3028CD4AB5B7C41CC373805CF76 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7915BECD9AABA5980A314527C265183 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 0908EEA6A2A8DD247B54C5D7393B41E0 /* hang.m */; };
-		FE6043FB4D82104308C003CEFBDC0AB7 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31067A9E5C94C5CAC416477DBBE121 /* after.swift */; };
+		025EED6A44FE486DD84DA9D38AC02AA0 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294BCB23D0E931DB5AB25214C0C7613 /* Thenable.swift */; };
+		030ABED9269F2E64B98FDF902D827F64 /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = C49677E0CAFB528D76D12AE41BEACE05 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DBF37C2F6DFD638D38F485FFC0D13C4 /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 296BC4F79BF94CA34AC9ACD05E4A1ECB /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15901C26A398A72C746D1369042356B6 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A00379FB07D75C9CD05D8D72612123C /* join.m */; };
+		18DF6A317CCB7F5BEE8D7AF5D79AEB38 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F512FA47A7187EE22ECF8691D0078969 /* PromiseKit-dummy.m */; };
+		1C5D3593B983B9369EFCFDE7D4DE0D19 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222AF638D27F0BC41CE6692215C497CD /* Configuration.swift */; };
+		208EDAA1D258CAA2BD08E462359D4FFF /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4B17C3227A0F9C47B3A5F33645DF4E /* when.m */; };
+		28B7DAC0FBCE98D36D94D872AA9F0BFB /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6941556CA185BF5F5B45C6D0B6B780 /* NavigationDirection.swift */; };
+		29643F7A000899634C9174BCB8D1A1AB /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8291EF926A7168063C64F2259968901F /* NSNotificationCenter+Promise.swift */; };
+		2C5AA48B191FF9F734B8462175C45D9F /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BF5BE95C66DA88C7610E76BCC7A689 /* Pageboy-dummy.m */; };
+		301B5F7669D2DC7E46384FBAC71B7C19 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D666EB84DC4DCA7FCEC20740B2C5E6F /* hang.m */; };
+		3208DDEB9CAC16AC7D2C7E9A7F057DC1 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040D0BE398A3DFDD324DAC2D340EAD70 /* NSURLSession+Promise.swift */; };
+		3378C1EEFC149B899433AF30F147CE32 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBA6CB22CF2FC66EA6A9E70F6EE11D /* after.swift */; };
+		33B79E4BFF8D25E1A705E2C469BBCA9B /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A506EA383B6517E1A7C798ED28D1B8 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34A205AD76EB08EE96AE88E0B2920EE6 /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0A5F93F5ECA379CD991D59B3A1913 /* PageboyViewControllerDelegate.swift */; };
+		37018D3DC554A00E9B3E306A28296316 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555F337C9CDDF65B4B7238A13FAA37 /* Error.swift */; };
+		3AAE347ADDFEFAC7DDECBC744D1BD6AC /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 87F09F2ED89BA1DA1597AB6F70473824 /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B702C2BEB25C579CA7CA826667ECC02 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902CC4C074A2ACB939A108214892CDC2 /* PageboyViewController.swift */; };
+		42495A8941D9B42B07F032390AA2389F /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B71E7E36B581AEE4EC9BFB75113AE3 /* UIViewPropertyAnimator+Promise.swift */; };
+		4418281931C4D1176F2C541CDD770F14 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0CF0F7F175E83858DD9871F9C374C /* Catchable.swift */; };
+		46C4120B8C66DBCBEEC55D09F043D618 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7599D17F9285EF91DA5AC67ED3C678 /* race.m */; };
+		4981C37D541CDA8BCB7DE77E6607AC50 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E843F15FDC4FD19A68422F6E2DC503 /* after.m */; };
+		4A613C22671DE0E90BC4F1B70CB3B479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		4D65C782220C5E27BF8A3B61EBBDAB3E /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C81B3CD65A042C32511CB42259C0BF /* Guarantee.swift */; };
+		4EC7BD8654B3587F1F725E812C9D828C /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142EA629119A77E37DD612754D6E3F4 /* race.swift */; };
+		52F57EB35132E86D75FE9443258EFDBF /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B858E71E4AA4986641061305A42194 /* UIView+AnyPromise.m */; };
+		52FA52571F89FCD16343E1624F387DA5 /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020FEA0A85203A00E0DBFEB149993183 /* UIViewController+Pageboy.swift */; };
+		56D8783CBF33646ECBF610FCC8EFC43E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		57FCCCFC5A7FC0E944300371F0A6666F /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7196701D1B68F90D7D02A531FE2D05 /* TransitionOperation.swift */; };
+		5802BD2A7E671D3015BE4E98C13D10CB /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8E1855DE0038B2DD29E721F0F1C6C2 /* NSURLSession+AnyPromise.m */; };
+		59AA176600E91A56BC244B381305060B /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BB2E6450CB48056C14F4A13D1E9BF3 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2D358E754D92564B259BBACFBA8271 /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 720AA0B1CEB9A6CE4AFB03C801265F50 /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F874ED0F6234A4417CAFDE554D088D /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C592E40D49193CD40B55DDEEDF9136BC /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638D5EFBAD5C5506F093D45144D4B3DB /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027BF35324A20628D2A21E4F0F70B6F /* WeakContainer.swift */; };
+		69DBAB1E3A8EEBFCC466D95509DE7125 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F285729C2607A80C558995392D8F668 /* UIView+Promise.swift */; };
+		6AD4ACB4B3370545B577657692218787 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F5BE9DDCF46FC3E2C41D6C4D983D47 /* PageboyViewControllerDataSource.swift */; };
+		6DE830042E36FDE326546970CA90F9B6 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7103B231B193DAEF3C6827270CC59F5F /* Promise.swift */; };
+		6EBB0761ABA13EF517618256AEBE64E4 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0165D1DAC2FA57952BC2C49EC66C8E /* Page.swift */; };
+		73EA1C553B580637369E1D5A72A425B3 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EEB8E72F3634B2A311B1FEE837399 /* when.swift */; };
+		78C02865AE43A78DF4904215F25E1796 /* IndexedObjectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09C3AEE9D23856A04155B9E6D979C6 /* IndexedObjectMap.swift */; };
+		78DA5523DC75CE990020240FFBE938C4 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAD30CA485FC51A431DBEAF4440C3D8 /* PageboyViewController+Transitioning.swift */; };
+		79F73BA854A7EC559E464EC446493D52 /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5072F6EF835B69E716408AD703CF1053 /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		817B30EB92F2EF8E1A6F770C6D99FEA9 /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856F289960DE337C9546BB40D006A2EA /* PageboyViewController+ScrollDetection.swift */; };
+		828E452494AEC5BBE66B9D12AB2C5C6E /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F1BDEAAAF1E83F651FAD547C386ED9 /* UIApplication+SafeShared.swift */; };
+		879CAFA0DBE57FDB70FE92565F432E8C /* Pods-KPI Schedule Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE338E56961331265A22691C2EC4F63 /* Pods-KPI Schedule Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E28416F689CAE2A93FD55B2E3CEA689 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B5ABC1C2A03CE6E1CEF5B2C9258736 /* UIView+AutoLayout.swift */; };
+		9447BD0FB408B2A7C9BFDFF99BBE1EBE /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2660B93A4AC834B337CAAB80B4455710 /* UIViewController+AnyPromise.m */; };
+		968B5CC9B9B0A7E92FACEEBEA3C0DA13 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D74E89C213C4DD84D7249ED16488BFF /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9760811C569E9476915734BDF3E9B42A /* Pods-KPI Schedule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C39D7B80134AF08716E952717EEDB7 /* Pods-KPI Schedule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		997870D5F490326F024B4D8687FF18DC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55519A2D0BAA5510464DBD30DF7898BA /* Resolver.swift */; };
+		9B65647B927085E2366117D59DC1586D /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D829D95AD926DBF1F9B46D40B76FB72 /* CustomStringConvertible.swift */; };
+		9BFE70DD7ECA3C6183B82DE691FE4491 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13432ADB2325AA700B6AC67CE32BE183 /* Box.swift */; };
+		9C7D266B70B4CE1E0747470B1184789F /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9F422869B20A9AC1E9D022B4D4250B /* UIScrollView+EmptyDataSet.m */; };
+		A155C34EB1DC74B8438AFDEB728CD205 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D27018E6BEE2473FBE1B47C298A4DD6 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1E6C35C5B3ECB558FE1AF9B1FAAB53B /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC219987472B5CE48B4322A639E36EF /* AnyPromise.m */; };
+		A4EDB69211196E394E7E6A4EC454AC10 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4329D80F28E3BF2B40240E19288CF6E /* UIView+Localization.swift */; };
+		A5F5D7A20264221D4A7F489FB0060D34 /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928C1EE282B4E24F51CEA343E68AF8B /* afterlife.swift */; };
+		AF25C84D44C0CB3DE1056DE5F443E578 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF4245072B75511216AE3C294AA60C /* UIView+Animation.swift */; };
+		B02556A07A82E12A80FB59147FC55FFE /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BB24579CBCA6483708260DC8A2DD3A /* DZNEmptyDataSet-dummy.m */; };
+		B209FB0358B5B144B8B98CB6FECF94C6 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69099143D3AB15C14701EB2BA7441E0 /* TransitionOperation+Action.swift */; };
+		B593B56495A204E756BAA753BA2D6E9C /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8E9590A3D491B6A519C56AEE31D6B /* Deprecations.swift */; };
+		B6731AA1A8B64F945A6E189998ACBE44 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565354EE4C62C132EF333E310D84B8F0 /* PageboyAutoScroller.swift */; };
+		B6E8B7202C45A0D06CF87374A332B8D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B758241FBF6592EFBE6283378D16F9FD /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428A96FB2089A38F45E1DABE71D270B /* NSObject+Promise.swift */; };
+		C426E30A28E2545BCA2824DBCF90816F /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 98240A3D178244D4AD38A9FF423767BA /* NSNotificationCenter+AnyPromise.m */; };
+		C5EF8FBC11CA9E66100F6489B57E35A6 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B18898D79F2F774E4E1885DAACE5E /* LogEvent.swift */; };
+		C7ECF714064C1188A6D042C6ACFD9504 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F596C4AB4BDA1904909727F699DD49 /* dispatch_promise.m */; };
+		C9F49AE0CF7DB4C85D82D7FD3020D500 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3C9FEA9199738A7F371721D0FD3BE /* UIScrollView+ScrollActivity.swift */; };
+		CE78A989A4188AF4A1F6E4CA66F276AD /* DispatchQueue+main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414188B45CE5C4C1D1395631D341FF1 /* DispatchQueue+main.swift */; };
+		D3208EF9EEE22C4C4658D53A7997B4C8 /* Pods-KPI Schedule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A7E6E535CD9B844603ABED4FAFC0CD /* Pods-KPI Schedule-dummy.m */; };
+		D45F084128052AA9834860EF73B34F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		D4C52546E7DEE38CEE04F2B6D61BB9E2 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5834913831B685085410E66DF5214CDE /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D62C637390B7611A2E992560B6B53147 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7D5E5ECC350B7E79C94AC8B59B91E /* PageboyViewController+AutoScrolling.swift */; };
+		D6AA1B02CF4BB6AEF85B24E55C51AFAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		DA06914C15CDE3F35C1E28C4AA28A0E4 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FBA402F1BBC2CF2107B0007ADB7563 /* UIPageViewController+ScrollView.swift */; };
+		DBEF0F49E57B3321CC7067EEF33AB582 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD97DD60C66FA13D5E8541855EABE97 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0F89F70F05744D1A083AA8D8D43BA0 /* PageboyViewController+ScrollCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE039DCDFB1BC07DF7B78A603518040 /* PageboyViewController+ScrollCalculations.swift */; };
+		E39BD56BD4E368A73AAE1F06785EFE1D /* Pods-KPI Schedule Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0908BDE0EB5890273ADFDA721E45817 /* Pods-KPI Schedule Tests-dummy.m */; };
+		E425FBEC27FF20E38E5F71856145D72C /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1BB2AE31A0C085C29FD96A38F0130B /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5C5D9B95DA53AC07E922DA1EE51A3D8 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661FC59B00F8067E9BBC63EA8C4A5D08 /* PageboyViewController+Management.swift */; };
+		EAC994EA457048CA6AA49B82C9F05DF4 /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 205F9315FF27B74D8006C5BA900A3FCA /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED90BA7601E88B3CE3C87A06CEB1B79C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		EF8241DFA90BCDBB97B8C504BB80D05C /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3666D40334E2DFE6E11831F32AD00241 /* AnyPromise.swift */; };
+		EF9BBCE851B820D4F5DA3163BF466A38 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95958A80381878C18156B41CA24019 /* Process+Promise.swift */; };
+		F13757DC196642F1629AA4B47EA57379 /* PageboyViewController+Updating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A3CA185C1B11501D881441B011ADD5 /* PageboyViewController+Updating.swift */; };
+		F6795E076E819D018FD1085F75CD7C47 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 619D39CE0A4B89CF871F61278B0C00F8 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB797FAA96B41ACE7474B8ADEF8107EC /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF227FE390BD535B59987CCDEC2126 /* firstly.swift */; };
+		FDF12428281F08B3F5F2B7DB68E3925D /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C05BAAD3BA4BDB0CA44DC948D14C155 /* NSTask+AnyPromise.m */; };
+		FED8C9BB577D35DBB6E5347B750C184C /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE2305638A6446343DFC30AE5ED3FF5 /* hang.swift */; };
+		FFE173624CCEF79AD01A7073B728BF26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2A45E02C34095E7E1F39EDAFB5D97F33 /* PBXContainerItemProxy */ = {
+		2484BCDF58EC8A2F2FBEA468556BD4B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0CC2D9443A1E6CE138AE72A6717A9ADD;
+			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
+			remoteInfo = PromiseKit;
+		};
+		3114F18877A4A416FC399517E0C2EA2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06201A837B408E21A6F416D49AF9A573;
 			remoteInfo = Pageboy;
 		};
-		6008AE95AB1E5A83234A04CFB4AD4BE1 /* PBXContainerItemProxy */ = {
+		5A23BC8A4CB2A15336F7CB0A89AF7BEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0D6799C9910D58A020CA2C196B6FA056;
-			remoteInfo = PromiseKit;
-		};
-		B7D045B636E729CA87412845B41B8A46 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0D6799C9910D58A020CA2C196B6FA056;
-			remoteInfo = PromiseKit;
-		};
-		D3B3613CC439BFDBE998D17411B73B9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3310EEFF328C58D7A02083727BC09E65;
+			remoteGlobalIDString = F1BCD9702276377FB5B3BDB6EAF709D7;
 			remoteInfo = DZNEmptyDataSet;
+		};
+		B37AF48DF04C6F2FD8B66BBC4C6F8B16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
+			remoteInfo = PromiseKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012CEBE442E1B5407F0AC108F6C0FAA9 /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
-		0181C057EF21E0D1DC692D9B49B4E686 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
-		03BBDA43D830383DC5BC87CF979B4EC4 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0753A4DFC3FA1ADB77AB83E5A57C9435 /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
-		0908EEA6A2A8DD247B54C5D7393B41E0 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
-		098C80BA5D3D5F481A80D6A9EC9FAD0B /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
-		0A012A6EDECB8E07C310B0240FDE33B2 /* Pods-KPI Schedule Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KPI Schedule Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		11E1283A01656743550F8773E6003265 /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
-		1A9A7D231948F83010FE65D820A6B673 /* Pods-KPI Schedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPI Schedule-umbrella.h"; sourceTree = "<group>"; };
-		1D491DA799810E39CB75D3DBD038A363 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
-		20120D9869AFBB70109D7A5B8091AD8B /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
-		217A6CE4525A44D4612D64E32D0032E6 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
-		26252EB91F886254901AE227FDD0D1D7 /* Pods-KPI Schedule Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPI Schedule Tests-umbrella.h"; sourceTree = "<group>"; };
-		2743ECA23A03B8D794A4E3441B65A5DF /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
-		2DDB3485FC26AC5E8DFDBCAD28900BAF /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
-		2EBBA71919AE73ECA3C177487157DCF5 /* Pods-KPI Schedule Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3238FF26C4E038EF99AEAD72FBC7384B /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
-		328DF71DB531DD20C5680BF3C0793069 /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
-		36B1077D7538308210624AD84D2D9136 /* Pods-KPI Schedule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPI Schedule-frameworks.sh"; sourceTree = "<group>"; };
-		37A74FF11FF2E79C785C10924F657C23 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Transitioning/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
-		3971A1EC250ED3114EE00DF45AA08EFE /* Pods-KPI Schedule Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPI Schedule Tests-frameworks.sh"; sourceTree = "<group>"; };
-		39731DAEA006B26FFADCBC6B05B5C8F9 /* PromiseKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromiseKit-Info.plist"; sourceTree = "<group>"; };
-		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41AF3AAE5ED4697999D48040AA44C103 /* Pods-KPI Schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule.release.xcconfig"; sourceTree = "<group>"; };
-		44C5DD421536BE0A2F5DF8D99550A9E2 /* PageboyViewController+Updating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Updating.swift"; path = "Sources/Pageboy/PageboyViewController+Updating.swift"; sourceTree = "<group>"; };
-		4AB14263979524821DE5FD16939D826E /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
-		4CF1A3028CD4AB5B7C41CC373805CF76 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		4D986DB9FF24B822181B860A85EBFCE2 /* Pods-KPI Schedule Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule Tests-Info.plist"; sourceTree = "<group>"; };
-		50D39C304352473B722DA37A6942268F /* Page.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Sources/Pageboy/Model/Page.swift; sourceTree = "<group>"; };
-		5194E1937E56AD79AEEE0B55B3FE26DC /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/AutoScrolling/PageboyAutoScroller.swift; sourceTree = "<group>"; };
-		551BEE6BF45BDE0B6F155699FF387B79 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
-		552DD84101E418B88F4A00C307082CA4 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
-		573A9ED9C1C35221670941BFFB1BD56C /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/AutoScrolling/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
-		5773F4C9ED7C10EFFF9CD13554330A56 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
-		58647CD4E061F299D0C143FDDAEA26B0 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
-		5B3677538E56BF8D194A2704429AC197 /* Pods_KPI_Schedule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KPI_Schedule_Tests.framework; path = "Pods-KPI Schedule Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C91D08D351E72A3AF9ADCE50CF257D1 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
-		5CA09410DCDD162495F8D15622AB6F9F /* NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDirection.swift; path = Sources/Pageboy/Model/NavigationDirection.swift; sourceTree = "<group>"; };
-		5E2C5FEC79F8AE12052C13AA6812FD9F /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
-		5F7ACA35972C546E77FC4F61023BB1A7 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
-		60485EE5CEF98A5B1BBC24A3DE155EDF /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
-		61F9AA692A1C9AAF68891F6841CB6E49 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
-		6404D4DE77BDD7A58910B3F96360CC89 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
-		670143006BD1DE209B64834FCCD40797 /* Pods-KPI Schedule Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		693E6BBA4EB93770FF8FDDE24B0F412D /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
-		6964C3CDDA85C0C32634E1528A4A57AA /* Pods-KPI Schedule Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule Tests.release.xcconfig"; sourceTree = "<group>"; };
-		69901F25396BC96092746D7AF1E7912C /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
-		6C73451B00CF6527579587AF29F771DF /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
-		730D1BA7EB6F65896DE8AB3224C9950C /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
-		78B177B42E2F6746612FAF9D382CC22F /* Pods-KPI Schedule Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KPI Schedule Tests.modulemap"; sourceTree = "<group>"; };
-		7D0AE0821166930D895BEB6B1FABF262 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
-		7D409A46310D7A5983DD6102046190E1 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
-		7F6B01BF234DC3C748DC48E961E024A1 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
-		8016ADFF9A6A55CFD5306DBCC12D6173 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
-		82B5E2DB397EA40AB708A9A9CD56DAFE /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
-		82D88F6F2DA3373998F136F2BD8F856B /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
-		84D56961D3C884013B5C27A701C425DF /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
-		859C414E512279F20F1B2E3A2E72D48E /* Pods_KPI_Schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KPI_Schedule.framework; path = "Pods-KPI Schedule.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8998DF0973B19129B0DAA7AF3EE37C0E /* Pods-KPI Schedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule-acknowledgements.plist"; sourceTree = "<group>"; };
-		89A8D1A77B9602ADE83E32A2D314D627 /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
-		8CEA8C3BCAFDA7060221594BC0588974 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
-		9261DD7747B13C607D29B7273883D232 /* PageboyViewController+ScrollCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollCalculations.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollCalculations.swift"; sourceTree = "<group>"; };
-		92F4DE2839839C9CC154EB3678414EC5 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
-		930ABFB6B4CA2F8F05F4A3675439A1DF /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
-		94141FEFB831A1FA619BFA776E5B2D69 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
-		9540224461A6DEFFC8ED3AA1D03FD057 /* Pods-KPI Schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule.debug.xcconfig"; sourceTree = "<group>"; };
-		97AC98B23832580BF2D5AEC37C9A9AAE /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
-		9AE3BC2572FECA21347031A76A889C97 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		9BA3932EFEDA924F44DE8C290EFA520E /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
-		9D60546A3D78FA6435E7E1512D59D011 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E04387F233E289E8A2C30889B5D11B6 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
-		A2F857C5BBDCBFE18E4B37704D53278A /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
-		A5B054B3BE6D2547A8266C3B7C4E174F /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
-		A81163DD28AD2FCC991D8E0992B61174 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
-		A8173211328F5D6707EEF9751913C6FA /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
-		AAFBE5BE41AF7CED3DDDD2125923DACE /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
-		B1AFD636842196F232767E17A48723C5 /* DispatchQueue+main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+main.swift"; path = "Sources/Pageboy/Utilities/Extensions/DispatchQueue+main.swift"; sourceTree = "<group>"; };
-		B8080DE9F9B3A8A530B7807F2C8F9FDC /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
-		BA9A5550FE8296EBC67F878AEB365F08 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB5908CA38BE2C3F75FFB9DEED42C799 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		BB9B967BA50CA4769AE7B2AAACF9FAAA /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
-		BE51089834A4C3B4B56F98D235C50985 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
-		C1930350658243E3BF726CD1F68FFCBB /* Pods-KPI Schedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KPI Schedule-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C8A30665B7EDDA76BC38B2C45B65565E /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
-		C9A5E82CB7F56A43840632A3510CB334 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
-		CB91FBCC3F72172FDED8ECE4C4F3F83B /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
-		CC87658F0E89D7CFC8218B0D807C67EC /* DZNEmptyDataSet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DZNEmptyDataSet-Info.plist"; sourceTree = "<group>"; };
-		D105198EDFFD4F8B21B990128E7AAEA4 /* UIView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Animation.swift"; sourceTree = "<group>"; };
-		D17DC3526CB7DDE5AE91D44DBAA17E9D /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
-		D209E2314D1801389180551550544A6D /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
-		D630D1D9B3956184DB0E80BB36B7B210 /* Pods-KPI Schedule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule-Info.plist"; sourceTree = "<group>"; };
-		D6EA5327AF9A9F52D8897FB774C3DAEF /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
-		D82951A32B528FDBB6E3386CE0EACA49 /* Pods-KPI Schedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPI Schedule-dummy.m"; sourceTree = "<group>"; };
-		D9601A349B28D79C4C7968B6836C2D2B /* Pageboy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pageboy-Info.plist"; sourceTree = "<group>"; };
-		DBBF0228FABCBBDB5587CD5FDE20F72E /* Pods-KPI Schedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KPI Schedule.modulemap"; sourceTree = "<group>"; };
-		DC50173B7AFB26BB60170B88A9330FD8 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
-		DCC508BB29C5D2F99756B82398783BA7 /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
-		DE5B5D5FA72884B73962BB31F043C4EE /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
-		DED21C604E23A42112DA19209429E972 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
-		DF2875D964C4E0D74F163B8A6EDC56CF /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
-		DF8C48D2D877FA4F7373BDE1E2D7775B /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
-		DFD49F8D8E5DC07AE24D16B06D822179 /* Pods-KPI Schedule Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPI Schedule Tests-dummy.m"; sourceTree = "<group>"; };
-		E513A06B4DBAC326CB326FF7C9514EA7 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F09D922231AE242C81511604AD2037E5 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
-		F245FC9DFF72624F8DAA8D12152F63BD /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
-		F62069C5647994C8729E696F28B1C435 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		F62C1A2F13C652DE6347C8452A41B673 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
-		FB6E87AAADC6A4343E656C798B6E2FB3 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC246B676EF3907124B576D3A0F3563F /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
-		FC31067A9E5C94C5CAC416477DBBE121 /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
-		FC423CAD5A4918CDBF37EDBEDFD8EACD /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
-		FE39D7B3A609BA6D0C28F1DC008EE680 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
-		FE84DAC12B6C33BBE12D68EBBB8009B8 /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		020FEA0A85203A00E0DBFEB149993183 /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
+		040D0BE398A3DFDD324DAC2D340EAD70 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		07A3CA185C1B11501D881441B011ADD5 /* PageboyViewController+Updating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Updating.swift"; path = "Sources/Pageboy/PageboyViewController+Updating.swift"; sourceTree = "<group>"; };
+		0A7599D17F9285EF91DA5AC67ED3C678 /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
+		0DAD30CA485FC51A431DBEAF4440C3D8 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Transitioning/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		0E8A2A51DE8365AA59B24BA9649B9D91 /* Pods_KPI_Schedule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Schedule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F09C3AEE9D23856A04155B9E6D979C6 /* IndexedObjectMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedObjectMap.swift; path = Sources/Pageboy/Utilities/IndexedObjectMap.swift; sourceTree = "<group>"; };
+		12B71E7E36B581AEE4EC9BFB75113AE3 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
+		13432ADB2325AA700B6AC67CE32BE183 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		16F0940CB1DBBC3F4DF61299E9074A33 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		196FC747C610056E21E46159988B2DEA /* Pods-KPI Schedule Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KPI Schedule Tests.modulemap"; sourceTree = "<group>"; };
+		1A00379FB07D75C9CD05D8D72612123C /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
+		1B4B17C3227A0F9C47B3A5F33645DF4E /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
+		1C3F96091A72B6EA20E7F0ECDC755A21 /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		1E95958A80381878C18156B41CA24019 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
+		2027BF35324A20628D2A21E4F0F70B6F /* WeakContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakContainer.swift; path = Sources/Pageboy/Utilities/WeakContainer.swift; sourceTree = "<group>"; };
+		205F9315FF27B74D8006C5BA900A3FCA /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		2142EA629119A77E37DD612754D6E3F4 /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
+		21A7E6E535CD9B844603ABED4FAFC0CD /* Pods-KPI Schedule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPI Schedule-dummy.m"; sourceTree = "<group>"; };
+		21B8E9590A3D491B6A519C56AEE31D6B /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
+		222AF638D27F0BC41CE6692215C497CD /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
+		23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2660B93A4AC834B337CAAB80B4455710 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
+		27FBA402F1BBC2CF2107B0007ADB7563 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
+		282B499B939129EB472E0A7E6ED37A0A /* Pods-KPI Schedule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule-Info.plist"; sourceTree = "<group>"; };
+		28EBA6CB22CF2FC66EA6A9E70F6EE11D /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
+		296BC4F79BF94CA34AC9ACD05E4A1ECB /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
+		2D829D95AD926DBF1F9B46D40B76FB72 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
+		2FA7D5E5ECC350B7E79C94AC8B59B91E /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/AutoScrolling/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3666D40334E2DFE6E11831F32AD00241 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
+		3D93CADBCAF3E47A1AFD031870870A40 /* DZNEmptyDataSet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DZNEmptyDataSet-Info.plist"; sourceTree = "<group>"; };
+		3DC219987472B5CE48B4322A639E36EF /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
+		3EE039DCDFB1BC07DF7B78A603518040 /* PageboyViewController+ScrollCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollCalculations.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollCalculations.swift"; sourceTree = "<group>"; };
+		42053DAC6EB9F019201AB2223F377AEC /* Pods-KPI Schedule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule-acknowledgements.plist"; sourceTree = "<group>"; };
+		42F0A5F93F5ECA379CD991D59B3A1913 /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43BF5BE95C66DA88C7610E76BCC7A689 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		4428A96FB2089A38F45E1DABE71D270B /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		490EEB8E72F3634B2A311B1FEE837399 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
+		4A619AA973C247BC924661F0F6D7A007 /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
+		4B9B18898D79F2F774E4E1885DAACE5E /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
+		4C3A4811C574E30D1CF8B3ECFAE7AEB0 /* Pods-KPI Schedule Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5072F6EF835B69E716408AD703CF1053 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
+		55519A2D0BAA5510464DBD30DF7898BA /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		565354EE4C62C132EF333E310D84B8F0 /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/AutoScrolling/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		5834913831B685085410E66DF5214CDE /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
+		5A02ECB9B38B6C3BB05515BF168DCB01 /* Pods-KPI Schedule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPI Schedule-frameworks.sh"; sourceTree = "<group>"; };
+		5D27018E6BEE2473FBE1B47C298A4DD6 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
+		5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F285729C2607A80C558995392D8F668 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
+		619D39CE0A4B89CF871F61278B0C00F8 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		64C0CF0F7F175E83858DD9871F9C374C /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
+		661FC59B00F8067E9BBC63EA8C4A5D08 /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
+		6EE338E56961331265A22691C2EC4F63 /* Pods-KPI Schedule Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPI Schedule Tests-umbrella.h"; sourceTree = "<group>"; };
+		7103B231B193DAEF3C6827270CC59F5F /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
+		720AA0B1CEB9A6CE4AFB03C801265F50 /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
+		7BE2305638A6446343DFC30AE5ED3FF5 /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		7C555F337C9CDDF65B4B7238A13FAA37 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		7C9F422869B20A9AC1E9D022B4D4250B /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		7D74E89C213C4DD84D7249ED16488BFF /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
+		8291EF926A7168063C64F2259968901F /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		8414188B45CE5C4C1D1395631D341FF1 /* DispatchQueue+main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+main.swift"; path = "Sources/Pageboy/Utilities/Extensions/DispatchQueue+main.swift"; sourceTree = "<group>"; };
+		856F289960DE337C9546BB40D006A2EA /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
+		87390C9FC0408BDB6A13C49A67AE13F1 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
+		87F09F2ED89BA1DA1597AB6F70473824 /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
+		8AADEBCDE9E1EC3F38A9C558CB8E0661 /* Pods-KPI Schedule Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule Tests-Info.plist"; sourceTree = "<group>"; };
+		8C05BAAD3BA4BDB0CA44DC948D14C155 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
+		8CF289E4614ABAB8D7B9CC60576BEA7A /* Pods-KPI Schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule.debug.xcconfig"; sourceTree = "<group>"; };
+		8D666EB84DC4DCA7FCEC20740B2C5E6F /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
+		902CC4C074A2ACB939A108214892CDC2 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
+		9177BA6F63DA1BE1FE210B6B925A2840 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		98240A3D178244D4AD38A9FF423767BA /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
+		995565EBEF7ABA7108913DD75E329CF3 /* Pods-KPI Schedule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KPI Schedule.modulemap"; sourceTree = "<group>"; };
+		9BF8A0F7637DB87504A8249936AC1026 /* PromiseKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromiseKit-Info.plist"; sourceTree = "<group>"; };
+		9C6941556CA185BF5F5B45C6D0B6B780 /* NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDirection.swift; path = Sources/Pageboy/Model/NavigationDirection.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F1BB2AE31A0C085C29FD96A38F0130B /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
+		A294BCB23D0E931DB5AB25214C0C7613 /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
+		A3BB2E6450CB48056C14F4A13D1E9BF3 /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
+		A4329D80F28E3BF2B40240E19288CF6E /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		A7A506EA383B6517E1A7C798ED28D1B8 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
+		AE3827312D2CE28CAB918199FD08712B /* Pageboy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pageboy-Info.plist"; sourceTree = "<group>"; };
+		B4C81B3CD65A042C32511CB42259C0BF /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
+		B50519AA0A03A5924A3CA04107962723 /* Pods-KPI Schedule Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KPI Schedule Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B5B858E71E4AA4986641061305A42194 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
+		B5EF227FE390BD535B59987CCDEC2126 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
+		B69099143D3AB15C14701EB2BA7441E0 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
+		B98EFBCE58A7B2EEB048EC2C6E07A48F /* Pods-KPI Schedule-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KPI Schedule-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BCAA12E403B1CC45AB320CBEEC193E3E /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
+		C49677E0CAFB528D76D12AE41BEACE05 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		C592E40D49193CD40B55DDEEDF9136BC /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
+		C845DDCEF610256DFC3C3E3F43F91E09 /* Pods_KPI_Schedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Schedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8E1855DE0038B2DD29E721F0F1C6C2 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
+		CBD97DD60C66FA13D5E8541855EABE97 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
+		CCB5126CCD87E62C352652369C687383 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
+		D0908BDE0EB5890273ADFDA721E45817 /* Pods-KPI Schedule Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KPI Schedule Tests-dummy.m"; sourceTree = "<group>"; };
+		D1D13593FCE838D3CBB560F5A625E6B8 /* Pods-KPI Schedule Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KPI Schedule Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5F5BE9DDCF46FC3E2C41D6C4D983D47 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		D6E843F15FDC4FD19A68422F6E2DC503 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
+		D710BA0EFFEFC655387309CE55215C10 /* Pods-KPI Schedule Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D928C1EE282B4E24F51CEA343E68AF8B /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
+		D9B5ABC1C2A03CE6E1CEF5B2C9258736 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		DD0165D1DAC2FA57952BC2C49EC66C8E /* Page.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Sources/Pageboy/Model/Page.swift; sourceTree = "<group>"; };
+		DEBF4245072B75511216AE3C294AA60C /* UIView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Animation.swift"; sourceTree = "<group>"; };
+		E3C39D7B80134AF08716E952717EEDB7 /* Pods-KPI Schedule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KPI Schedule-umbrella.h"; sourceTree = "<group>"; };
+		E6EE7830B126E60DBD13F8728D93EC10 /* Pods-KPI Schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KPI Schedule.release.xcconfig"; sourceTree = "<group>"; };
+		E7E199343B604F0CF4AA276392B33A4B /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		EB7196701D1B68F90D7D02A531FE2D05 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
+		EF6E64BD60083EE400924FC99BBFC60C /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		F0BB24579CBCA6483708260DC8A2DD3A /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		F512FA47A7187EE22ECF8691D0078969 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		F69790D404B40373BF5CD2E2FAC4EE16 /* Pods-KPI Schedule Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KPI Schedule Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6F1BDEAAAF1E83F651FAD547C386ED9 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
+		F9F596C4AB4BDA1904909727F699DD49 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		FDE3C9FEA9199738A7F371721D0FD3BE /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		08F8E3755EEFBEFEBAB6C98F192DAA78 /* Frameworks */ = {
+		46F9214900CE1F500D4E081AC05BDD61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D9AC184A035501D09CD2B0DD2484FA /* Foundation.framework in Frameworks */,
-				6F729AE4F635C97A21FF1785BD1273DF /* UIKit.framework in Frameworks */,
+				4A613C22671DE0E90BC4F1B70CB3B479 /* Foundation.framework in Frameworks */,
+				56D8783CBF33646ECBF610FCC8EFC43E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52B848341D1D6D2A01602DD798AEC89C /* Frameworks */ = {
+		65D0F38C8974C31345B8DB1A5C27DB6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD44BE203078C94F7263CA318AB785BA /* Foundation.framework in Frameworks */,
+				B6E8B7202C45A0D06CF87374A332B8D0 /* Foundation.framework in Frameworks */,
+				FFE173624CCEF79AD01A7073B728BF26 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6162F3BE78E9475E4DD39556DC016EE2 /* Frameworks */ = {
+		6A9F86D27389F6EDDA5DDFCEFCBEF665 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A65F5B318D340C37F774855DDB5CEF /* Foundation.framework in Frameworks */,
+				D45F084128052AA9834860EF73B34F03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE1CC9EA774254A6480F56AF8DC4A6E /* Frameworks */ = {
+		6C8152D1695B67DF46A5C384C410D25D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B65BF001B0CADD1B5F95EDE5F3817A /* Foundation.framework in Frameworks */,
+				D6AA1B02CF4BB6AEF85B24E55C51AFAE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9E51BC5E6D969E8DD100BA8AB7DFB69 /* Frameworks */ = {
+		BF61D9EBB57EDF58DAFEA2B5F5B1A87C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5CD6E8FA9B244572F70E4156C29603 /* Foundation.framework in Frameworks */,
-				605EFF3E798065B9E2BACC04C32C2363 /* UIKit.framework in Frameworks */,
+				ED90BA7601E88B3CE3C87A06CEB1B79C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02A698A6F87090F564F8CA6D58C92B49 /* PromiseKit */ = {
-			isa = PBXGroup;
-			children = (
-				0771C4B6A9ED1414AA7D5468D10FB4C0 /* CorePromise */,
-				03160A68B54AD676226388B50CA0B80E /* Foundation */,
-				356B750F0D8859C1B9B839616DCD4B7F /* Support Files */,
-				75A5681443C36BE2DC35AFC3213DA435 /* UIKit */,
-			);
-			name = PromiseKit;
-			path = PromiseKit;
-			sourceTree = "<group>";
-		};
-		03160A68B54AD676226388B50CA0B80E /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				F62C1A2F13C652DE6347C8452A41B673 /* afterlife.swift */,
-				6404D4DE77BDD7A58910B3F96360CC89 /* NSNotificationCenter+AnyPromise.h */,
-				9AE3BC2572FECA21347031A76A889C97 /* NSNotificationCenter+AnyPromise.m */,
-				B8080DE9F9B3A8A530B7807F2C8F9FDC /* NSNotificationCenter+Promise.swift */,
-				552DD84101E418B88F4A00C307082CA4 /* NSObject+Promise.swift */,
-				C8A30665B7EDDA76BC38B2C45B65565E /* NSTask+AnyPromise.h */,
-				551BEE6BF45BDE0B6F155699FF387B79 /* NSTask+AnyPromise.m */,
-				693E6BBA4EB93770FF8FDDE24B0F412D /* NSURLSession+AnyPromise.h */,
-				C9A5E82CB7F56A43840632A3510CB334 /* NSURLSession+AnyPromise.m */,
-				9E04387F233E289E8A2C30889B5D11B6 /* NSURLSession+Promise.swift */,
-				20120D9869AFBB70109D7A5B8091AD8B /* PMKFoundation.h */,
-				3238FF26C4E038EF99AEAD72FBC7384B /* Process+Promise.swift */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		0771C4B6A9ED1414AA7D5468D10FB4C0 /* CorePromise */ = {
-			isa = PBXGroup;
-			children = (
-				BB9B967BA50CA4769AE7B2AAACF9FAAA /* after.m */,
-				FC31067A9E5C94C5CAC416477DBBE121 /* after.swift */,
-				FC246B676EF3907124B576D3A0F3563F /* AnyPromise.h */,
-				7D409A46310D7A5983DD6102046190E1 /* AnyPromise.m */,
-				94141FEFB831A1FA619BFA776E5B2D69 /* AnyPromise.swift */,
-				2DDB3485FC26AC5E8DFDBCAD28900BAF /* Box.swift */,
-				89A8D1A77B9602ADE83E32A2D314D627 /* Catchable.swift */,
-				098C80BA5D3D5F481A80D6A9EC9FAD0B /* Configuration.swift */,
-				60485EE5CEF98A5B1BBC24A3DE155EDF /* CustomStringConvertible.swift */,
-				DF8C48D2D877FA4F7373BDE1E2D7775B /* Deprecations.swift */,
-				84D56961D3C884013B5C27A701C425DF /* dispatch_promise.m */,
-				2743ECA23A03B8D794A4E3441B65A5DF /* Error.swift */,
-				0181C057EF21E0D1DC692D9B49B4E686 /* firstly.swift */,
-				D6EA5327AF9A9F52D8897FB774C3DAEF /* fwd.h */,
-				9BA3932EFEDA924F44DE8C290EFA520E /* Guarantee.swift */,
-				0908EEA6A2A8DD247B54C5D7393B41E0 /* hang.m */,
-				FE84DAC12B6C33BBE12D68EBBB8009B8 /* hang.swift */,
-				CB91FBCC3F72172FDED8ECE4C4F3F83B /* join.m */,
-				82B5E2DB397EA40AB708A9A9CD56DAFE /* LogEvent.swift */,
-				61F9AA692A1C9AAF68891F6841CB6E49 /* Promise.swift */,
-				E513A06B4DBAC326CB326FF7C9514EA7 /* PromiseKit.h */,
-				0753A4DFC3FA1ADB77AB83E5A57C9435 /* race.m */,
-				5C91D08D351E72A3AF9ADCE50CF257D1 /* race.swift */,
-				D209E2314D1801389180551550544A6D /* Resolver.swift */,
-				A5B054B3BE6D2547A8266C3B7C4E174F /* Thenable.swift */,
-				A2F857C5BBDCBFE18E4B37704D53278A /* when.m */,
-				F09D922231AE242C81511604AD2037E5 /* when.swift */,
-			);
-			name = CorePromise;
-			sourceTree = "<group>";
-		};
-		0F4DA416BC33E798B9CFDC73801DFD54 /* Pods-KPI Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				DBBF0228FABCBBDB5587CD5FDE20F72E /* Pods-KPI Schedule.modulemap */,
-				C1930350658243E3BF726CD1F68FFCBB /* Pods-KPI Schedule-acknowledgements.markdown */,
-				8998DF0973B19129B0DAA7AF3EE37C0E /* Pods-KPI Schedule-acknowledgements.plist */,
-				D82951A32B528FDBB6E3386CE0EACA49 /* Pods-KPI Schedule-dummy.m */,
-				36B1077D7538308210624AD84D2D9136 /* Pods-KPI Schedule-frameworks.sh */,
-				D630D1D9B3956184DB0E80BB36B7B210 /* Pods-KPI Schedule-Info.plist */,
-				1A9A7D231948F83010FE65D820A6B673 /* Pods-KPI Schedule-umbrella.h */,
-				9540224461A6DEFFC8ED3AA1D03FD057 /* Pods-KPI Schedule.debug.xcconfig */,
-				41AF3AAE5ED4697999D48040AA44C103 /* Pods-KPI Schedule.release.xcconfig */,
-			);
-			name = "Pods-KPI Schedule";
-			path = "Target Support Files/Pods-KPI Schedule";
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		25D6EBBD63793140F5FA93555D52A965 /* Targets Support Files */ = {
+		24353246F2F3EE1673F673DD6BC792DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0F4DA416BC33E798B9CFDC73801DFD54 /* Pods-KPI Schedule */,
-				BDE8F4AB99C1ABF093541970551CD1F3 /* Pods-KPI Schedule Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		356B750F0D8859C1B9B839616DCD4B7F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5F7ACA35972C546E77FC4F61023BB1A7 /* PromiseKit.modulemap */,
-				1D491DA799810E39CB75D3DBD038A363 /* PromiseKit.xcconfig */,
-				A81163DD28AD2FCC991D8E0992B61174 /* PromiseKit-dummy.m */,
-				39731DAEA006B26FFADCBC6B05B5C8F9 /* PromiseKit-Info.plist */,
-				FE39D7B3A609BA6D0C28F1DC008EE680 /* PromiseKit-prefix.pch */,
-				7F6B01BF234DC3C748DC48E961E024A1 /* PromiseKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PromiseKit";
-			sourceTree = "<group>";
-		};
-		483284EEC7641A72212DD7F738C10692 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				82D88F6F2DA3373998F136F2BD8F856B /* Pageboy.modulemap */,
-				11E1283A01656743550F8773E6003265 /* Pageboy.xcconfig */,
-				7D0AE0821166930D895BEB6B1FABF262 /* Pageboy-dummy.m */,
-				D9601A349B28D79C4C7968B6836C2D2B /* Pageboy-Info.plist */,
-				9D60546A3D78FA6435E7E1512D59D011 /* Pageboy-prefix.pch */,
-				730D1BA7EB6F65896DE8AB3224C9950C /* Pageboy-umbrella.h */,
+				4A619AA973C247BC924661F0F6D7A007 /* Pageboy.modulemap */,
+				BCAA12E403B1CC45AB320CBEEC193E3E /* Pageboy.xcconfig */,
+				43BF5BE95C66DA88C7610E76BCC7A689 /* Pageboy-dummy.m */,
+				AE3827312D2CE28CAB918199FD08712B /* Pageboy-Info.plist */,
+				E7E199343B604F0CF4AA276392B33A4B /* Pageboy-prefix.pch */,
+				296BC4F79BF94CA34AC9ACD05E4A1ECB /* Pageboy-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pageboy";
 			sourceTree = "<group>";
 		};
-		75A5681443C36BE2DC35AFC3213DA435 /* UIKit */ = {
+		25D6EBBD63793140F5FA93555D52A965 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				217A6CE4525A44D4612D64E32D0032E6 /* PMKUIKit.h */,
-				DE5B5D5FA72884B73962BB31F043C4EE /* UIView+AnyPromise.h */,
-				F62069C5647994C8729E696F28B1C435 /* UIView+AnyPromise.m */,
-				AAFBE5BE41AF7CED3DDDD2125923DACE /* UIView+Promise.swift */,
-				BE51089834A4C3B4B56F98D235C50985 /* UIViewController+AnyPromise.h */,
-				69901F25396BC96092746D7AF1E7912C /* UIViewController+AnyPromise.m */,
-				5E2C5FEC79F8AE12052C13AA6812FD9F /* UIViewPropertyAnimator+Promise.swift */,
+				28D58F34C2948BD6DAE4BB3BA7E9303D /* Pods-KPI Schedule */,
+				72E0A62A3FC48B12577EE6B717B20078 /* Pods-KPI Schedule Tests */,
 			);
-			name = UIKit;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7E6D1BBC3E28745A3023780E0A3771A5 /* Support Files */ = {
+		28D58F34C2948BD6DAE4BB3BA7E9303D /* Pods-KPI Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				930ABFB6B4CA2F8F05F4A3675439A1DF /* DZNEmptyDataSet.modulemap */,
-				DF2875D964C4E0D74F163B8A6EDC56CF /* DZNEmptyDataSet.xcconfig */,
-				8CEA8C3BCAFDA7060221594BC0588974 /* DZNEmptyDataSet-dummy.m */,
-				CC87658F0E89D7CFC8218B0D807C67EC /* DZNEmptyDataSet-Info.plist */,
-				8016ADFF9A6A55CFD5306DBCC12D6173 /* DZNEmptyDataSet-prefix.pch */,
-				5773F4C9ED7C10EFFF9CD13554330A56 /* DZNEmptyDataSet-umbrella.h */,
+				995565EBEF7ABA7108913DD75E329CF3 /* Pods-KPI Schedule.modulemap */,
+				B98EFBCE58A7B2EEB048EC2C6E07A48F /* Pods-KPI Schedule-acknowledgements.markdown */,
+				42053DAC6EB9F019201AB2223F377AEC /* Pods-KPI Schedule-acknowledgements.plist */,
+				21A7E6E535CD9B844603ABED4FAFC0CD /* Pods-KPI Schedule-dummy.m */,
+				5A02ECB9B38B6C3BB05515BF168DCB01 /* Pods-KPI Schedule-frameworks.sh */,
+				282B499B939129EB472E0A7E6ED37A0A /* Pods-KPI Schedule-Info.plist */,
+				E3C39D7B80134AF08716E952717EEDB7 /* Pods-KPI Schedule-umbrella.h */,
+				8CF289E4614ABAB8D7B9CC60576BEA7A /* Pods-KPI Schedule.debug.xcconfig */,
+				E6EE7830B126E60DBD13F8728D93EC10 /* Pods-KPI Schedule.release.xcconfig */,
+			);
+			name = "Pods-KPI Schedule";
+			path = "Target Support Files/Pods-KPI Schedule";
+			sourceTree = "<group>";
+		};
+		2F839DBC74B338F5906D6D3A073973BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E64BD60083EE400924FC99BBFC60C /* PromiseKit.modulemap */,
+				87390C9FC0408BDB6A13C49A67AE13F1 /* PromiseKit.xcconfig */,
+				F512FA47A7187EE22ECF8691D0078969 /* PromiseKit-dummy.m */,
+				9BF8A0F7637DB87504A8249936AC1026 /* PromiseKit-Info.plist */,
+				9177BA6F63DA1BE1FE210B6B925A2840 /* PromiseKit-prefix.pch */,
+				7D74E89C213C4DD84D7249ED16488BFF /* PromiseKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromiseKit";
+			sourceTree = "<group>";
+		};
+		3554208915E4281B9A7D2AFFBF8B1F28 /* CorePromise */ = {
+			isa = PBXGroup;
+			children = (
+				D6E843F15FDC4FD19A68422F6E2DC503 /* after.m */,
+				28EBA6CB22CF2FC66EA6A9E70F6EE11D /* after.swift */,
+				5072F6EF835B69E716408AD703CF1053 /* AnyPromise.h */,
+				3DC219987472B5CE48B4322A639E36EF /* AnyPromise.m */,
+				3666D40334E2DFE6E11831F32AD00241 /* AnyPromise.swift */,
+				13432ADB2325AA700B6AC67CE32BE183 /* Box.swift */,
+				64C0CF0F7F175E83858DD9871F9C374C /* Catchable.swift */,
+				222AF638D27F0BC41CE6692215C497CD /* Configuration.swift */,
+				2D829D95AD926DBF1F9B46D40B76FB72 /* CustomStringConvertible.swift */,
+				21B8E9590A3D491B6A519C56AEE31D6B /* Deprecations.swift */,
+				F9F596C4AB4BDA1904909727F699DD49 /* dispatch_promise.m */,
+				7C555F337C9CDDF65B4B7238A13FAA37 /* Error.swift */,
+				B5EF227FE390BD535B59987CCDEC2126 /* firstly.swift */,
+				5834913831B685085410E66DF5214CDE /* fwd.h */,
+				B4C81B3CD65A042C32511CB42259C0BF /* Guarantee.swift */,
+				8D666EB84DC4DCA7FCEC20740B2C5E6F /* hang.m */,
+				7BE2305638A6446343DFC30AE5ED3FF5 /* hang.swift */,
+				1A00379FB07D75C9CD05D8D72612123C /* join.m */,
+				4B9B18898D79F2F774E4E1885DAACE5E /* LogEvent.swift */,
+				7103B231B193DAEF3C6827270CC59F5F /* Promise.swift */,
+				A7A506EA383B6517E1A7C798ED28D1B8 /* PromiseKit.h */,
+				0A7599D17F9285EF91DA5AC67ED3C678 /* race.m */,
+				2142EA629119A77E37DD612754D6E3F4 /* race.swift */,
+				55519A2D0BAA5510464DBD30DF7898BA /* Resolver.swift */,
+				A294BCB23D0E931DB5AB25214C0C7613 /* Thenable.swift */,
+				1B4B17C3227A0F9C47B3A5F33645DF4E /* when.m */,
+				490EEB8E72F3634B2A311B1FEE837399 /* when.swift */,
+			);
+			name = CorePromise;
+			sourceTree = "<group>";
+		};
+		59F90E37CEC14FB4C3048E0750142B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet.framework */,
+				23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */,
+				C845DDCEF610256DFC3C3E3F43F91E09 /* Pods_KPI_Schedule.framework */,
+				0E8A2A51DE8365AA59B24BA9649B9D91 /* Pods_KPI_Schedule_Tests.framework */,
+				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		614BF392AE82BF587317A54D937F7196 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A6E985E03C0D884894D0FCDD159126 /* DZNEmptyDataSet */,
+				F374AECB252D1D86E5F26CAD7A8E02B6 /* Pageboy */,
+				8F61501558D808935027D5868C8A6FA8 /* PromiseKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		72E0A62A3FC48B12577EE6B717B20078 /* Pods-KPI Schedule Tests */ = {
+			isa = PBXGroup;
+			children = (
+				196FC747C610056E21E46159988B2DEA /* Pods-KPI Schedule Tests.modulemap */,
+				F69790D404B40373BF5CD2E2FAC4EE16 /* Pods-KPI Schedule Tests-acknowledgements.markdown */,
+				D1D13593FCE838D3CBB560F5A625E6B8 /* Pods-KPI Schedule Tests-acknowledgements.plist */,
+				D0908BDE0EB5890273ADFDA721E45817 /* Pods-KPI Schedule Tests-dummy.m */,
+				B50519AA0A03A5924A3CA04107962723 /* Pods-KPI Schedule Tests-frameworks.sh */,
+				8AADEBCDE9E1EC3F38A9C558CB8E0661 /* Pods-KPI Schedule Tests-Info.plist */,
+				6EE338E56961331265A22691C2EC4F63 /* Pods-KPI Schedule Tests-umbrella.h */,
+				D710BA0EFFEFC655387309CE55215C10 /* Pods-KPI Schedule Tests.debug.xcconfig */,
+				4C3A4811C574E30D1CF8B3ECFAE7AEB0 /* Pods-KPI Schedule Tests.release.xcconfig */,
+			);
+			name = "Pods-KPI Schedule Tests";
+			path = "Target Support Files/Pods-KPI Schedule Tests";
+			sourceTree = "<group>";
+		};
+		83BB88AFB6400B204EFD25D59DE9E75B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB5126CCD87E62C352652369C687383 /* DZNEmptyDataSet.modulemap */,
+				1C3F96091A72B6EA20E7F0ECDC755A21 /* DZNEmptyDataSet.xcconfig */,
+				F0BB24579CBCA6483708260DC8A2DD3A /* DZNEmptyDataSet-dummy.m */,
+				3D93CADBCAF3E47A1AFD031870870A40 /* DZNEmptyDataSet-Info.plist */,
+				16F0940CB1DBBC3F4DF61299E9074A33 /* DZNEmptyDataSet-prefix.pch */,
+				619D39CE0A4B89CF871F61278B0C00F8 /* DZNEmptyDataSet-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DZNEmptyDataSet";
 			sourceTree = "<group>";
 		};
-		9DDBE5B4793E44A55A2D57224AB2F98B /* Products */ = {
+		89810507C11842A16C245F4CD3F8C557 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				FB6E87AAADC6A4343E656C798B6E2FB3 /* DZNEmptyDataSet.framework */,
-				BA9A5550FE8296EBC67F878AEB365F08 /* Pageboy.framework */,
-				859C414E512279F20F1B2E3A2E72D48E /* Pods_KPI_Schedule.framework */,
-				5B3677538E56BF8D194A2704429AC197 /* Pods_KPI_Schedule_Tests.framework */,
-				03BBDA43D830383DC5BC87CF979B4EC4 /* PromiseKit.framework */,
+				D928C1EE282B4E24F51CEA343E68AF8B /* afterlife.swift */,
+				CBD97DD60C66FA13D5E8541855EABE97 /* NSNotificationCenter+AnyPromise.h */,
+				98240A3D178244D4AD38A9FF423767BA /* NSNotificationCenter+AnyPromise.m */,
+				8291EF926A7168063C64F2259968901F /* NSNotificationCenter+Promise.swift */,
+				4428A96FB2089A38F45E1DABE71D270B /* NSObject+Promise.swift */,
+				87F09F2ED89BA1DA1597AB6F70473824 /* NSTask+AnyPromise.h */,
+				8C05BAAD3BA4BDB0CA44DC948D14C155 /* NSTask+AnyPromise.m */,
+				205F9315FF27B74D8006C5BA900A3FCA /* NSURLSession+AnyPromise.h */,
+				CB8E1855DE0038B2DD29E721F0F1C6C2 /* NSURLSession+AnyPromise.m */,
+				040D0BE398A3DFDD324DAC2D340EAD70 /* NSURLSession+Promise.swift */,
+				720AA0B1CEB9A6CE4AFB03C801265F50 /* PMKFoundation.h */,
+				1E95958A80381878C18156B41CA24019 /* Process+Promise.swift */,
 			);
-			name = Products;
+			name = Foundation;
 			sourceTree = "<group>";
 		};
-		BDE8F4AB99C1ABF093541970551CD1F3 /* Pods-KPI Schedule Tests */ = {
+		8F61501558D808935027D5868C8A6FA8 /* PromiseKit */ = {
 			isa = PBXGroup;
 			children = (
-				78B177B42E2F6746612FAF9D382CC22F /* Pods-KPI Schedule Tests.modulemap */,
-				0A012A6EDECB8E07C310B0240FDE33B2 /* Pods-KPI Schedule Tests-acknowledgements.markdown */,
-				2EBBA71919AE73ECA3C177487157DCF5 /* Pods-KPI Schedule Tests-acknowledgements.plist */,
-				DFD49F8D8E5DC07AE24D16B06D822179 /* Pods-KPI Schedule Tests-dummy.m */,
-				3971A1EC250ED3114EE00DF45AA08EFE /* Pods-KPI Schedule Tests-frameworks.sh */,
-				4D986DB9FF24B822181B860A85EBFCE2 /* Pods-KPI Schedule Tests-Info.plist */,
-				26252EB91F886254901AE227FDD0D1D7 /* Pods-KPI Schedule Tests-umbrella.h */,
-				670143006BD1DE209B64834FCCD40797 /* Pods-KPI Schedule Tests.debug.xcconfig */,
-				6964C3CDDA85C0C32634E1528A4A57AA /* Pods-KPI Schedule Tests.release.xcconfig */,
+				3554208915E4281B9A7D2AFFBF8B1F28 /* CorePromise */,
+				89810507C11842A16C245F4CD3F8C557 /* Foundation */,
+				2F839DBC74B338F5906D6D3A073973BA /* Support Files */,
+				F952990AD2BDAC58884F6ED731EAAC49 /* UIKit */,
 			);
-			name = "Pods-KPI Schedule Tests";
-			path = "Target Support Files/Pods-KPI Schedule Tests";
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		99A6E985E03C0D884894D0FCDD159126 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				C49677E0CAFB528D76D12AE41BEACE05 /* UIScrollView+EmptyDataSet.h */,
+				7C9F422869B20A9AC1E9D022B4D4250B /* UIScrollView+EmptyDataSet.m */,
+				83BB88AFB6400B204EFD25D59DE9E75B /* Support Files */,
+			);
+			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -481,140 +490,134 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				EA8127CDB7C828B523FA56DD9D51C89A /* Pods */,
-				9DDBE5B4793E44A55A2D57224AB2F98B /* Products */,
+				614BF392AE82BF587317A54D937F7196 /* Pods */,
+				59F90E37CEC14FB4C3048E0750142B4A /* Products */,
 				25D6EBBD63793140F5FA93555D52A965 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D8C9D5CB102DFC32D188BF775D194FDF /* DZNEmptyDataSet */ = {
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4CF1A3028CD4AB5B7C41CC373805CF76 /* UIScrollView+EmptyDataSet.h */,
-				DED21C604E23A42112DA19209429E972 /* UIScrollView+EmptyDataSet.m */,
-				7E6D1BBC3E28745A3023780E0A3771A5 /* Support Files */,
-			);
-			name = DZNEmptyDataSet;
-			path = DZNEmptyDataSet;
-			sourceTree = "<group>";
-		};
-		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
-				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EA8127CDB7C828B523FA56DD9D51C89A /* Pods */ = {
+		F374AECB252D1D86E5F26CAD7A8E02B6 /* Pageboy */ = {
 			isa = PBXGroup;
 			children = (
-				D8C9D5CB102DFC32D188BF775D194FDF /* DZNEmptyDataSet */,
-				F2235EB1D0D343C56D1C995E7C0FC258 /* Pageboy */,
-				02A698A6F87090F564F8CA6D58C92B49 /* PromiseKit */,
+				8414188B45CE5C4C1D1395631D341FF1 /* DispatchQueue+main.swift */,
+				0F09C3AEE9D23856A04155B9E6D979C6 /* IndexedObjectMap.swift */,
+				9C6941556CA185BF5F5B45C6D0B6B780 /* NavigationDirection.swift */,
+				DD0165D1DAC2FA57952BC2C49EC66C8E /* Page.swift */,
+				5D27018E6BEE2473FBE1B47C298A4DD6 /* Pageboy.h */,
+				565354EE4C62C132EF333E310D84B8F0 /* PageboyAutoScroller.swift */,
+				902CC4C074A2ACB939A108214892CDC2 /* PageboyViewController.swift */,
+				2FA7D5E5ECC350B7E79C94AC8B59B91E /* PageboyViewController+AutoScrolling.swift */,
+				661FC59B00F8067E9BBC63EA8C4A5D08 /* PageboyViewController+Management.swift */,
+				3EE039DCDFB1BC07DF7B78A603518040 /* PageboyViewController+ScrollCalculations.swift */,
+				856F289960DE337C9546BB40D006A2EA /* PageboyViewController+ScrollDetection.swift */,
+				0DAD30CA485FC51A431DBEAF4440C3D8 /* PageboyViewController+Transitioning.swift */,
+				07A3CA185C1B11501D881441B011ADD5 /* PageboyViewController+Updating.swift */,
+				D5F5BE9DDCF46FC3E2C41D6C4D983D47 /* PageboyViewControllerDataSource.swift */,
+				42F0A5F93F5ECA379CD991D59B3A1913 /* PageboyViewControllerDelegate.swift */,
+				EB7196701D1B68F90D7D02A531FE2D05 /* TransitionOperation.swift */,
+				B69099143D3AB15C14701EB2BA7441E0 /* TransitionOperation+Action.swift */,
+				F6F1BDEAAAF1E83F651FAD547C386ED9 /* UIApplication+SafeShared.swift */,
+				27FBA402F1BBC2CF2107B0007ADB7563 /* UIPageViewController+ScrollView.swift */,
+				FDE3C9FEA9199738A7F371721D0FD3BE /* UIScrollView+ScrollActivity.swift */,
+				DEBF4245072B75511216AE3C294AA60C /* UIView+Animation.swift */,
+				D9B5ABC1C2A03CE6E1CEF5B2C9258736 /* UIView+AutoLayout.swift */,
+				A4329D80F28E3BF2B40240E19288CF6E /* UIView+Localization.swift */,
+				020FEA0A85203A00E0DBFEB149993183 /* UIViewController+Pageboy.swift */,
+				2027BF35324A20628D2A21E4F0F70B6F /* WeakContainer.swift */,
+				24353246F2F3EE1673F673DD6BC792DA /* Support Files */,
 			);
-			name = Pods;
+			path = Pageboy;
 			sourceTree = "<group>";
 		};
-		F2235EB1D0D343C56D1C995E7C0FC258 /* Pageboy */ = {
+		F952990AD2BDAC58884F6ED731EAAC49 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B1AFD636842196F232767E17A48723C5 /* DispatchQueue+main.swift */,
-				5CA09410DCDD162495F8D15622AB6F9F /* NavigationDirection.swift */,
-				50D39C304352473B722DA37A6942268F /* Page.swift */,
-				4AB14263979524821DE5FD16939D826E /* Pageboy.h */,
-				5194E1937E56AD79AEEE0B55B3FE26DC /* PageboyAutoScroller.swift */,
-				A8173211328F5D6707EEF9751913C6FA /* PageboyViewController.swift */,
-				573A9ED9C1C35221670941BFFB1BD56C /* PageboyViewController+AutoScrolling.swift */,
-				97AC98B23832580BF2D5AEC37C9A9AAE /* PageboyViewController+Management.swift */,
-				9261DD7747B13C607D29B7273883D232 /* PageboyViewController+ScrollCalculations.swift */,
-				328DF71DB531DD20C5680BF3C0793069 /* PageboyViewController+ScrollDetection.swift */,
-				37A74FF11FF2E79C785C10924F657C23 /* PageboyViewController+Transitioning.swift */,
-				44C5DD421536BE0A2F5DF8D99550A9E2 /* PageboyViewController+Updating.swift */,
-				DC50173B7AFB26BB60170B88A9330FD8 /* PageboyViewControllerDataSource.swift */,
-				012CEBE442E1B5407F0AC108F6C0FAA9 /* PageboyViewControllerDelegate.swift */,
-				58647CD4E061F299D0C143FDDAEA26B0 /* TransitionOperation.swift */,
-				D17DC3526CB7DDE5AE91D44DBAA17E9D /* TransitionOperation+Action.swift */,
-				92F4DE2839839C9CC154EB3678414EC5 /* UIApplication+SafeShared.swift */,
-				F245FC9DFF72624F8DAA8D12152F63BD /* UIPageViewController+ScrollView.swift */,
-				FC423CAD5A4918CDBF37EDBEDFD8EACD /* UIScrollView+ScrollActivity.swift */,
-				D105198EDFFD4F8B21B990128E7AAEA4 /* UIView+Animation.swift */,
-				BB5908CA38BE2C3F75FFB9DEED42C799 /* UIView+AutoLayout.swift */,
-				6C73451B00CF6527579587AF29F771DF /* UIView+Localization.swift */,
-				DCC508BB29C5D2F99756B82398783BA7 /* UIViewController+Pageboy.swift */,
-				483284EEC7641A72212DD7F738C10692 /* Support Files */,
+				C592E40D49193CD40B55DDEEDF9136BC /* PMKUIKit.h */,
+				A3BB2E6450CB48056C14F4A13D1E9BF3 /* UIView+AnyPromise.h */,
+				B5B858E71E4AA4986641061305A42194 /* UIView+AnyPromise.m */,
+				5F285729C2607A80C558995392D8F668 /* UIView+Promise.swift */,
+				9F1BB2AE31A0C085C29FD96A38F0130B /* UIViewController+AnyPromise.h */,
+				2660B93A4AC834B337CAAB80B4455710 /* UIViewController+AnyPromise.m */,
+				12B71E7E36B581AEE4EC9BFB75113AE3 /* UIViewPropertyAnimator+Promise.swift */,
 			);
-			name = Pageboy;
-			path = Pageboy;
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		007201E17B1CC29495B2415542676C6F /* Headers */ = {
+		32CD8CD4D84F9F88185DBFAC7505622E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27ECE162C30B043B06FDA84645F69B85 /* Pageboy-umbrella.h in Headers */,
-				DA38644A2E1DCEA102D5D07B80F17F41 /* Pageboy.h in Headers */,
+				F6795E076E819D018FD1085F75CD7C47 /* DZNEmptyDataSet-umbrella.h in Headers */,
+				030ABED9269F2E64B98FDF902D827F64 /* UIScrollView+EmptyDataSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		204C669900A25689E9234D792FCCC197 /* Headers */ = {
+		7CF1637A149D2A50F1846A83FFDEEC6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BDF60216AC3C890BD70428634ED7A2 /* AnyPromise.h in Headers */,
-				7E02110382C56F1E82D0E900B8C91A6C /* fwd.h in Headers */,
-				A29CED3FD48E0986C98C267CB89ACB6B /* NSNotificationCenter+AnyPromise.h in Headers */,
-				461BC9A8381C26AD9B6C3986825F04C3 /* NSTask+AnyPromise.h in Headers */,
-				AF692A980FCFFB1FC0E1824D3D69B831 /* NSURLSession+AnyPromise.h in Headers */,
-				BFFABBE460B3489C7985B0DD2EE0CA0A /* PMKFoundation.h in Headers */,
-				898E287B670B446EB5C77689BD3240BE /* PMKUIKit.h in Headers */,
-				A5704E78083A55B6302281CB11650899 /* PromiseKit-umbrella.h in Headers */,
-				0269A2A0AFDA23F876B986B9FB2812B1 /* PromiseKit.h in Headers */,
-				0CB070CABDAC5DC26CFCC1BD820FA8BC /* UIView+AnyPromise.h in Headers */,
-				8E455900124177EB1873BE398D3B409A /* UIViewController+AnyPromise.h in Headers */,
+				79F73BA854A7EC559E464EC446493D52 /* AnyPromise.h in Headers */,
+				D4C52546E7DEE38CEE04F2B6D61BB9E2 /* fwd.h in Headers */,
+				DBEF0F49E57B3321CC7067EEF33AB582 /* NSNotificationCenter+AnyPromise.h in Headers */,
+				3AAE347ADDFEFAC7DDECBC744D1BD6AC /* NSTask+AnyPromise.h in Headers */,
+				EAC994EA457048CA6AA49B82C9F05DF4 /* NSURLSession+AnyPromise.h in Headers */,
+				5D2D358E754D92564B259BBACFBA8271 /* PMKFoundation.h in Headers */,
+				60F874ED0F6234A4417CAFDE554D088D /* PMKUIKit.h in Headers */,
+				968B5CC9B9B0A7E92FACEEBEA3C0DA13 /* PromiseKit-umbrella.h in Headers */,
+				33B79E4BFF8D25E1A705E2C469BBCA9B /* PromiseKit.h in Headers */,
+				59AA176600E91A56BC244B381305060B /* UIView+AnyPromise.h in Headers */,
+				E425FBEC27FF20E38E5F71856145D72C /* UIViewController+AnyPromise.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		771EACB898D910EE4CE606D9CE79C77B /* Headers */ = {
+		82862A980419B48A183C9BB3FEF0E282 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FBE75262050C1CAEBD3830FD0F6A19C /* Pods-KPI Schedule-umbrella.h in Headers */,
+				879CAFA0DBE57FDB70FE92565F432E8C /* Pods-KPI Schedule Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9369D60C4DF457F53D7B1E11921E5473 /* Headers */ = {
+		D0884839A85C2FB97033A398B5A802CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0387B92123D9002B334B3E62512C3CCE /* DZNEmptyDataSet-umbrella.h in Headers */,
-				F465558938D19F2352CD00E23A72C0D0 /* UIScrollView+EmptyDataSet.h in Headers */,
+				9760811C569E9476915734BDF3E9B42A /* Pods-KPI Schedule-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2BF987AA903B8CD4A0714236C05CC89 /* Headers */ = {
+		EF3CD441D484B2FE0EA8A0B9576E46E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E24B6B822379E8045BD1DF69F3F490 /* Pods-KPI Schedule Tests-umbrella.h in Headers */,
+				0DBF37C2F6DFD638D38F485FFC0D13C4 /* Pageboy-umbrella.h in Headers */,
+				A155C34EB1DC74B8438AFDEB728CD205 /* Pageboy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0CC2D9443A1E6CE138AE72A6717A9ADD /* Pageboy */ = {
+		06201A837B408E21A6F416D49AF9A573 /* Pageboy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B3557E762C4DFFDA9A83B35F3C863D5C /* Build configuration list for PBXNativeTarget "Pageboy" */;
+			buildConfigurationList = 54292FD7D9B29A260976D5F4CAEDCD3D /* Build configuration list for PBXNativeTarget "Pageboy" */;
 			buildPhases = (
-				007201E17B1CC29495B2415542676C6F /* Headers */,
-				8ED439C43531799F8171D6A11E663875 /* Sources */,
-				52B848341D1D6D2A01602DD798AEC89C /* Frameworks */,
-				95AB0825BE33D958366B5ECADBC52791 /* Resources */,
+				EF3CD441D484B2FE0EA8A0B9576E46E3 /* Headers */,
+				286F6158704323EC92AF478CBA48C7AB /* Sources */,
+				BF61D9EBB57EDF58DAFEA2B5F5B1A87C /* Frameworks */,
+				5E68A1175047328EF607485D137066A0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -622,17 +625,57 @@
 			);
 			name = Pageboy;
 			productName = Pageboy;
-			productReference = BA9A5550FE8296EBC67F878AEB365F08 /* Pageboy.framework */;
+			productReference = 23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0D6799C9910D58A020CA2C196B6FA056 /* PromiseKit */ = {
+		08A45AF3FAED43929F48AB0E66C4A988 /* Pods-KPI Schedule Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E15FBAE54899D7FCA08F733C2B16A446 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildConfigurationList = CDB465D260DA7F5241ADAF1BF37DD27F /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule Tests" */;
 			buildPhases = (
-				204C669900A25689E9234D792FCCC197 /* Headers */,
-				06418886F1DE06DF7051EF1BB0325563 /* Sources */,
-				08F8E3755EEFBEFEBAB6C98F192DAA78 /* Frameworks */,
-				9211A017F4D4F05914C33DDE85FD4437 /* Resources */,
+				82862A980419B48A183C9BB3FEF0E282 /* Headers */,
+				EF7758A714A5BAC098FD27FDBCAD5D98 /* Sources */,
+				6C8152D1695B67DF46A5C384C410D25D /* Frameworks */,
+				32867D85879D928653C13D782D63187D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A874B944656CDFC05A0199EA845123AC /* PBXTargetDependency */,
+			);
+			name = "Pods-KPI Schedule Tests";
+			productName = "Pods-KPI Schedule Tests";
+			productReference = 0E8A2A51DE8365AA59B24BA9649B9D91 /* Pods_KPI_Schedule_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F7B2A1494B63A3E6AEEDACA855B991D /* Pods-KPI Schedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88790C01C95E8211047F851330060D6C /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule" */;
+			buildPhases = (
+				D0884839A85C2FB97033A398B5A802CE /* Headers */,
+				1C25B245644A60A1B70F918B6792BC39 /* Sources */,
+				6A9F86D27389F6EDDA5DDFCEFCBEF665 /* Frameworks */,
+				0756BD66A6C91A01196D7404D9FA251D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B3E1BAADEB5A8A7C355378EC911DD9 /* PBXTargetDependency */,
+				619D75156C3BEF0102C9E944C9A98CF8 /* PBXTargetDependency */,
+				B4B1DD58F61FE07E17CEA65ABD58F9ED /* PBXTargetDependency */,
+			);
+			name = "Pods-KPI Schedule";
+			productName = "Pods-KPI Schedule";
+			productReference = C845DDCEF610256DFC3C3E3F43F91E09 /* Pods_KPI_Schedule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 058DF38F5922F24842B97693B0188F2D /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildPhases = (
+				7CF1637A149D2A50F1846A83FFDEEC6F /* Headers */,
+				5E5F9E7DC1D3B74E7C15141C2B3E9BD5 /* Sources */,
+				46F9214900CE1F500D4E081AC05BDD61 /* Frameworks */,
+				409EA903AAA7848EE17474A886579F4C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -640,17 +683,17 @@
 			);
 			name = PromiseKit;
 			productName = PromiseKit;
-			productReference = 03BBDA43D830383DC5BC87CF979B4EC4 /* PromiseKit.framework */;
+			productReference = 002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3310EEFF328C58D7A02083727BC09E65 /* DZNEmptyDataSet */ = {
+		F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E247B679229F323E8B52D483BEDD7E55 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
+			buildConfigurationList = 4623BF75FC689195BAB4277E02EB7001 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
 			buildPhases = (
-				9369D60C4DF457F53D7B1E11921E5473 /* Headers */,
-				15FF6D4F60DF912AD9725643B7F59675 /* Sources */,
-				A9E51BC5E6D969E8DD100BA8AB7DFB69 /* Frameworks */,
-				5C68ED540AC86354E6C5418CBA597D45 /* Resources */,
+				32CD8CD4D84F9F88185DBFAC7505622E /* Headers */,
+				EBF93C37DB518E655DBE127CBBE1373C /* Sources */,
+				65D0F38C8974C31345B8DB1A5C27DB6F /* Frameworks */,
+				E99C89A8DCED47013480BA6FD5E8A52B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -658,47 +701,7 @@
 			);
 			name = DZNEmptyDataSet;
 			productName = DZNEmptyDataSet;
-			productReference = FB6E87AAADC6A4343E656C798B6E2FB3 /* DZNEmptyDataSet.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		417CC29510DCAC42EF23E6CBB5D6F5AB /* Pods-KPI Schedule Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FF03D5412DC3EBB3647FC51D0E3CBCA2 /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule Tests" */;
-			buildPhases = (
-				D2BF987AA903B8CD4A0714236C05CC89 /* Headers */,
-				6410E1E19FB2C41AA32720B93016A2B7 /* Sources */,
-				6162F3BE78E9475E4DD39556DC016EE2 /* Frameworks */,
-				8F984CAB4D0E93380CF748F8CA92EC34 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				462D7787E08C3009EC5F24672C959612 /* PBXTargetDependency */,
-			);
-			name = "Pods-KPI Schedule Tests";
-			productName = "Pods-KPI Schedule Tests";
-			productReference = 5B3677538E56BF8D194A2704429AC197 /* Pods_KPI_Schedule_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		84944A4AF70930A357FA051E7F29257E /* Pods-KPI Schedule */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73E15E6063133ED50FA3BB94587D532D /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule" */;
-			buildPhases = (
-				771EACB898D910EE4CE606D9CE79C77B /* Headers */,
-				30ADDE0BC493B6FEA1EDC4D133A3BCA9 /* Sources */,
-				7DE1CC9EA774254A6480F56AF8DC4A6E /* Frameworks */,
-				34002AB5ED8E90BE169F3C814A0F0888 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53F99F5B66C72B6CA42513EC3572C58D /* PBXTargetDependency */,
-				E8EBFF18E5E9A49F2A8B882F63352294 /* PBXTargetDependency */,
-				F78819E6BF8BDE3A738D617F8B26C551 /* PBXTargetDependency */,
-			);
-			name = "Pods-KPI Schedule";
-			productName = "Pods-KPI Schedule";
-			productReference = 859C414E512279F20F1B2E3A2E72D48E /* Pods_KPI_Schedule.framework */;
+			productReference = 5DA4577FE3BC4A03751108FFED07B385 /* DZNEmptyDataSet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -707,60 +710,61 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 9DDBE5B4793E44A55A2D57224AB2F98B /* Products */;
+			productRefGroup = 59F90E37CEC14FB4C3048E0750142B4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3310EEFF328C58D7A02083727BC09E65 /* DZNEmptyDataSet */,
-				0CC2D9443A1E6CE138AE72A6717A9ADD /* Pageboy */,
-				84944A4AF70930A357FA051E7F29257E /* Pods-KPI Schedule */,
-				417CC29510DCAC42EF23E6CBB5D6F5AB /* Pods-KPI Schedule Tests */,
-				0D6799C9910D58A020CA2C196B6FA056 /* PromiseKit */,
+				F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */,
+				06201A837B408E21A6F416D49AF9A573 /* Pageboy */,
+				6F7B2A1494B63A3E6AEEDACA855B991D /* Pods-KPI Schedule */,
+				08A45AF3FAED43929F48AB0E66C4A988 /* Pods-KPI Schedule Tests */,
+				7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		34002AB5ED8E90BE169F3C814A0F0888 /* Resources */ = {
+		0756BD66A6C91A01196D7404D9FA251D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C68ED540AC86354E6C5418CBA597D45 /* Resources */ = {
+		32867D85879D928653C13D782D63187D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F984CAB4D0E93380CF748F8CA92EC34 /* Resources */ = {
+		409EA903AAA7848EE17474A886579F4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9211A017F4D4F05914C33DDE85FD4437 /* Resources */ = {
+		5E68A1175047328EF607485D137066A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95AB0825BE33D958366B5ECADBC52791 /* Resources */ = {
+		E99C89A8DCED47013480BA6FD5E8A52B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -770,136 +774,383 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		06418886F1DE06DF7051EF1BB0325563 /* Sources */ = {
+		1C25B245644A60A1B70F918B6792BC39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5356172FF2D8B1693C7AA2AECD0F0532 /* after.m in Sources */,
-				FE6043FB4D82104308C003CEFBDC0AB7 /* after.swift in Sources */,
-				BE7D4EAF914D7A939CB48CC5CB2FD999 /* afterlife.swift in Sources */,
-				80CF292B3FDC2E16E192F199B3881558 /* AnyPromise.m in Sources */,
-				962B36834D621FBB1C96C0E1E6FD300C /* AnyPromise.swift in Sources */,
-				4040672A543B7D6633C7A606130AB3CF /* Box.swift in Sources */,
-				21A1539DFE54D9F2DED25470AD7D6E47 /* Catchable.swift in Sources */,
-				BEC177746E398274C15FD23140734482 /* Configuration.swift in Sources */,
-				1FD9A9D5D1FC8A93B3078EE048F47890 /* CustomStringConvertible.swift in Sources */,
-				ABE887876C9DA6A9E2D2EF7E53E43CC2 /* Deprecations.swift in Sources */,
-				DF3ED4829B247623640688FBBF36FBD1 /* dispatch_promise.m in Sources */,
-				87657769CFB586F872070AD5ECEE5993 /* Error.swift in Sources */,
-				04BA80BDE03B6D0FB453AB3397570E9E /* firstly.swift in Sources */,
-				7D67292E214CAB2F8E6571F80807D128 /* Guarantee.swift in Sources */,
-				F7915BECD9AABA5980A314527C265183 /* hang.m in Sources */,
-				C043DDAC431079366DEB3A8891AE7013 /* hang.swift in Sources */,
-				442CFE53D93D77044EB08F6E4F3E7FF2 /* join.m in Sources */,
-				81D6409EE17962537BE4B578D76B3851 /* LogEvent.swift in Sources */,
-				E489D85B0C3F6D16DB521FBC5789656D /* NSNotificationCenter+AnyPromise.m in Sources */,
-				4399C4C274E67F2C879B2ED7C7246F51 /* NSNotificationCenter+Promise.swift in Sources */,
-				E1ED98E7C9ACA359A7F0E080759FD8D4 /* NSObject+Promise.swift in Sources */,
-				7A7049139F0D432AF0778E03430E75F9 /* NSTask+AnyPromise.m in Sources */,
-				5EFA73D76802FAF96E1096C245B58F28 /* NSURLSession+AnyPromise.m in Sources */,
-				004590F333CD9EC16133BF013ADB8478 /* NSURLSession+Promise.swift in Sources */,
-				A88200272A28C8ADDD72F28E4D628BA0 /* Process+Promise.swift in Sources */,
-				B612C12E6D192FA8B56F22556CA45F61 /* Promise.swift in Sources */,
-				22E7C17A7A1F21F22FBE7FC8DFD4CCA1 /* PromiseKit-dummy.m in Sources */,
-				4CF0166150275554BF1E5BF48D5B93E9 /* race.m in Sources */,
-				24DB79C0D66F9900DDC38F30AA1E4041 /* race.swift in Sources */,
-				D170FEB7EA06A8C9D4144D29F135BB88 /* Resolver.swift in Sources */,
-				422D54C40E23985F4974721138108EC9 /* Thenable.swift in Sources */,
-				4C8B1FD40FA099A219F4F9116B83851A /* UIView+AnyPromise.m in Sources */,
-				35199E8970D9690FD59D2DE530C0C271 /* UIView+Promise.swift in Sources */,
-				A8B4EDF22486F06C752C6682433A87C0 /* UIViewController+AnyPromise.m in Sources */,
-				13405A22B922201DC6D1A3D73932FA47 /* UIViewPropertyAnimator+Promise.swift in Sources */,
-				BD8047E6C86CEE766C86D647AFF9D24A /* when.m in Sources */,
-				CB1E38153AB4D5D15F41E02063443A5A /* when.swift in Sources */,
+				D3208EF9EEE22C4C4658D53A7997B4C8 /* Pods-KPI Schedule-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15FF6D4F60DF912AD9725643B7F59675 /* Sources */ = {
+		286F6158704323EC92AF478CBA48C7AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13DD4ECFF47226B73E6CF2880718123 /* DZNEmptyDataSet-dummy.m in Sources */,
-				1F20A399BC5D31252CE28515FAA02D7D /* UIScrollView+EmptyDataSet.m in Sources */,
+				CE78A989A4188AF4A1F6E4CA66F276AD /* DispatchQueue+main.swift in Sources */,
+				78C02865AE43A78DF4904215F25E1796 /* IndexedObjectMap.swift in Sources */,
+				28B7DAC0FBCE98D36D94D872AA9F0BFB /* NavigationDirection.swift in Sources */,
+				6EBB0761ABA13EF517618256AEBE64E4 /* Page.swift in Sources */,
+				2C5AA48B191FF9F734B8462175C45D9F /* Pageboy-dummy.m in Sources */,
+				B6731AA1A8B64F945A6E189998ACBE44 /* PageboyAutoScroller.swift in Sources */,
+				D62C637390B7611A2E992560B6B53147 /* PageboyViewController+AutoScrolling.swift in Sources */,
+				E5C5D9B95DA53AC07E922DA1EE51A3D8 /* PageboyViewController+Management.swift in Sources */,
+				DD0F89F70F05744D1A083AA8D8D43BA0 /* PageboyViewController+ScrollCalculations.swift in Sources */,
+				817B30EB92F2EF8E1A6F770C6D99FEA9 /* PageboyViewController+ScrollDetection.swift in Sources */,
+				78DA5523DC75CE990020240FFBE938C4 /* PageboyViewController+Transitioning.swift in Sources */,
+				F13757DC196642F1629AA4B47EA57379 /* PageboyViewController+Updating.swift in Sources */,
+				3B702C2BEB25C579CA7CA826667ECC02 /* PageboyViewController.swift in Sources */,
+				6AD4ACB4B3370545B577657692218787 /* PageboyViewControllerDataSource.swift in Sources */,
+				34A205AD76EB08EE96AE88E0B2920EE6 /* PageboyViewControllerDelegate.swift in Sources */,
+				B209FB0358B5B144B8B98CB6FECF94C6 /* TransitionOperation+Action.swift in Sources */,
+				57FCCCFC5A7FC0E944300371F0A6666F /* TransitionOperation.swift in Sources */,
+				828E452494AEC5BBE66B9D12AB2C5C6E /* UIApplication+SafeShared.swift in Sources */,
+				DA06914C15CDE3F35C1E28C4AA28A0E4 /* UIPageViewController+ScrollView.swift in Sources */,
+				C9F49AE0CF7DB4C85D82D7FD3020D500 /* UIScrollView+ScrollActivity.swift in Sources */,
+				AF25C84D44C0CB3DE1056DE5F443E578 /* UIView+Animation.swift in Sources */,
+				8E28416F689CAE2A93FD55B2E3CEA689 /* UIView+AutoLayout.swift in Sources */,
+				A4EDB69211196E394E7E6A4EC454AC10 /* UIView+Localization.swift in Sources */,
+				52FA52571F89FCD16343E1624F387DA5 /* UIViewController+Pageboy.swift in Sources */,
+				638D5EFBAD5C5506F093D45144D4B3DB /* WeakContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30ADDE0BC493B6FEA1EDC4D133A3BCA9 /* Sources */ = {
+		5E5F9E7DC1D3B74E7C15141C2B3E9BD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247F9B2FFB18C8E718CA21CBC1FFAFB9 /* Pods-KPI Schedule-dummy.m in Sources */,
+				4981C37D541CDA8BCB7DE77E6607AC50 /* after.m in Sources */,
+				3378C1EEFC149B899433AF30F147CE32 /* after.swift in Sources */,
+				A5F5D7A20264221D4A7F489FB0060D34 /* afterlife.swift in Sources */,
+				A1E6C35C5B3ECB558FE1AF9B1FAAB53B /* AnyPromise.m in Sources */,
+				EF8241DFA90BCDBB97B8C504BB80D05C /* AnyPromise.swift in Sources */,
+				9BFE70DD7ECA3C6183B82DE691FE4491 /* Box.swift in Sources */,
+				4418281931C4D1176F2C541CDD770F14 /* Catchable.swift in Sources */,
+				1C5D3593B983B9369EFCFDE7D4DE0D19 /* Configuration.swift in Sources */,
+				9B65647B927085E2366117D59DC1586D /* CustomStringConvertible.swift in Sources */,
+				B593B56495A204E756BAA753BA2D6E9C /* Deprecations.swift in Sources */,
+				C7ECF714064C1188A6D042C6ACFD9504 /* dispatch_promise.m in Sources */,
+				37018D3DC554A00E9B3E306A28296316 /* Error.swift in Sources */,
+				FB797FAA96B41ACE7474B8ADEF8107EC /* firstly.swift in Sources */,
+				4D65C782220C5E27BF8A3B61EBBDAB3E /* Guarantee.swift in Sources */,
+				301B5F7669D2DC7E46384FBAC71B7C19 /* hang.m in Sources */,
+				FED8C9BB577D35DBB6E5347B750C184C /* hang.swift in Sources */,
+				15901C26A398A72C746D1369042356B6 /* join.m in Sources */,
+				C5EF8FBC11CA9E66100F6489B57E35A6 /* LogEvent.swift in Sources */,
+				C426E30A28E2545BCA2824DBCF90816F /* NSNotificationCenter+AnyPromise.m in Sources */,
+				29643F7A000899634C9174BCB8D1A1AB /* NSNotificationCenter+Promise.swift in Sources */,
+				B758241FBF6592EFBE6283378D16F9FD /* NSObject+Promise.swift in Sources */,
+				FDF12428281F08B3F5F2B7DB68E3925D /* NSTask+AnyPromise.m in Sources */,
+				5802BD2A7E671D3015BE4E98C13D10CB /* NSURLSession+AnyPromise.m in Sources */,
+				3208DDEB9CAC16AC7D2C7E9A7F057DC1 /* NSURLSession+Promise.swift in Sources */,
+				EF9BBCE851B820D4F5DA3163BF466A38 /* Process+Promise.swift in Sources */,
+				6DE830042E36FDE326546970CA90F9B6 /* Promise.swift in Sources */,
+				18DF6A317CCB7F5BEE8D7AF5D79AEB38 /* PromiseKit-dummy.m in Sources */,
+				46C4120B8C66DBCBEEC55D09F043D618 /* race.m in Sources */,
+				4EC7BD8654B3587F1F725E812C9D828C /* race.swift in Sources */,
+				997870D5F490326F024B4D8687FF18DC /* Resolver.swift in Sources */,
+				025EED6A44FE486DD84DA9D38AC02AA0 /* Thenable.swift in Sources */,
+				52F57EB35132E86D75FE9443258EFDBF /* UIView+AnyPromise.m in Sources */,
+				69DBAB1E3A8EEBFCC466D95509DE7125 /* UIView+Promise.swift in Sources */,
+				9447BD0FB408B2A7C9BFDFF99BBE1EBE /* UIViewController+AnyPromise.m in Sources */,
+				42495A8941D9B42B07F032390AA2389F /* UIViewPropertyAnimator+Promise.swift in Sources */,
+				208EDAA1D258CAA2BD08E462359D4FFF /* when.m in Sources */,
+				73EA1C553B580637369E1D5A72A425B3 /* when.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6410E1E19FB2C41AA32720B93016A2B7 /* Sources */ = {
+		EBF93C37DB518E655DBE127CBBE1373C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C363E3200B9B7CFCA3BAA606E3748E25 /* Pods-KPI Schedule Tests-dummy.m in Sources */,
+				B02556A07A82E12A80FB59147FC55FFE /* DZNEmptyDataSet-dummy.m in Sources */,
+				9C7D266B70B4CE1E0747470B1184789F /* UIScrollView+EmptyDataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8ED439C43531799F8171D6A11E663875 /* Sources */ = {
+		EF7758A714A5BAC098FD27FDBCAD5D98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87E9FEF20118CA7E3C1DDE6AFBBF63E /* DispatchQueue+main.swift in Sources */,
-				0B5AF60F3F052163778639F31802C54A /* NavigationDirection.swift in Sources */,
-				1E0CA465B1D87E4866667C4D05084EAE /* Page.swift in Sources */,
-				1453C19525B08A843F49D14E1F30DD1C /* Pageboy-dummy.m in Sources */,
-				3824B9DDBB5C7B576C8A1AAB6FE8BA6E /* PageboyAutoScroller.swift in Sources */,
-				8A058E9E642C6F6047D733D98AE1BE3C /* PageboyViewController+AutoScrolling.swift in Sources */,
-				AADB2358C8EB7435D488757D05DC9CC4 /* PageboyViewController+Management.swift in Sources */,
-				2805CDF104A81809DECE07EFAB4F2A57 /* PageboyViewController+ScrollCalculations.swift in Sources */,
-				4F034807DF960713C65E7BAF0BF163B0 /* PageboyViewController+ScrollDetection.swift in Sources */,
-				EA3286661A93D7647C5E64D3224A08F9 /* PageboyViewController+Transitioning.swift in Sources */,
-				66D513FB203384B59A64C6A07C72C932 /* PageboyViewController+Updating.swift in Sources */,
-				C55A4DD1FC510EAA059F85D15C2D5D18 /* PageboyViewController.swift in Sources */,
-				AEC891D775C81D1A71B97890150ED843 /* PageboyViewControllerDataSource.swift in Sources */,
-				63556D7CEF11F2BB51AD027E6DAAFDA1 /* PageboyViewControllerDelegate.swift in Sources */,
-				51FE9537DCAB400EF5FD6A549DC5038E /* TransitionOperation+Action.swift in Sources */,
-				65F8F2A346B5FC1861A6589413820438 /* TransitionOperation.swift in Sources */,
-				F1B2B8912438551E34BD3763DE92DF0E /* UIApplication+SafeShared.swift in Sources */,
-				C4FF56F85A2D1AB18C3FE74C57A874D6 /* UIPageViewController+ScrollView.swift in Sources */,
-				E019462461B91663148A8A67EEF5F771 /* UIScrollView+ScrollActivity.swift in Sources */,
-				27694925F1E0563B7B0214C4BFD0DD1B /* UIView+Animation.swift in Sources */,
-				103F1D0DE971566ACC8C66302C4D7487 /* UIView+AutoLayout.swift in Sources */,
-				156778B4DDD5B94BE736DB59C1770F17 /* UIView+Localization.swift in Sources */,
-				5C43DB3630EFDD54D1FE090E184E0BD6 /* UIViewController+Pageboy.swift in Sources */,
+				E39BD56BD4E368A73AAE1F06785EFE1D /* Pods-KPI Schedule Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		462D7787E08C3009EC5F24672C959612 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PromiseKit;
-			target = 0D6799C9910D58A020CA2C196B6FA056 /* PromiseKit */;
-			targetProxy = 6008AE95AB1E5A83234A04CFB4AD4BE1 /* PBXContainerItemProxy */;
-		};
-		53F99F5B66C72B6CA42513EC3572C58D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DZNEmptyDataSet;
-			target = 3310EEFF328C58D7A02083727BC09E65 /* DZNEmptyDataSet */;
-			targetProxy = D3B3613CC439BFDBE998D17411B73B9D /* PBXContainerItemProxy */;
-		};
-		E8EBFF18E5E9A49F2A8B882F63352294 /* PBXTargetDependency */ = {
+		619D75156C3BEF0102C9E944C9A98CF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pageboy;
-			target = 0CC2D9443A1E6CE138AE72A6717A9ADD /* Pageboy */;
-			targetProxy = 2A45E02C34095E7E1F39EDAFB5D97F33 /* PBXContainerItemProxy */;
+			target = 06201A837B408E21A6F416D49AF9A573 /* Pageboy */;
+			targetProxy = 3114F18877A4A416FC399517E0C2EA2E /* PBXContainerItemProxy */;
 		};
-		F78819E6BF8BDE3A738D617F8B26C551 /* PBXTargetDependency */ = {
+		A874B944656CDFC05A0199EA845123AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PromiseKit;
-			target = 0D6799C9910D58A020CA2C196B6FA056 /* PromiseKit */;
-			targetProxy = B7D045B636E729CA87412845B41B8A46 /* PBXContainerItemProxy */;
+			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
+			targetProxy = 2484BCDF58EC8A2F2FBEA468556BD4B0 /* PBXContainerItemProxy */;
+		};
+		A9B3E1BAADEB5A8A7C355378EC911DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			target = F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */;
+			targetProxy = 5A23BC8A4CB2A15336F7CB0A89AF7BEE /* PBXContainerItemProxy */;
+		};
+		B4B1DD58F61FE07E17CEA65ABD58F9ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
+			targetProxy = B37AF48DF04C6F2FD8B66BBC4C6F8B16 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+		260089ACF71F672CB5334FFDF3383E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3F96091A72B6EA20E7F0ECDC755A21 /* DZNEmptyDataSet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
+				PRODUCT_NAME = DZNEmptyDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		379DE1CA50612555BDD6F2484E2F0256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D710BA0EFFEFC655387309CE55215C10 /* Pods-KPI Schedule Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A85AECD9396E86D3A52A1149F3506CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87390C9FC0408BDB6A13C49A67AE13F1 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/PromiseKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				PRODUCT_MODULE_NAME = PromiseKit;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8040AFFE8CC23E2EA8D56A0513CD8032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C3A4811C574E30D1CF8B3ECFAE7AEB0 /* Pods-KPI Schedule Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		862E269C71D48E9FC51AB0DC899897EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6EE7830B126E60DBD13F8728D93EC10 /* Pods-KPI Schedule.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -958,16 +1209,15 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		0A4B90FED60ECA42ADFA9F0B77045A63 /* Release */ = {
+		C232EB54DDDEB37F0F2E3546BE9414FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6964C3CDDA85C0C32634E1528A4A57AA /* Pods-KPI Schedule Tests.release.xcconfig */;
+			baseConfigurationReference = BCAA12E403B1CC45AB320CBEEC193E3E /* Pageboy.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -977,7 +1227,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -985,15 +1236,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1001,9 +1250,9 @@
 			};
 			name = Release;
 		};
-		0F266948E580C788F469B47D2DF600AF /* Debug */ = {
+		E173A0C10583886DE26D089FC1A03860 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D491DA799810E39CB75D3DBD038A363 /* PromiseKit.xcconfig */;
+			baseConfigurationReference = BCAA12E403B1CC45AB320CBEEC193E3E /* Pageboy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1014,69 +1263,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PromiseKit/PromiseKit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
-				PRODUCT_MODULE_NAME = PromiseKit;
-				PRODUCT_NAME = PromiseKit;
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		570FE9853D7B7B83E9B735E45AE7938E /* Release */ = {
+		E83236D1D0EB071B2E829B3567B1E37E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41AF3AAE5ED4697999D48040AA44C103 /* Pods-KPI Schedule.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		885232DCF234DABE90027D91B78A8925 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9540224461A6DEFFC8ED3AA1D03FD057 /* Pods-KPI Schedule.debug.xcconfig */;
+			baseConfigurationReference = 8CF289E4614ABAB8D7B9CC60576BEA7A /* Pods-KPI Schedule.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1111,140 +1322,9 @@
 			};
 			name = Debug;
 		};
-		9154029DE739D740117224869FD2B7C6 /* Release */ = {
+		EC7631E590879FBBF9BA4D66D2E01868 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF2875D964C4E0D74F163B8A6EDC56CF /* DZNEmptyDataSet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
-				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
-				PRODUCT_NAME = DZNEmptyDataSet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A31A5BD8A56B204D4BF231DD03D30DD2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF2875D964C4E0D74F163B8A6EDC56CF /* DZNEmptyDataSet.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
-				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
-				PRODUCT_NAME = DZNEmptyDataSet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A95EE3AE7ABFBB7A33551A5A34813A9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D491DA799810E39CB75D3DBD038A363 /* PromiseKit.xcconfig */;
+			baseConfigurationReference = 87390C9FC0408BDB6A13C49A67AE13F1 /* PromiseKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1270,54 +1350,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AF7B883FC8CC00D472A1FF7E0BDCF628 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 670143006BD1DE209B64834FCCD40797 /* Pods-KPI Schedule Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B82CAC254BCBD6879D6D7CA796793979 /* Debug */ = {
+		F47C014DDDB90F41E59A6DD9546BDE9F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11E1283A01656743550F8773E6003265 /* Pageboy.xcconfig */;
+			baseConfigurationReference = 1C3F96091A72B6EA20E7F0ECDC755A21 /* DZNEmptyDataSet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1328,117 +1370,81 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
-				PRODUCT_MODULE_NAME = Pageboy;
-				PRODUCT_NAME = Pageboy;
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				PRODUCT_MODULE_NAME = DZNEmptyDataSet;
+				PRODUCT_NAME = DZNEmptyDataSet;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E3BF30B15CCE48E847207031DDC052B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11E1283A01656743550F8773E6003265 /* Pageboy.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
-				PRODUCT_MODULE_NAME = Pageboy;
-				PRODUCT_NAME = Pageboy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		058DF38F5922F24842B97693B0188F2D /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7631E590879FBBF9BA4D66D2E01868 /* Debug */,
+				3A85AECD9396E86D3A52A1149F3506CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4623BF75FC689195BAB4277E02EB7001 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47C014DDDB90F41E59A6DD9546BDE9F /* Debug */,
+				260089ACF71F672CB5334FFDF3383E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07488D4657FB0A78086563621D425F8A /* Debug */,
-				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73E15E6063133ED50FA3BB94587D532D /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule" */ = {
+		54292FD7D9B29A260976D5F4CAEDCD3D /* Build configuration list for PBXNativeTarget "Pageboy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				885232DCF234DABE90027D91B78A8925 /* Debug */,
-				570FE9853D7B7B83E9B735E45AE7938E /* Release */,
+				E173A0C10583886DE26D089FC1A03860 /* Debug */,
+				C232EB54DDDEB37F0F2E3546BE9414FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B3557E762C4DFFDA9A83B35F3C863D5C /* Build configuration list for PBXNativeTarget "Pageboy" */ = {
+		88790C01C95E8211047F851330060D6C /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B82CAC254BCBD6879D6D7CA796793979 /* Debug */,
-				E3BF30B15CCE48E847207031DDC052B4 /* Release */,
+				E83236D1D0EB071B2E829B3567B1E37E /* Debug */,
+				862E269C71D48E9FC51AB0DC899897EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E15FBAE54899D7FCA08F733C2B16A446 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+		CDB465D260DA7F5241ADAF1BF37DD27F /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F266948E580C788F469B47D2DF600AF /* Debug */,
-				A95EE3AE7ABFBB7A33551A5A34813A9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E247B679229F323E8B52D483BEDD7E55 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A31A5BD8A56B204D4BF231DD03D30DD2 /* Debug */,
-				9154029DE739D740117224869FD2B7C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FF03D5412DC3EBB3647FC51D0E3CBCA2 /* Build configuration list for PBXNativeTarget "Pods-KPI Schedule Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF7B883FC8CC00D472A1FF7E0BDCF628 /* Debug */,
-				0A4B90FED60ECA42ADFA9F0B77045A63 /* Release */,
+				379DE1CA50612555BDD6F2484E2F0256 /* Debug */,
+				8040AFFE8CC23E2EA8D56A0513CD8032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

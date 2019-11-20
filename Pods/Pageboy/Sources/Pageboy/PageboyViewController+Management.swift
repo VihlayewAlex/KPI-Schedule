@@ -24,7 +24,7 @@ extension PageboyViewController {
     internal func reloadData(reloadViewControllers: Bool) {
 
         if reloadViewControllers {
-            viewControllerMap.removeAll()
+            viewControllerIndexMap.removeAll()
         }
 
         let newViewControllerCount = dataSource?.numberOfViewControllers(in: self) ?? 0
@@ -158,16 +158,16 @@ internal extension PageboyViewController {
 }
 
 // MARK: - Data Source interaction
-internal extension PageboyViewController {
+extension PageboyViewController {
     
     /// Load view controller from the data source.
     ///
     /// - Parameter index: Index of the view controller to load.
     /// - Returns: View controller if it exists.
-    func fetchViewController(at index: PageIndex) -> UIViewController? {
+    internal func fetchViewController(at index: PageIndex) -> UIViewController? {
         let viewController = dataSource?.viewController(for: self, at: index)
         if let viewController = viewController {
-            viewControllerMap[viewController] = index
+            viewControllerIndexMap.set(index, for: viewController)
         }
         return viewController
     }
@@ -184,7 +184,7 @@ internal extension PageboyViewController {
     func setUpPageViewController(reloadViewControllers: Bool = true) {
         let existingZIndex: Int?
         if let pageViewController = self.pageViewController { // destroy existing page VC
-            existingZIndex = view.subviews.index(of: pageViewController.view)
+            existingZIndex = view.subviews.firstIndex(of: pageViewController.view)
             destroyCurrentPageViewController()
         } else {
             existingZIndex = nil
@@ -193,10 +193,6 @@ internal extension PageboyViewController {
         let pageViewController = UIPageViewController(transitionStyle: .scroll,
                                                       navigationOrientation: navigationOrientation,
                                                       options: pageViewControllerOptions)
-        pageViewController.view.clipsToBounds = false
-        pageViewController.view.subviews.forEach { (view) in
-            view.clipsToBounds = false
-        }
         pageViewController.delegate = self
         pageViewController.dataSource = self
         self.pageViewController = pageViewController
@@ -259,7 +255,7 @@ internal extension PageboyViewController {
             options[.interPageSpacing] = interPageSpacing
         }
         
-        guard options.count > 0 else {
+        guard !options.isEmpty else {
             return nil
         }
         return options
@@ -273,7 +269,7 @@ internal extension PageboyViewController {
             options[UIPageViewControllerOptionInterPageSpacingKey] = interPageSpacing
         }
         
-        guard options.count > 0 else {
+        guard !options.isEmpty else {
             return nil
         }
         return options

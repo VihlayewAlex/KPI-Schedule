@@ -1,14 +1,14 @@
 PODS:
   - DZNEmptyDataSet (1.8.1)
-  - Pageboy (3.0.5)
-  - PromiseKit (6.8.3):
-    - PromiseKit/CorePromise (= 6.8.3)
-    - PromiseKit/Foundation (= 6.8.3)
-    - PromiseKit/UIKit (= 6.8.3)
-  - PromiseKit/CorePromise (6.8.3)
-  - PromiseKit/Foundation (6.8.3):
+  - Pageboy (3.4.0)
+  - PromiseKit (6.11.0):
+    - PromiseKit/CorePromise (= 6.11.0)
+    - PromiseKit/Foundation (= 6.11.0)
+    - PromiseKit/UIKit (= 6.11.0)
+  - PromiseKit/CorePromise (6.11.0)
+  - PromiseKit/Foundation (6.11.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.8.3):
+  - PromiseKit/UIKit (6.11.0):
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
@@ -24,9 +24,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  Pageboy: 64f8b1ac4b43eb622897425a1825223418261e2e
-  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  Pageboy: fd23a9b9e8156f4fac62731637f5d6f7d1e1c3aa
+  PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
 
 PODFILE CHECKSUM: ed66e461f4c6e54c75409d472144ea30b374f0ae
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5

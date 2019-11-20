@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -108,6 +108,11 @@
 		3AF967DC2231A43B00761ACD /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF967DA2231A32B00761ACD /* Date+Extensions.swift */; };
 		3AF967DE2231A47F00761ACD /* DayOfWeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF967DD2231A47F00761ACD /* DayOfWeekTests.swift */; };
 		5BD76FD0968E6F1354D1409B /* Pods_KPI_Schedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF3727B1C3918B35F1054AB /* Pods_KPI_Schedule.framework */; };
+		FA2767C7232D1A05000FF2B2 /* ErrorMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2767C6232D1A05000FF2B2 /* ErrorMessageResponse.swift */; };
+		FA2767C8232D1B1F000FF2B2 /* ErrorMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2767C6232D1A05000FF2B2 /* ErrorMessageResponse.swift */; };
+		FA2767C9232D218A000FF2B2 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB74A4D22370166005AA30D /* Notification+Extensions.swift */; };
+		FA2767CA232D2193000FF2B2 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F57882230400E00BFD268 /* SplashScreenVC.swift */; };
+		FA860070232D278A005F8EA9 /* ChooseGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5F578D223053EC00BFD268 /* ChooseGroupVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +205,7 @@
 		8B0049582D14C7D340D7D394 /* Pods-KPI Schedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Schedule.release.xcconfig"; path = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule.release.xcconfig"; sourceTree = "<group>"; };
 		DAEF86A691B76155A08E4CF9 /* Pods_KPI_Schedule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KPI_Schedule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5DCB9E02DCBE2839D58D619 /* Pods-KPI Schedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KPI Schedule.debug.xcconfig"; path = "Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule.debug.xcconfig"; sourceTree = "<group>"; };
+		FA2767C6232D1A05000FF2B2 /* ErrorMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +412,7 @@
 		3AC6EBD3222FD9A200A387CC /* API */ = {
 			isa = PBXGroup;
 			children = (
+				FA2767C6232D1A05000FF2B2 /* ErrorMessageResponse.swift */,
 				3AC6EBE4222FDC5A00A387CC /* ArrayDataResponse.swift */,
 				3AC6EBE7222FDC9900A387CC /* SingleDataResponse.swift */,
 				3A482875222F42690093E949 /* Groups */,
@@ -527,6 +534,7 @@
 				TargetAttributes = {
 					3A482857222F2AA30093E949 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -535,6 +543,7 @@
 					};
 					3A48288C222F58C60093E949 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 3A482857222F2AA30093E949;
 					};
 				};
@@ -589,16 +598,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule Tests/Pods-KPI Schedule Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -611,20 +615,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-KPI Schedule/Pods-KPI Schedule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -705,6 +700,7 @@
 				3A5F57982230684000BFD268 /* SchedulePagerVC.swift in Sources */,
 				3A48287C222F42D70093E949 /* GroupType.swift in Sources */,
 				3A4828B5222F67F20093E949 /* DaysInfo.swift in Sources */,
+				FA2767C7232D1A05000FF2B2 /* ErrorMessageResponse.swift in Sources */,
 				3AC6EBDC222FD9FF00A387CC /* Lesson.swift in Sources */,
 				3ADC4B6122444C0D00E9F851 /* TutorialPageVC.swift in Sources */,
 				3A4828AE222F65C60093E949 /* WeeksInfo.swift in Sources */,
@@ -751,14 +747,17 @@
 				3A4828A7222F64890093E949 /* TeacherInfo.swift in Sources */,
 				3A2E6B0622317ABA004623F1 /* NetworkingApiError.swift in Sources */,
 				3AF967D722318AFE00761ACD /* ScheduleWeek.swift in Sources */,
+				FA2767CA232D2193000FF2B2 /* SplashScreenVC.swift in Sources */,
 				3ABB3DD12244CD16000B9685 /* Preferences.swift in Sources */,
 				3A4828B1222F66760093E949 /* WeeksInfo.swift in Sources */,
 				3AC6EBDD222FD9FF00A387CC /* Lesson.swift in Sources */,
 				3ABB3DDB2244F335000B9685 /* Reachability.swift in Sources */,
+				FA860070232D278A005F8EA9 /* ChooseGroupVC.swift in Sources */,
 				3AF967D822318B0800761ACD /* LessonType.swift in Sources */,
 				3A482897222F59930093E949 /* NetworkingApi.swift in Sources */,
 				3ABB3DD22244CFB4000B9685 /* AppDelegate.swift in Sources */,
 				3AC6EBE3222FDA2700A387CC /* Room.swift in Sources */,
+				FA2767C8232D1B1F000FF2B2 /* ErrorMessageResponse.swift in Sources */,
 				3AC6EBEE222FF1ED00A387CC /* NetworkingAPIFacadeTests.swift in Sources */,
 				3A48289C222F5A880093E949 /* GroupType.swift in Sources */,
 				3ABB3DD52244D258000B9685 /* LabeledCodable.swift in Sources */,
@@ -779,6 +778,7 @@
 				3A482890222F58C60093E949 /* NetworkingApiTests.swift in Sources */,
 				3A4828BA222F695B0093E949 /* WeekInfo.swift in Sources */,
 				3AF967DC2231A43B00761ACD /* Date+Extensions.swift in Sources */,
+				FA2767C9232D218A000FF2B2 /* Notification+Extensions.swift in Sources */,
 				3A4828A2222F5A980093E949 /* RoomInfo.swift in Sources */,
 				3A48289E222F5A8E0093E949 /* LessonInfo.swift in Sources */,
 				3AC6EBE9222FDC9900A387CC /* SingleDataResponse.swift in Sources */,
@@ -952,14 +952,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22U234HGU8;
 				INFOPLIST_FILE = "KPI Schedule/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vihlayew.kpi-schedule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -972,14 +973,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22U234HGU8;
 				INFOPLIST_FILE = "KPI Schedule/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vihlayew.kpi-schedule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -999,7 +1001,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vikhliaiev.KPI-Schedule-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPI Schedule.app/KPI Schedule";
 			};
@@ -1020,7 +1022,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "vikhliaiev.KPI-Schedule-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KPI Schedule.app/KPI Schedule";
 			};

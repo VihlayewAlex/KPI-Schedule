@@ -43,7 +43,7 @@ class NetworkingAPIFacadeTests: XCTestCase {
     }
     
     func testGetGroupSchedule() {
-        APIFacade.getSchedule(forGroupWithId: 3176).done({ (schedule) in
+        APIFacade.getSchedule(forGroupWithId: 3176, allowCached: false).done({ (schedule) in
             print(schedule)
             self.exp.fulfill()
         }).catch({ (error) in

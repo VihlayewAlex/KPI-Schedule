@@ -32,6 +32,7 @@ final class ScheduleVC: UIViewController {
         super.viewDidLoad()
         
         configureLabels()
+        configureSegmentedControl()
         configureTimeline()
         configurePageVC()
         loadSchedule()
@@ -70,6 +71,11 @@ final class ScheduleVC: UIViewController {
         }
     }
     
+    private func configureSegmentedControl() {
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+        segmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+    }
+    
     private func configureTimeline() {
         let radius: CGFloat = 6.0
         let corners = CACornerMask.layerMaxXMinYCorner
@@ -98,6 +104,14 @@ final class ScheduleVC: UIViewController {
     }
     
     private func configurePageVC() {
+        // !!!
+        schedulePageVC.view.clipsToBounds = false
+        schedulePageVC.view.layer.masksToBounds = false
+        
+        // !!!
+        scheduleContainerView.clipsToBounds = false
+        scheduleContainerView.layer.masksToBounds = false
+        
         addChild(schedulePageVC)
         schedulePageVC.scrollingDelegate = self
         schedulePageVC.view.translatesAutoresizingMaskIntoConstraints = false
@@ -110,29 +124,45 @@ final class ScheduleVC: UIViewController {
     }
     
     private func loadSchedule(for group: GroupInfo? = nil) {
-        if let group = (group ?? Preferences.selectedGroup) {
-            when(fulfilled: API.getSchedule(forGroupWithId: group.id, allowCached: true), API.getCurrentWeekNumber()).done({ [weak self] (schedule, currentWeek) in
-                print("✅ Reloaded schedule for " + group.name)
-                self?.segmentedControl.selectedSegmentIndex = currentWeek.index
-                self?.segmentedControl.setTitle("Week".localized + " 1" + ((currentWeek.index == 0) ? " (Current)".localized : ""), forSegmentAt: 0)
-                self?.segmentedControl.setTitle("Week".localized + " 2" + ((currentWeek.index == 1) ? " (Current)".localized : ""), forSegmentAt: 1)
-                self?.segmentedControl.sizeToFit()
-                self?.schedulePageVC.currentScheduleWeek = currentWeek
-                self?.schedulePageVC.scheduleOptions = ScheduleOptions(group: group, schedule: schedule, selectedScheduleWeek: currentWeek)
-                self?.groupDropdownButton.setAttributedTitle({ () -> NSAttributedString in
-                    let attrStr = NSMutableAttributedString(string: group.name)
-                    attrStr.append(NSAttributedString(string: " ▼", attributes: [.font: UIFont.systemFont(ofSize: 14.0)]))
-                    return attrStr
-                }(), for: .normal)
-            }).catch({ [weak self] (error) in
-                let alert = UIAlertController(title: "Error".localized, message: error.localizedDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
-                alert.addAction(UIAlertAction(title: "Retry".localized, style: .cancel, handler: { (_) in
-                    self?.loadSchedule(for: group)
-                }))
-                self?.present(alert, animated: true, completion: nil)
-            })
+        guard let group = (group ?? Preferences.selectedGroup) else {
+            return
         }
+        let configureSchedule = { [weak self] (schedule: Schedule, currentWeek: ScheduleWeek) in
+            self?.segmentedControl.selectedSegmentIndex = currentWeek.index
+            self?.segmentedControl.setTitle("Week".localized + " 1" + ((currentWeek.index == 0) ? " (Current)".localized : ""), forSegmentAt: 0)
+            self?.segmentedControl.setTitle("Week".localized + " 2" + ((currentWeek.index == 1) ? " (Current)".localized : ""), forSegmentAt: 1)
+            self?.segmentedControl.sizeToFit()
+            self?.schedulePageVC.currentScheduleWeek = currentWeek
+            self?.schedulePageVC.scheduleOptions = ScheduleOptions(group: group, schedule: schedule, selectedScheduleWeek: currentWeek)
+            self?.groupDropdownButton.setAttributedTitle({ () -> NSAttributedString in
+                let attrStr = NSMutableAttributedString(string: group.name)
+                attrStr.append(NSAttributedString(string: " ▼", attributes: [.font: UIFont.systemFont(ofSize: 14.0)]))
+                return attrStr
+            }(), for: .normal)
+            self?.groupDropdownButton.sizeToFit()
+        }
+        when(fulfilled: API.getSchedule(forGroupWithId: group.id, allowCached: true), API.getCurrentWeekNumber()).done({ (schedule, currentWeek) in
+            print("✅ Loaded cached schedule for " + group.name)
+            configureSchedule(schedule, currentWeek)
+        }).then({
+            return when(fulfilled: API.getSchedule(forGroupWithId: group.id, allowCached: false), API.getCurrentWeekNumber()).done({ (newSchedule, newCurrentWeek) in
+                print("✅ Reloaded schedule for " + group.name)
+                configureSchedule(newSchedule, newCurrentWeek)
+            })
+        }).catch({ [weak self] (error) in
+            guard error.localizedDescription != NetworkingApiError.groupNotFound.localizedDescription else {
+                Preferences.clear()
+                NotificationCenter.default.post(Notification.route)
+                return
+            }
+            
+            let alert = UIAlertController(title: "Error".localized, message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok".localized, style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title: "Retry".localized, style: .cancel, handler: { (_) in
+                self?.loadSchedule(for: group)
+            }))
+            self?.present(alert, animated: true, completion: nil)
+        })
     }
     
     private func setupNotificationObservers() {

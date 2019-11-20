@@ -174,13 +174,13 @@ extension ScheduleDayVC: UITableViewDataSource, UITableViewDelegate {
             lessonCell.typeLabel.backgroundColor = lesson.type.color
             
             lessonCell.layer.cornerRadius = 6.0
-            lessonCell.clipsToBounds = true
             lessonCell.layer.shadowPath = UIBezierPath(roundedRect: lessonCell.bounds, cornerRadius: lessonCell.layer.cornerRadius).cgPath
             lessonCell.layer.shadowColor = UIColor.black.cgColor
             lessonCell.layer.shadowOpacity = 0.3
             lessonCell.layer.shadowOffset = CGSize(width: 0, height: 4)
             lessonCell.layer.shadowRadius = 8
             lessonCell.layer.masksToBounds = false
+            lessonCell.clipsToBounds = false
             
             return lessonCell
         } else {

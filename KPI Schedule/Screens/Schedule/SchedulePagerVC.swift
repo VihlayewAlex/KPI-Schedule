@@ -53,6 +53,10 @@ final class SchedulePagerVC: PageboyViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // !!!
+        view.clipsToBounds = false
+        view.layer.masksToBounds = false
+        
         self.delegate = self
         self.dataSource = self
     }
